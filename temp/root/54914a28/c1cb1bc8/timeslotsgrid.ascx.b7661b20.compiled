@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Modules/TimeSlotsGrid.ascx" hash="11464af1181dfbb" filehash="ffffeda09e3e47e6" flags="110000" assembly="App_Web_zuwxiras" type="ASP.modules_timeslotsgrid_ascx">
+    <filedeps>
+        <filedep name="/Modules/TimeSlotsGrid.ascx" />
+    </filedeps>
+</preserve>

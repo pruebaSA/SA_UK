@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/widget/Forms/ResourceSoftwareForm.aspx" hash="fffffff3110c36bd" filehash="371586168817" flags="110000" assembly="App_Web_dcvtneyp" type="ASP.widget_forms_resourcesoftwareform_aspx">
+    <filedeps>
+        <filedep name="/widget/Forms/ResourceSoftwareForm.aspx" />
+    </filedeps>
+</preserve>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/securearea/Scheduling-ReadOnly.aspx" hash="feeea05a47124133" filehash="8ef4133f274c8067" flags="110000" assembly="App_Web_hy545vhw" type="ASP.securearea_scheduling_readonly_aspx">
+    <filedeps>
+        <filedep name="/MasterPages/OneColumn.master" />
+        <filedep name="/MasterPages/Root.Master" />
+        <filedep name="/Modules/Footer.ascx" />
+        <filedep name="/Modules/NoScript.ascx" />
+        <filedep name="/SecureArea/Modules/Menu.ascx" />
+        <filedep name="/SecureArea/Modules/SchedulingLineReadOnly.ascx" />
+        <filedep name="/securearea/Scheduling-ReadOnly.aspx" />
+    </filedeps>
+</preserve>

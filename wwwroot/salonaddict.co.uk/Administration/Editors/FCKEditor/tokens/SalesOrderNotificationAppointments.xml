@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Tokens>
+  <Token name="--BUSINESS INFORMATION --" value=" " />
+  <Token name="Business Name" value="$BUSINESS_NAME$" />
+  <Token name="Business Phone" value="$BUSINESS_PHONE$" />
+  <Token name="Business Address 1" value="$BUSINESS_ADDRESSLINE1$" />
+  <Token name="Business Address 2" value="$BUSINESS_ADDRESSLINE2$" />
+  <Token name="Business City/Town" value="$BUSINESS_CITYTOWN_NAME$" />
+  <Token name="Business Area" value="$BUSINESS_AREA_NAME$" />
+  <Token name="Business County" value="$BUSINESS_COUNTY_NAME$" />
+  <Token name="Business State/Province" value="$BUSINESS_STATEPROVINCE_NAME$" />
+  <Token name="Business Zip/Postal Code" value="$BUSINESS_ZIP_POSTALCODE$" />
+  <Token name="Business Country" value="$BUSINESS_COUNTRY_NAME$" />
+
+  <Token name="--STAFF/SERVICE INFORMATION --" value=" " />
+  <Token name="Staff Name" value="$STAFF_DISPLAY_NAME$" />
+  <Token name="Service Name" value="$SERVICE_DISPLAY_NAME$" />
+  <Token name="Start Time (HH:mm)" value="$START_TIME$" />
+  <Token name="Start Date (ddd dd MMM yyyy)" value="$START_DATE$" />
+  <Token name="End Time (HH:mm)" value="$END_TIME$" />
+  <Token name="End Date (ddd dd MMM yyyy)" value="$END_DATE$" />
+  <Token name="Special Instructions" value="$CUSTOMER_COMMENT$" />
+</Tokens>

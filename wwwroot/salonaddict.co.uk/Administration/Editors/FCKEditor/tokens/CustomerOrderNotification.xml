@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Tokens>
+  <Token name="-- ORDER INFORMATION" value=" " />
+  <Token name="Order Date" value="$ORDER_DATE$" />
+  <Token name="Order Reference No." value="$REFERENCE_NO$" />
+  <Token name="Appointments Template" value="$APPOINTMENTS$" />
+  <Token name="Masked Card Number" value="$CARD_NUMBER_MASKED$" />
+  <Token name="Payment Method" value="$PAYMENT_METHOD_NAME$" />
+  <Token name="Balance" value="$BALANCE$" />
+  <Token name="Balance in Customer Currency" value="$BALANCE_IN_CUSTOMER_CURRENCY$" />
+  <Token name="Amount Paid" value="$TOTAL_IN_CUSTOMER_CURRENCY$" />
+  <Token name="Customer Total" value="$CUSTOMER_TOTAL_IN_CUSTOMER_CURRENCY$" />
+
+  <Token name="-- BILLING INFORMATION" value=" " />
+  <Token name="Billing First Name" value="$BILLING_FIRSTNAME$" />
+  <Token name="Billing Last Name" value="$BILLING_LASTNAME$" />
+  <Token name="Billing Full Name" value="$BILLING_FULLNAME$" />
+  <Token name="Billing Phone" value="$BILLING_PHONE$" />
+  <Token name="Billing Email" value="$BILLING_EMAIL$" />
+</Tokens>

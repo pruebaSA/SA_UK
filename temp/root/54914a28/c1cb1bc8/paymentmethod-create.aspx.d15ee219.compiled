@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/securearea/PaymentMethod-Create.aspx" hash="feeea05a47124133" filehash="6351fbfda769178b" flags="110000" assembly="App_Web_abybvad4" type="ASP.securearea_paymentmethod_create_aspx">
+    <filedeps>
+        <filedep name="/MasterPages/OneColumn.master" />
+        <filedep name="/MasterPages/Root.Master" />
+        <filedep name="/Modules/Footer.ascx" />
+        <filedep name="/Modules/NoScript.ascx" />
+        <filedep name="/SecureArea/Modules/Menu.ascx" />
+        <filedep name="/securearea/PaymentMethod-Create.aspx" />
+    </filedeps>
+</preserve>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Modules/PromotionSummary.ascx" hash="e5c9eca6977318" filehash="ffffcea6c7a32c42" flags="110000" assembly="App_Web_iuwcbyzr" type="ASP.modules_promotionsummary_ascx">
+    <filedeps>
+        <filedep name="/Modules/PromotionSummary.ascx" />
+    </filedeps>
+</preserve>

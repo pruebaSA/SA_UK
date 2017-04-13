@@ -1,0 +1,24 @@
+﻿<asp:GridView runat="server" CssClass="default-gridview" >
+	<AlternatingRowStyle CssClass="altrow-style" />
+    <HeaderStyle CssClass="header-style" />
+    <RowStyle CssClass="row-style" />  
+    <PagerStyle CssClass="pager-style" />
+</asp:GridView>
+
+<asp:GridView runat="server" SkinID="dashboard" CssClass="dashboard-gridview" >
+	<AlternatingRowStyle CssClass="altrow-style" />
+    <HeaderStyle CssClass="header-style" />
+    <RowStyle CssClass="row-style" />  
+    <PagerStyle CssClass="pager-style" />
+</asp:GridView>
+
+<ajaxToolkit:CalendarExtender runat="server" CssClass="calendar" /> 
+
+<asp:Label runat="server" SkinID="DisabledTextBox" CssClass="disabled-textbox" />
+
+<asp:TextBox runat="server" CssClass="default" />
+
+<asp:Button runat="server" CssClass="button" />
+<asp:Button runat="server" SkinID="ButtonSmallGrey" CssClass="small-button-grey" />
+<asp:Button runat="server" SkinID="ButtonSmallPink" CssClass="small-button-pink" />
+<asp:Button runat="server" SkinID="ButtonLogin" CssClass="button-login" />

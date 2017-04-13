@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Modules/ContentTitle.ascx" hash="ff1ceda5557081d6" filehash="ffffd1e3cbc3c57a" flags="110000" assembly="App_Web_0q5m2y1a" type="ASP.modules_contenttitle_ascx">
+    <filedeps>
+        <filedep name="/Modules/ContentTitle.ascx" />
+    </filedeps>
+</preserve>

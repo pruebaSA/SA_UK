@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/securearea/Holiday-Create.aspx" hash="feeea05a47124133" filehash="10e9057a654851a1" flags="110000" assembly="App_Web_hy545vhw" type="ASP.securearea_holiday_create_aspx">
+    <filedeps>
+        <filedep name="/MasterPages/OneColumn.master" />
+        <filedep name="/MasterPages/Root.Master" />
+        <filedep name="/Modules/DateTextBox.ascx" />
+        <filedep name="/Modules/Footer.ascx" />
+        <filedep name="/Modules/NoScript.ascx" />
+        <filedep name="/securearea/Holiday-Create.aspx" />
+        <filedep name="/SecureArea/Modules/Menu.ascx" />
+    </filedeps>
+</preserve>

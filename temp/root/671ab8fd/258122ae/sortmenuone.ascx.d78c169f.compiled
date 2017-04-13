@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Templates/SortMenuOne.ascx" hash="e9c02dc3c543cf" filehash="2cbbf908460b" flags="110000" assembly="App_Web_04yuxjmp" type="ASP.templates_sortmenuone_ascx">
+    <filedeps>
+        <filedep name="/Templates/SortMenuOne.ascx" />
+    </filedeps>
+</preserve>

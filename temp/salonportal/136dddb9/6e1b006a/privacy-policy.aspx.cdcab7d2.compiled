@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/salonportal/Privacy-Policy.aspx" hash="ff152185bf1dfbbc" filehash="c072a41124cf2d87" flags="110000" assembly="App_Web_1wqxlnu5" type="ASP.privacy_policy_aspx">
+    <filedeps>
+        <filedep name="/SalonPortal/MasterPages/OneColumn.master" />
+        <filedep name="/SalonPortal/MasterPages/Root.Master" />
+        <filedep name="/SalonPortal/Modules/ContentTitle.ascx" />
+        <filedep name="/SalonPortal/Modules/Menu.ascx" />
+        <filedep name="/SalonPortal/Modules/Topic.ascx" />
+        <filedep name="/SalonPortal/Modules/WelcomeLoginView.ascx" />
+        <filedep name="/salonportal/Privacy-Policy.aspx" />
+        <filedep name="/SalonPortal/Templates/Footer.ascx" />
+        <filedep name="/SalonPortal/Templates/Header.ascx" />
+    </filedeps>
+</preserve>

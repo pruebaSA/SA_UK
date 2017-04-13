@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/securearea/Ticket-Alert-Create.aspx" hash="feeea05a47124133" filehash="9cae0fc6ddb45665" flags="110000" assembly="App_Web_abybvad4" type="ASP.securearea_ticket_alert_create_aspx">
+    <filedeps>
+        <filedep name="/MasterPages/OneColumn.master" />
+        <filedep name="/MasterPages/Root.Master" />
+        <filedep name="/Modules/Footer.ascx" />
+        <filedep name="/Modules/NoScript.ascx" />
+        <filedep name="/SecureArea/Modules/Menu.ascx" />
+        <filedep name="/securearea/Ticket-Alert-Create.aspx" />
+    </filedeps>
+</preserve>

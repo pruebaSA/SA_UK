@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/MasterPages/OneColumn.master" hash="11870549c86bf5e" filehash="968b5017d2fa44ba" flags="110000" assembly="App_Web_bqkxutvh" type="ASP.masterpages_onecolumn_master">
+    <filedeps>
+        <filedep name="/MasterPages/OneColumn.master" />
+        <filedep name="/MasterPages/Root.Master" />
+        <filedep name="/Modules/Footer.ascx" />
+        <filedep name="/Modules/NoScript.ascx" />
+    </filedeps>
+</preserve>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/SalonPortal/SecureArea/Modules/ServiceCategoryDropDownList.ascx" hash="fffffff3110c36bd" filehash="fffffcaeef28ee97" flags="110000" assembly="App_Web_z5p1nmdg" type="ASP.securearea_modules_servicecategorydropdownlist_ascx">
+    <filedeps>
+        <filedep name="/SalonPortal/SecureArea/Modules/ServiceCategoryDropDownList.ascx" />
+    </filedeps>
+</preserve>

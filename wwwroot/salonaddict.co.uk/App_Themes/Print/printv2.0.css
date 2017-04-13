@@ -1,0 +1,31 @@
+﻿body, h1, h2, h3, h4, h5, h6, address, blockquote, dd, dl, hr, form, input
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+	font-family: arial, verdana, helvetica, sans-serif;
+	font-size: 12px;
+	background: #fff;
+	color: #000000;
+	margin: 10px 10px 10px 10px;
+}
+
+th
+{
+	text-align:left;
+    text-decoration:underline;
+}
+
+table
+{
+	border:solid 1px #aaa;
+}
+
+td
+{
+	vertical-align:middle;
+	border:none;
+}

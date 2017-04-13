@@ -1,0 +1,161 @@
+﻿/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	HTML GENERAL 
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+html,body, h1, h2, h3, h4, h5, h6, address, blockquote, dd, dl, hr, form, input
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+	font-family: arial, verdana, helvetica, sans-serif;
+	font-size: 12px;
+	line-height:15px;
+	text-align: left;
+	color: #555; 
+	background:#fff;
+	line-height: 18px;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	LINKS
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+a
+{
+	color:#000;
+	text-decoration: underline;
+}
+
+a:visited
+{
+	color:#000;
+	text-decoration: underline;
+}
+
+a:hover
+{
+	text-decoration: none;
+}
+
+a img
+{
+	border: 0;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	IMAGES
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+img
+{
+	border: none;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	HEADINGS & TEXT
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+h1, h2, h3, h4, h5, h6, p
+{
+    font-family: arial, helvetica, sans-serif;
+    margin:0px;
+	padding: 0px 0px 8px 0px;
+}
+
+h1
+{
+	font-size:18px;
+	line-height:22px;
+}
+
+h2, h3
+{
+    font-size: 16px;
+    line-height: 19px;
+}
+
+b
+{
+	font-weight:bold;
+	color:#333;
+	font-family:Tahoma;
+}
+
+.smallprint
+{
+    font-size: x-small;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	TABLES
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+td
+{
+    vertical-align: middle;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	MISC. CLASSES
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.clear
+{
+	border: medium none;
+	clear: both;
+	float: none;
+	font-size: 0;
+	height: 0;
+	line-height: 0;
+}
+
+.htmlcontent
+{
+	padding-bottom:5px;
+	font-family: verdana, helvetica, sans-serif; 
+	font-size: 11px;
+	line-height:15px;
+	width:520px;
+}
+
+.htmlcontent-title
+{
+	padding: 0 0 5px 0;
+	clear:both;
+}
+
+.htmlcontent-header 
+{
+	padding:0px;
+	margin:0px;
+	height:30px;
+	font-size:15px;
+	background:#d0d0d0;
+	border-bottom:solid 1px #999;
+	margin-bottom:15px;
+	line-height:28px;
+	padding-left:15px;
+	vertical-align:middle;
+	color:#333;
+}
+
+.htmlcontent-body
+{
+	text-align:justify;
+}

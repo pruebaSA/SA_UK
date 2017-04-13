@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ContentTitle.Text" xml:space="preserve">
+    <value>&lt;span class="pink"&gt;Salon Addict.co.uk&lt;/span&gt; Press</value>
+  </data>
+  <data name="ContentTopic.Body" xml:space="preserve">
+    <value>&lt;p&gt;&lt;b&gt;SalonAddict.co.uk - one-stop shop for hair and beauty appointments launches in London&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Over 600 salons to choose from in London to book instant hair and beauty appointments on SalonAddict.co.uk&lt;/li&gt;&lt;li&gt;It's as easy as booking a hotel online. Pay a 10% deposit on the site and the booking is confirmed. No calls, no wasted time&lt;/li&gt;&lt;li&gt;The site will continue to add salons all over the UK as it expands it's service in the coming months&lt;/li&gt;&lt;/ul&gt;&lt;div&gt;&amp;nbsp;&lt;/div&gt;&lt;p&gt;SalonAddict.co.uk, the one-stop shop for booking all your hair and beauty appointments in over 600 salons across London, has officially launched in the UK.&lt;/p&gt;&lt;p&gt;SalonAddict.co.uk is an online booking service that offers the best choice of salons, services, and stylists, whilst saving time by finding you a salon near your office, home or restaurant.  Having responded to customer needs in Ireland, the site is to offer the same service to Londoners.  SalonAddict.co.uk also offers a discount for booking in advance and user reviews, which aid the salon selection process and provide comfort to new customers.&lt;/p&gt;&lt;p&gt;Founded by three young entrepreneurs, SalonAddict.co.uk now has over 250 salons in Ireland and over 600 in London. &lt;/p&gt;&lt;p&gt;“We launched SalonAddict.ie in Ireland in May 2011 and it was an immediate success,” says Co-Founder Cormac McNamara, 29.  “The public had been crying out for a service where they could quickly and easily book a hair or beauty appointment online, which they could view and search by ratings and location.  We are certain this success can be mirrored in London and all over the UK."&lt;/p&gt;&lt;p&gt;“We want to make the painful and annoying experience of trawling through search engines to look for salons a thing of the past.  Here you can see who is free to give you a treatment without having to phone them,” added McNamara.&lt;/p&gt;&lt;p&gt;
+According to Ronan Ryan, Co-Founder, 29,  "whether you're in the office, at home or on the move with a smart phone, SalonAddict.co.uk is quick and easy to use, so you can find a salon anywhere in the Capital.  It’s a very exciting time for us now.  When we started the business, our aim was to expand to the UK and further afield but we didn’t realise how fast it was going to grow."&lt;/p&gt;&lt;p&gt;Ryan Estes, Co-Founder, 29, pointed out how the company has responded to customer needs to create the most user-friendly site possible, "we learned that reviews were crucial for new users and that discounts were a factor for many.  We introduced a discount for booking in advance - the further in advance you book, the better the price, so it can be cheaper to book online than directly with the salon.  Our customers love the incentives."&lt;/p&gt;</value>
+  </data>
+  <data name="ContentTopic.Title" xml:space="preserve">
+    <value>March 13th 2012</value>
+  </data>
+  <data name="Page.Title" xml:space="preserve">
+    <value>SalonAddict.co.uk | Press</value>
+  </data>
+</root>

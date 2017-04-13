@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/SalonPortal/SecureArea/Modules/AppointmentStatusDropDownList.ascx" hash="fffffff3110c36bd" filehash="ffffe16b5096f9a1" flags="110000" assembly="App_Web_z5p1nmdg" type="ASP.securearea_modules_appointmentstatusdropdownlist_ascx">
+    <filedeps>
+        <filedep name="/SalonPortal/SecureArea/Modules/AppointmentStatusDropDownList.ascx" />
+    </filedeps>
+</preserve>

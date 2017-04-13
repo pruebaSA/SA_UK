@@ -1,0 +1,163 @@
+﻿/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	SECTION HEADERS
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.section-title
+{
+	border-bottom: solid 3px #dfdfdf;
+	padding-bottom: 1px;
+	margin-bottom: 10px;
+	color:#333;
+	font-size: 14px;
+	font-weight: bold;
+	vertical-align: bottom;
+}
+
+.section-title img
+{
+	vertical-align: middle;
+	padding-bottom: 2px;
+}
+
+.section-header .title a
+{
+	text-decoration: none;
+	font-size: 11px;
+	color: #555;
+}
+
+
+.section-header
+{
+	border-bottom: solid 3px #dfdfdf;
+	padding-bottom: 1px;
+	margin-bottom: 10px;
+	height: 25px;
+}
+
+.section-header .title
+{
+	float: left;
+	color:#333;
+	font-size: 14px;
+	font-weight: bold;
+	vertical-align: bottom;
+	padding-top: 5px;
+}
+
+.section-header .title img
+{
+	vertical-align: middle;
+	padding-bottom: 2px;
+}
+
+.section-header .options
+{
+	text-align: right;
+	float: right;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	HOME PAGES
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.homepage
+{
+}
+
+.homepage .intro
+{
+	font-weight: bold;
+	padding: 5px 5px 5px 5px;
+	background: #fcfabc;
+	border: dashed 1px #dfdfdf;
+	margin-bottom: 10px;
+}
+
+.homepage .options
+{
+	padding: 10px 10px 10px 10px;
+	background: #e7efef;
+}
+
+.homepage .options ul
+{
+	margin: 0;
+	padding: 0;
+}
+
+.homepage .options ul li
+{
+	margin-bottom: 5px;
+	padding-bottom: 5px;
+	list-style: none;
+}
+
+.homepage .options .title
+{
+}
+
+.homepage .options .description p
+{
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	DETAIL PAGES
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+table.details
+{
+	border-collapse: collapse;
+	color: #333;
+	font-size: 12px;
+	margin: 0px;
+	vertical-align: middle;
+	text-align: left;
+}
+
+table.details td.title
+{
+	width:175px;
+	white-space:nowrap;
+	padding: 4px 4px 4px 4px;
+}
+
+table.details td.data-item
+{
+	padding: 4px 4px 4px 4px;
+}
+
+tr.detailsGroup td.title
+{
+	border-top: solid 1px #d3d3d3;
+	padding-top: 10px;
+	margin-top: 10px;
+}
+
+tr.detailsGroup td.data-item
+{
+	border-top: solid 1px #d3d3d3;
+	padding-top: 10px;
+	margin-top: 10px;
+}
+
+td.details
+{
+	text-align: left;
+	vertical-align: middle;
+	width: 175px;
+}
+
+td.title img
+{
+	vertical-align: bottom;
+	padding-right: 2px;
+}

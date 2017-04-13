@@ -1,0 +1,326 @@
+﻿/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	NAVBAR CONTROL
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.navbar-module
+{
+	background: #eee;
+	height: 26px;
+	border: solid 1px #acacac;
+	padding: 0px 5px 0 5px;
+}
+
+.navbar-module .date-time
+{
+	padding-top: 5px;
+	float:left;
+	font-weight: bold;
+}
+
+.navbar-module .breadcrumb
+{
+	float: right;
+	text-align: right;
+	padding-top: 5px;
+}
+
+.navbar-module .breadcrumb a
+{
+	text-decoration:none;
+	color:#000;
+}
+
+.navbar-module .breadcrumb a:hover
+{
+	text-decoration:underline;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	MENU CONTROL
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.menu-module
+{
+	position:relative;
+	width: 100%;
+	line-height: 29px;
+	height:31px;
+	background: url('images/bg_menu.gif') repeat-x;
+}
+
+.menu-module .AdminMenu
+{
+	vertical-align: middle;
+	font-family: Arial;
+	display: inline;
+}
+
+/* The menu adapter generates a list item (li) in HTML for each menu item. */
+/* Use this rule create the common appearance of each menu item. */
+
+.menu-module .AdminMenu ul.AspNet-Menu li a img
+{
+	border: none;
+	padding-right: 7px;
+	margin-bottom: 2px;
+	vertical-align: middle;
+}
+
+/* TOP TIER */
+.menu-module .AdminMenu ul.AspNet-Menu li
+{
+	padding: 0 3px 0 3px;
+	line-height: 29px;
+}
+
+.menu-module .AdminMenu ul.AspNet-Menu li:hover
+{
+	background: url(images/bg_menu_item_left_hover.png) no-repeat left center;
+}
+
+.menu-module .AdminMenu ul.AspNet-Menu li:hover a
+{
+	background: url(images/bg_menu_item_right_hover.png) no-repeat right center;
+}
+/* END TOP TIER */
+
+/* Within each menu item is a link or a span, depending on whether or not the MenuItem has defined it's */
+/* NavigateUrl property. By setting a transparent background image here you can effectively layer two images */
+/* in each menu item.  One comes from the CSS rule (above) governing the li tag that each menu item has. */
+/* The second image comes from this rule (below). */
+.menu-module .AdminMenu ul.AspNet-Menu li a, .menu-module .AdminMenu ul.AspNet-Menu li span
+{
+	color: #fff;
+	padding: 0 5px 0px 5px;
+	font-size: 12px;
+	font-weight: normal;
+}
+
+/* When a menu item contains no submenu items it is marked as a "leaf" and can be styled specially by this rule. */
+.menu-module .AdminMenu ul.AspNet-Menu li.AspNet-Menu-Leaf a, .menu-module .AdminMenu ul.AspNet-Menu li.AspNet-Menu-Leaf span
+{
+	color: #fff; 
+	font-size: 12px;
+}
+
+/* When you hover over a menu item, this rule comes into play. */
+/* Browsers that do not support the CSS hover pseudo-class, use JavaScript to dynamically change the */
+/* menu item's li tag so it has the AspNet-Menu-Hover class when the cursor is over that li tag. */
+/* See MenuAdapter.js (in the JavaScript folder). */
+.menu-module .AdminMenu ul.AspNet-Menu li:hover, .menu-module .AdminMenu ul.AspNet-Menu li.AspNet-Menu-Hover
+{
+	/* not required */
+}
+
+.menu-module .AdminMenu ul.AspNet-Menu li:hover a, .menu-module .AdminMenu ul.AspNet-Menu li:hover span, .menu-module .AdminMenu ul.AspNet-Menu li.AspNet-Menu-Hover a, .menu-module .AdminMenu ul.AspNet-Menu li.AspNet-Menu-Hover span, .menu-module .AdminMenu ul.AspNet-Menu li:hover li:hover a, .menu-module .AdminMenu ul.AspNet-Menu li:hover li:hover span, .menu-module .AdminMenu ul.AspNet-Menu li.AspNet-Menu-Hover li.AspNet-Menu-Hover a, .menu-module .AdminMenu ul.AspNet-Menu li.AspNet-Menu-Hover li.AspNet-Menu-Hover span, .menu-module .AdminMenu ul.AspNet-Menu li:hover li:hover ul a:hover, .menu-module .AdminMenu ul.AspNet-Menu li:hover li:hover ul span.Asp-Menu-Hover, .menu-module .AdminMenu ul.AspNet-Menu li.AspNet-Menu-Hover li.AspNet-Menu-Hover ul a:hover, .menu-module .AdminMenu ul.AspNet-Menu li.AspNet-Menu-Hover li.AspNet-Menu-Hover ul span.Asp-Menu-Hover
+{
+	/*bf - this is hover on all items*/
+}
+
+.menu-module .AdminMenu ul.AspNet-Menu li:hover ul a, .menu-module .AdminMenu ul.AspNet-Menu li:hover ul span, .menu-module .AdminMenu ul.AspNet-Menu li.AspNet-Menu-Hover ul a, .menu-module .AdminMenu ul.AspNet-Menu li.AspNet-Menu-Hover ul span, .menu-module .AdminMenu ul.AspNet-Menu li:hover li:hover ul a, .menu-module .AdminMenu ul.AspNet-Menu li:hover li:hover ul span, .menu-module .AdminMenu ul.AspNet-Menu li.AspNet-Menu-Hover li.AspNet-Menu-Hover ul a, .menu-module .AdminMenu ul.AspNet-Menu li.AspNet-Menu-Hover li.AspNet-Menu-Hover ul span
+{
+	color: #555; /* this is individual items below parent*/
+	border-top: solid 1px #e0e0e0;
+	text-align: left;
+	text-decoration: none;
+	background: none;
+}
+
+
+/* While you hover over a list item (li) you are also hovering over a link or span because */
+/* the link or span covers the interior of the li.  So you can set some hover-related styles */
+/* in the rule (above) for the li but set other hover-related styles in this (below) rule. */
+.menu-module .AdminMenu ul.AspNet-Menu li a:hover, .menu-module .AdminMenu ul.AspNet-Menu li span.Asp-Menu-Hover
+{
+}
+
+.menu-module .AdminMenu ul.AspNet-Menu ul li:hover, .menu-module .AdminMenu ul.AspNet-Menu ul li.AspNet-Menu-Leaf a:hover /* hover styles for lower tiers */
+{
+	background-image: none;
+	background-color:#fff;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* When the Menu control's Orientation property is Horizontal the adapter wraps the menu with DIV */
+/* whose class is AspNet-Menu-Horizontal. */
+
+.menu-module .AdminMenu .AspNet-Menu-Horizontal
+{
+	position: relative;
+}
+
+/* This rule controls the width of the top tier of the horizontal menu. */
+/* BE SURE TO MAKE THIS WIDE ENOUGH to accommodate all of the top tier menu items that are lined */
+/* up from left to right. In other words, this width needs to be the width of the individual */
+/* top tier menu items multiplied by the number of items. */
+.menu-module .AdminMenu .AspNet-Menu-Horizontal ul.AspNet-Menu
+{
+	width: 1000px;
+}
+
+/* This rule effectively says: style all tiers EXCEPT THE TOP TIER in the menu this way... */
+/* In other words, this rule can be used to style the second and third tiers of the menu without impacting */
+/* the topmost tier's appearance. */
+/* Remember that only the topmost tier of the menu is horizontal.  The second and third tiers are vertical. */
+/* So, they need a much smaller width than the top tier.  Effectively, the width specified here is simply */
+/* the width of a single menu item in the second and their tiers. */
+
+
+
+.menu-module .AdminMenu .AspNet-Menu-Horizontal ul.AspNet-Menu ul
+{
+	width: 170px;
+	left: 0;
+	top: 100%;
+	background-color: #f0f0f0;
+	border: solid 1px #6b798c;
+	margin-left: 1px;
+}
+
+
+.menu-module .AdminMenu .AspNet-Menu-Horizontal ul.AspNet-Menu ul ul
+{
+	width: 170px;
+}
+
+.menu-module .AdminMenu .AspNet-Menu-Horizontal ul.AspNet-Menu ul ul
+{
+	width: 170px;
+}
+
+/* Generally, you use this rule to set style properties that pertain to all menu items. */
+/* One exception is the width set here.  We will override this width with a more specific rule (below) */
+/* That sets the width for all menu items from the second tier downward in the menu. */
+.menu-module .AdminMenu .AspNet-Menu-Horizontal ul.AspNet-Menu li
+{
+	/*this is the top one */
+	padding-top: 1px;
+}
+
+
+*html .menu-module .AdminMenu .AspNet-Menu-Horizontal ul.AspNet-Menu li
+{
+	width: 1%;
+	vertical-align: middle;
+	margin: 5px 0;
+}
+
+/* This rule establishes the width of menu items below the top tier.  This allows the top tier menu items */
+/* to be narrower, for example, than the sub-menu items. */
+/* This value you set here should be slightly larger than the left margin value in the next rule. See */
+/* its comment for more details. */
+.menu-module .AdminMenu .AspNet-Menu-Horizontal ul.AspNet-Menu ul li
+{
+	text-align: left;
+	width: 170px;
+	padding: 0;
+	margin: 0;
+}
+
+.menu-module .AdminMenu .AspNet-Menu-Horizontal ul.AspNet-Menu ul ul li
+{
+	text-align: left;
+	width: 170px;
+	padding: 0;
+	margin: 0;
+}
+
+/* Third tier menus have to be positioned differently than second (or top) tier menu items because */
+/* they drop to the side, not below, their parent menu item. This is done by setting the last margin */
+/* value (which is equal to margin-left) to a value that is slightly smaller than the WIDTH of the */
+/* menu item. So, if you modify the rule above, then you should modify this (below) rule, too. */
+.menu-module .AdminMenu .AspNet-Menu-Horizontal ul.AspNet-Menu li ul li ul
+{
+	margin: -31px 0 0 170px;
+}
+
+/* selected / active link */
+
+.menu-module .AdminMenu .AspNet-Menu-Selected /* this tier is selected */
+{
+	font-weight: bold !important;
+}
+
+
+.menu-module .AdminMenu .AspNet-Menu-ChildSelected /* a tier below this one is selected */
+{
+	font-weight: bold !important;
+}
+
+.menu-module .AdminMenu .AspNet-Menu-ParentSelected /* a tier above this one is selected */
+{
+
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	MESSAGE MODULE
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.wrapper-message
+{
+}
+
+.wrapper-message .message
+{
+	display:block;
+	padding:15px;
+	margin:5px 0px 15px 0px;
+	background:#f7f7f7;
+	border:solid 1px green;
+}
+
+.wrapper-message .error
+{
+	display:block;
+	padding:15px;
+	margin:5px 0px 15px 0px;
+	background:#ffebe8;
+	border:solid 1px #990000;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	BUSINESS DROPDOWNLIST CONTROL
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.business-module
+{
+}
+
+.business-module .business-dropdownlist
+{
+	width:125px;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	CUSTOMER DROPDOWNLIST CONTROL
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.customer-module
+{
+}
+
+.customer-module .customer-dropdownlist
+{
+	width:125px;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	STAFF DROPDOWNLIST CONTROL
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.staff-module
+{
+}
+
+.staff-module .staff-dropdownlist
+{
+	width:125px;
+}

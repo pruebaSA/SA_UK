@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/securearea/BlockedTimes.aspx" hash="feeea05a47124133" filehash="c4b7c05861d47448" flags="110000" assembly="App_Web_kzlglbah" type="ASP.securearea_blockedtimes_aspx">
+    <filedeps>
+        <filedep name="/MasterPages/OneColumn.master" />
+        <filedep name="/MasterPages/Root.Master" />
+        <filedep name="/Modules/DateTextBox.ascx" />
+        <filedep name="/Modules/Footer.ascx" />
+        <filedep name="/Modules/NoScript.ascx" />
+        <filedep name="/securearea/BlockedTimes.aspx" />
+        <filedep name="/SecureArea/Modules/BlockedTimeLine.ascx" />
+        <filedep name="/SecureArea/Modules/Menu.ascx" />
+    </filedeps>
+</preserve>

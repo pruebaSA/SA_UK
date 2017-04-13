@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="2" virtualPath="/salonportal/CaptchaImage.ashx" hash="fff8e1fc4a1abb67" filehash="ffffe933dee69e21" flags="130000" assembly="SalonPortal" type="SalonPortal.CaptchaImage">
+    <filedeps>
+        <filedep name="/salonportal/CaptchaImage.ashx" />
+    </filedeps>
+</preserve>

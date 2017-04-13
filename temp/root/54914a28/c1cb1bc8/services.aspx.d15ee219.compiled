@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/securearea/Services.aspx" hash="feeea05a47124133" filehash="9cae1326b960de08" flags="110000" assembly="App_Web_kzlglbah" type="ASP.securearea_services_aspx">
+    <filedeps>
+        <filedep name="/MasterPages/OneColumn.master" />
+        <filedep name="/MasterPages/Root.Master" />
+        <filedep name="/Modules/Footer.ascx" />
+        <filedep name="/Modules/NoScript.ascx" />
+        <filedep name="/SecureArea/Modules/Menu.ascx" />
+        <filedep name="/securearea/Services.aspx" />
+    </filedeps>
+</preserve>

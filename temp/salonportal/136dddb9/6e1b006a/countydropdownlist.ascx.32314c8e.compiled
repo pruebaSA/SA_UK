@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/SalonPortal/SecureArea/Modules/CountyDropDownList.ascx" hash="fffffff3110c36bd" filehash="ffffc2e027fdd417" flags="110000" assembly="App_Web_sifyx01m" type="ASP.securearea_modules_countydropdownlist_ascx">
+    <filedeps>
+        <filedep name="/SalonPortal/SecureArea/Modules/CountyDropDownList.ascx" />
+    </filedeps>
+</preserve>

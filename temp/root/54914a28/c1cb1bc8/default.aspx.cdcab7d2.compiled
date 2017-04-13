@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Default.aspx" hash="feedcbb17ca940fa" filehash="594fe509642f7e88" flags="110000" assembly="App_Web_q3q0fwl1" type="ASP.default_aspx">
+    <filedeps>
+        <filedep name="/Default.aspx" />
+        <filedep name="/MasterPages/OneColumn.master" />
+        <filedep name="/MasterPages/Root.Master" />
+        <filedep name="/Modules/DateTextBox.ascx" />
+        <filedep name="/Modules/Footer.ascx" />
+        <filedep name="/Modules/HomepageSalonHours.ascx" />
+        <filedep name="/Modules/NoScript.ascx" />
+        <filedep name="/Modules/ServiceDropDownList.ascx" />
+    </filedeps>
+</preserve>

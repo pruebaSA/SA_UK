@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Templates/OrderSummaryOne.ascx" hash="e9c02dc3c543cf" filehash="17e2f4aff4a6" flags="110000" assembly="App_Web_04yuxjmp" type="ASP.templates_ordersummaryone_ascx">
+    <filedeps>
+        <filedep name="/Templates/OrderSummaryOne.ascx" />
+    </filedeps>
+</preserve>

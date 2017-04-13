@@ -1,0 +1,6 @@
+﻿<asp:DropDownList runat="server" SkinID="DropDownList" CssClass="dropdownlist" />
+<asp:DropDownList runat="server" SkinID="ServiceDropDownList" CssClass="dropdownlist-service" />
+<asp:DropDownList runat="server" SkinID="EmployeeDropDownList" CssClass="dropdownlist-employee" />
+<asp:DropDownList runat="server" SkinID="PhoneDropDownList" CssClass="dropdownlist-phone" />
+
+<asp:RadioButtonList runat="server" SkinID="YesNo" RepeatDirection="Horizontal" RepeatLayout="Table" Width="100px" CellPadding="0" CellSpacing="0" ></asp:RadioButtonList>

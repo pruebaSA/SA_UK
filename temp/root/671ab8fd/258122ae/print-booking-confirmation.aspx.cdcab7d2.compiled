@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Print-Booking-Confirmation.aspx" hash="ff1c696e40d15681" filehash="602fc0e0266a605c" flags="110000" assembly="App_Web_ldgkdd5s" type="ASP.print_booking_confirmation_aspx">
+    <filedeps>
+        <filedep name="/Modules/ContentTopic.ascx" />
+        <filedep name="/Print-Booking-Confirmation.aspx" />
+        <filedep name="/Templates/OrderSummaryTwo.ascx" />
+    </filedeps>
+</preserve>

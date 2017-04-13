@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/salonportal/Default.aspx" hash="ff152185bf1dfbbc" filehash="205bd8c51f97c7e2" flags="110000" assembly="App_Web_1wqxlnu5" type="ASP.default_aspx">
+    <filedeps>
+        <filedep name="/salonportal/Default.aspx" />
+        <filedep name="/SalonPortal/MasterPages/OneColumn.master" />
+        <filedep name="/SalonPortal/MasterPages/Root.Master" />
+        <filedep name="/SalonPortal/Modules/ContentTitle.ascx" />
+        <filedep name="/SalonPortal/Modules/Menu.ascx" />
+        <filedep name="/SalonPortal/Modules/WelcomeLoginView.ascx" />
+        <filedep name="/SalonPortal/Templates/Footer.ascx" />
+        <filedep name="/SalonPortal/Templates/Header.ascx" />
+    </filedeps>
+</preserve>

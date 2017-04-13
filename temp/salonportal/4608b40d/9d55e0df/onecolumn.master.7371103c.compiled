@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/SalonPortal/MasterPages/OneColumn.master" hash="fffffff3110c36bd" filehash="58ed14dcb6009f60" flags="110000" assembly="App_Web_h0hsmmwt" type="ASP.masterpages_onecolumn_master">
+    <filedeps>
+        <filedep name="/SalonPortal/MasterPages/OneColumn.master" />
+        <filedep name="/SalonPortal/MasterPages/Root.Master" />
+        <filedep name="/SalonPortal/Modules/ContentTitle.ascx" />
+        <filedep name="/SalonPortal/Modules/Menu.ascx" />
+        <filedep name="/SalonPortal/Modules/WelcomeLoginView.ascx" />
+        <filedep name="/SalonPortal/Templates/Footer.ascx" />
+        <filedep name="/SalonPortal/Templates/Header.ascx" />
+    </filedeps>
+</preserve>

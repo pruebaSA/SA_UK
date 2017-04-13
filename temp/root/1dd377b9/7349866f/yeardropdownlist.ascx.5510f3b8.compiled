@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Modules/DropDownLists/YearDropDownList.ascx" hash="ff199d84b012fa25" filehash="139cc2dc74cf" flags="110000" assembly="App_Web_jd52h2zw" type="ASP.modules_dropdownlists_yeardropdownlist_ascx">
+    <filedeps>
+        <filedep name="/Modules/DropDownLists/YearDropDownList.ascx" />
+    </filedeps>
+</preserve>

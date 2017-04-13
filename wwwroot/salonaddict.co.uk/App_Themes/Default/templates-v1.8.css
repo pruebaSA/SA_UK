@@ -1,0 +1,1026 @@
+﻿/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	NEWSLETTER SIGN UP ONE TEMPLATE
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.template-newslettersignup1
+{
+	padding-top:2px;
+}
+
+.template-newslettersignup1 ul
+{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+}
+
+.template-newslettersignup1 ul li
+{
+	float:left;
+	padding-right:4px;
+}
+
+.template-newslettersignup1 ul li b
+{
+	font-size:11px;
+	font-family:Arial;
+	font-weight:normal;
+	line-height:15px;
+	vertical-align:middle;
+	color:#eee;
+}
+
+
+.template-newslettersignup1 input[type="text"]
+{
+	font-size:11px;
+	height:15px;
+	color:#666;
+}
+
+.template-newslettersignup1 .submit
+{
+	cursor:pointer;
+	text-align:center;
+	width:43px;
+	height:20px;
+	font-size:11px;
+	font-family:Arial;
+	font-weight:normal;
+	color:#000;
+	border:none;
+	background: url('images/button_small_grey.png') no-repeat;
+}
+
+.template-newslettersignup1 .submit:hover
+{
+	color:#eee;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	NEWSLETTER SIGNUP TWO TEMPLATE
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.template-newslettersignup2 b
+{
+	font-size:15px;
+	font-weight:bold;
+	font-family:Arial;
+	color:#eee;
+}
+
+.template-newslettersignup2 div
+{
+	padding-top: 8px;
+}
+
+.template-newslettersignup2 input[type="text"]
+{
+	font-size:11px;
+	height:17px;
+	color:#666;
+}
+
+.template-newslettersignup2 p
+{
+	padding-right:10px;
+	font-size:11px;
+	color:#eee;
+}
+
+.template-newslettersignup2 .submit
+{
+	margin-top:10px;
+	margin-bottom:10px;
+	display:block;
+	width:144px;
+	height:48px;
+	font-size:20px;
+	font-weight:normal;
+	font-family:'Myriad Pro', Arial;
+	color:#000;
+	border:none;
+	background: transparent url('images/button_sliver_144x48.png') center no-repeat;
+	cursor:pointer;
+}
+
+.template-newslettersignup2 .submit:hover
+{
+	color:#555;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	SEARCH PANEL ONE TEMPLATE
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.template-searchpanelone
+{
+	position:relative;
+	height:190px;
+	width:450px;
+}
+
+.template-searchpanelone .search-option-one
+{
+	position:absolute;
+	top:20px;
+	left:13px;
+}
+
+.template-searchpanelone .search-city
+{
+	position:absolute;
+	top:15px;
+	left:36px;
+}
+
+.template-searchpanelone .search-city select
+{
+	width:190px;
+	font-size:14px;
+	line-height:18px;
+	height:23px;
+	background:#fff;
+	border:solid 1px #fff;
+}
+
+.template-searchpanelone .search-city-disabled
+{
+	position:absolute;
+	top:15px;
+	left:36px;
+}
+
+.template-searchpanelone .search-city-disabled select
+{
+	color:#5f5f5f;
+	width:190px;
+	font-size:14px;
+	line-height:18px;
+	height:23px;
+	background:#fdbdd2;
+	border:solid 1px #faa1be;
+}
+
+
+.template-searchpanelone .search-locality
+{
+	position:absolute;
+	top:15px;
+	left:236px;
+}
+
+.template-searchpanelone .search-locality select
+{
+	width:190px;
+	font-size:14px;
+	line-height:18px;
+	height:23px;
+	background:#fff;
+	border:solid 1px #fff;
+}
+
+.template-searchpanelone .search-locality-disabled
+{
+	position:absolute;
+	top:15px;
+	left:236px;
+}
+
+.template-searchpanelone .search-locality-disabled select
+{
+	color:#5f5f5f;
+	width:190px;
+	font-size:14px;
+	line-height:18px;
+	height:23px;
+	background:#fdbdd2;
+	border:solid 1px #faa1be;
+}
+
+.template-searchpanelone .search-option-two
+{
+	position:absolute;
+	top:54px;
+	left:13px;
+}
+
+.template-searchpanelone .search-keyword
+{
+	position:absolute;
+	top:50px;
+	left:36px;
+}
+
+.template-searchpanelone .search-keyword input
+{
+	font-size:14px;
+	line-height:18px;
+	width:386px;
+	padding-left:2px;
+	height:21px;
+	background:#fff;
+	border:solid 1px #fff;
+}
+
+.template-searchpanelone .search-keyword-disabled
+{
+	position:absolute;
+	top:50px;
+	left:36px;
+}
+
+.template-searchpanelone .search-keyword-disabled input
+{
+	color:#5f5f5f;
+	font-size:14px;
+	line-height:18px;
+	width:386px;
+	height:21px;
+	background:#fdbdd2;
+	padding-left:2px;
+	border:solid 1px #faa1be;
+}
+
+.template-searchpanelone #keyword_menu
+{
+    display:none;
+    position:absolute;
+    width:376px;
+    top:18px;
+    left:0px;
+    padding:5px;
+    z-index:99999;
+    border:solid 2px #eee;
+    border-top:none;
+    background:#f7f7f7;
+}
+     
+.template-searchpanelone #keyword_menu div.title
+{
+    padding-left:5px;
+    font-size:12px;
+    font-weight:bold;
+    text-decoration:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    background:#f7f7f7;
+    border-bottom:solid 1px #e7e7e7;
+}
+     
+.template-searchpanelone #keyword_menu ul
+{
+    padding:0px;
+    margin:0px;
+    list-style:none;
+}
+     
+.template-searchpanelone #keyword_menu ul li
+{
+    padding:8px 0px 8px 0px;
+    border-bottom:solid 1px #e7e7e7;
+    background:#fff;
+    cursor:pointer;
+}
+     
+.template-searchpanelone #keyword_menu ul li.selected
+{
+    padding:8px 0px 8px 0px;
+    border-bottom:solid 1px #e7e7e7;
+    color:#fff;
+    background:#ef286a;
+    cursor:pointer;
+}
+     
+.template-searchpanelone #keyword_menu ul li div
+{
+   padding-left:5px;
+}
+     
+.template-searchpanelone .sdate-label
+{
+	position:absolute;
+	top:88px;
+	right:155px;
+	font-size:13px;
+	line-height:12px;
+	font-family:Arial;
+	font-weight:bold;
+	color:#fff;
+}
+
+.template-searchpanelone .sdate
+{
+	position:absolute;
+	top:85px;
+	right:55px;
+	z-index:99;
+}
+
+.template-searchpanelone .sdate input
+{ 
+	text-align:center;
+	font-size:14px;
+	padding-left:2px;
+	padding-right:2px;
+	line-height:18px;
+	width:85px;
+	height:19px;
+}
+
+.template-searchpanelone .sdate-button
+{
+	position:absolute;
+	top:83px;
+	right:25px;
+}
+
+
+.template-searchpanelone .stype-label
+{
+	position:absolute;
+	top:101px;
+	left:36px;
+	width:60px;
+	overflow:hidden;
+	font-size:13px;
+	line-height:12px;
+	font-family:Arial;
+	font-weight:bold;
+	color:#fff;
+}
+
+.template-searchpanelone .stype
+{
+	position:absolute;
+	top:120px;
+	left:36px;
+}
+
+.template-searchpanelone .stype select
+{
+	font-size:14px;
+	line-height:18px;
+	height:23px;
+	background:#fff;
+	border:solid 1px #fff;
+}
+
+.template-searchpanelone .scat
+{
+	position:absolute;
+	top:120px;
+	left:235px;
+}
+
+.template-searchpanelone .scat select
+{
+	font-size:14px;
+	line-height:18px;
+	height:23px;
+	background:#fff;
+	border:solid 1px #fff;
+}
+
+.template-searchpanelone .search-button
+{
+	position:absolute;
+	bottom:8px;
+	right:20px;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	SEARCH PANEL TWO TEMPLATE
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.template-searchpaneltwo
+{
+	position:relative;
+	width:212px;
+	height:300px;
+	background:#e1316b;
+}
+
+.template-searchpaneltwo .title
+{
+	position:absolute;
+	top:0px;
+	left:0px;
+	height:38px;
+	width:202px;
+	font-size:17px;
+	line-height:38px;
+	font-family:Arial;
+	font-weight:bold;
+	color:#fff;
+	vertical-align:middle;
+	padding-left:10px;
+	background:#2c2c2c url('images/bg_searchpaneltwo.jpg') no-repeat right top;
+}
+
+.template-searchpaneltwo select
+{
+	font-size:14px;
+	font-family:Arial;
+	line-height:18px;
+	height:23px;
+}
+
+.template-searchpaneltwo .search-city
+{
+	position:absolute;
+	top:55px;
+	left:10px;
+	width:190px;
+	overflow:hidden;
+}
+
+.template-searchpaneltwo .search-locality
+{
+	position:absolute;
+	top:85px;
+	left:10px;
+	width:190px;
+	overflow:hidden;
+}
+
+.template-searchpaneltwo .sdate-label
+{
+	position:absolute;
+	top:120px;
+	left:10px;
+	font-size:13px;
+	line-height:12px;
+	font-family:Arial;
+	font-weight:bold;
+	color:#fff;
+}
+
+.template-searchpaneltwo .sdate
+{
+	position:absolute;
+	top:137px;
+	left:10px;
+	width:110px;
+	z-index:99;
+}
+
+.template-searchpaneltwo .sdate input
+{
+	text-align:center;
+	height:19px;
+	line-height:18px;
+	font-size:13px;
+	padding-left:2px;
+	padding-right:2px;
+}
+
+.template-searchpaneltwo .sdate-button
+{
+	position:absolute;
+	top:134px;
+	left:98px;
+	z-index:99;
+}
+
+
+.template-searchpaneltwo .stype-label
+{
+	position:absolute;
+	top:170px;
+	left:10px;
+	overflow:hidden;
+	font-size:13px;
+	line-height:12px;
+	font-family:Arial;
+	font-weight:bold;
+	color:#fff;
+}
+
+.template-searchpaneltwo .stype
+{
+	position:absolute;
+	top:187px;
+	left:10px;
+}
+
+.template-searchpaneltwo .scat
+{
+	position:absolute;
+	top:217px;
+	left:10px;
+}
+
+.template-searchpaneltwo .search-button
+{
+	position:absolute;
+	top:255px;
+	right:10px;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	SORT MENU ONE TEMPLATE
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.tempate-sortmenuone
+{
+	height:26px;
+	padding-top:12px;
+	background: #dedede url('images/bg_sort_menu.gif') no-repeat left;
+}
+
+.template-sortmenuone ul
+{
+	margin:0px;
+	padding-left:39px;
+	list-style:none;
+}
+
+.tempate-sortmenuone ul li
+{
+	display:inline;
+	padding-left:10px;
+}
+
+.tempate-sortmenuone ul li a
+{
+	color:#212121;
+	font-weight:bold;
+}
+
+.tempate-sortmenuone ul li a.selected
+{
+	color:#ef286a;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	SORT MENU TWO TEMPLATE
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.tempate-sortmenutwo
+{
+	height:26px;
+	padding-top:12px;
+	background: #dedede url('images/bg_sort_menu.gif') no-repeat left;
+}
+
+.template-sortmenutwo ul
+{
+	margin:0px;
+	padding-left:39px;
+	list-style:none;
+}
+
+.tempate-sortmenutwo ul li
+{
+	display:inline;
+	padding-left:10px;
+}
+
+.tempate-sortmenutwo ul li a
+{
+	color:#212121;
+	font-weight:bold;
+}
+
+.tempate-sortmenutwo ul li a.selected
+{
+	color:#ef286a;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	CHANGE SEAERCH DATE ONE TEMPLATE
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.template-changesearchdateone
+{
+	position:relative;
+}
+
+.template-changesearchdateone ul
+{
+	margin:0px;
+	padding:0px;
+}
+
+.template-changesearchdateone ul li
+{
+	display:inline;
+	padding-left:2px;
+	padding-right:2px;
+	font-size:11px;
+	font-family:Arial;
+}
+
+.template-changesearchdateone ul li span
+{
+	display:inline;
+	font-size:11px;
+	font-family:Arial;
+	color:#aaa;
+}
+
+.template-changesearchdateone ul li a
+{
+	font-size:11px;
+	font-family:Arial;
+	font-weight:normal;
+	color:#212121;
+}
+
+.template-changesearchdateone ul li a.disabled
+{
+	color:#aaa;
+	text-decoration:none;
+	cursor:default;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	BUSINESS AVAILABILITY ONE TEMPLATE
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.template-businessavailabilityone
+{
+	position:relative;
+	width:713px;
+	height:139px;
+	margin-bottom:10px;
+	background:url('images/availability_panel_139.png') no-repeat center;
+}
+
+.template-businessavailabilityone .logo
+{
+	position:absolute;
+	width:110px;
+	height:110px;
+	top:15px;
+	left:12px;
+	overflow:hidden;
+}
+
+.template-businessavailabilityone .name
+{
+	position:absolute;
+	left:135px;
+	top:20px;
+}
+
+.template-businessavailabilityone .name a
+{
+	color:#444;
+	font-size:17px;
+	font-family:Arial;
+	font-weight:bold;
+}
+
+.template-businessavailabilityone .name a:hover
+{
+    text-decoration:underline;
+}
+
+.template-businessavailabilityone .location
+{
+	position:absolute;
+	left:135px;
+	top:38px;
+	font-size:12px;
+	font-family:Arial;
+	font-weight:normal;
+	
+}
+
+.template-businessavailabilityone .description
+{
+	position:absolute;
+	left:135px;
+	top:60px;
+	width:380px;
+	white-space:normal;
+	font-size:11px;
+	line-height:13px;
+}
+
+.template-businessavailabilityone .rating
+{
+	position:absolute;
+	right:10px;
+	top:10px;
+	padding:10px;
+	width:165px;
+	height:41px;
+	text-align:center;
+	background:url('images/bg_review.png') no-repeat center;
+}
+
+.template-businessavailabilityone .rating a
+{
+	color:#fff;
+    font-size:12px;
+	font-family:Arial;
+	font-weight:bold;
+    cursor:pointer;
+}
+
+.template-businessavailabilityone .rating a:hover
+{
+	text-decoration:none;
+}
+
+.template-businessavailabilityone .price
+{
+	position:absolute;
+	right:10px;
+	top:80px;
+	font-family:Arial;
+	font-size:12px;
+	font-weight:bold;
+}
+
+.template-businessavailabilityone .button
+{
+	position:absolute;
+	right:10px;
+	top:104px;
+}
+
+.template-businessavailabilityone .button a
+{
+	display:block;
+    padding-left:5px;
+	padding-right:5px;
+	color:#fff;
+	font-weight:bold;
+	font-size:11px;
+    font-family:Arial;
+    width:120px;
+    height:21px;
+    text-align:center;
+    line-height:20px;
+    text-transform:none;
+    vertical-align:middle;
+	cursor:pointer;
+	background:url('images/bg_button_pink120.png') no-repeat center;
+}
+
+.template-businessavailabilityone .button a:hover
+{
+	background:url('images/bg_button_pink120.png') no-repeat center;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	STAFF AVAILABILITY ONE TEMPLATE
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.template-staffavailabilityone
+{
+	position:relative;
+	width:713px;
+	height:94px;
+	margin-bottom:10px;
+	background:url('images/availability_panel_94.png') no-repeat center;
+}
+
+.template-staffavailabilityone .service
+{
+	position:absolute;
+	top:8px;
+	left:10px;
+	color:#333;
+	font-size:16px;
+	font-family:Arial;
+	font-weight:bold;
+}
+
+.template-staffavailabilityone .staff
+{
+	position:absolute;
+	top:27px;
+	left:10px;
+	color:#ef2869;
+	font-family:Arial;
+	font-size:14px;
+	font-weight:bold;
+    font-style:italic;
+}
+
+.template-staffavailabilityone .description
+{
+	position:absolute;
+	top:45px;
+	left:10px;
+	width:480px;
+	color:#333;
+	font-family:Arial;
+	font-size:11px;
+	line-height:13px;
+}
+
+.template-staffavailabilityone .price
+{
+	position:absolute;
+	top:0px;
+	right:0px;
+	text-align:right;
+	font-family:Arial;
+	font-size:12px;
+	font-weight:bold;
+}
+
+.template-staffavailabilityone .price .price-label
+{
+	position:absolute;
+	top:3px;
+	right:65px;
+	width:100px;
+	text-align:right;
+}
+
+.template-staffavailabilityone .price .price-nextweek
+{
+	position:absolute;
+	top:23px; 
+	right:10px;
+	font-style:italic;
+	width:200px;
+	text-align:right;
+	color:#ef286a;
+}
+
+.template-staffavailabilityone .price .price-amount
+{
+	position:absolute;
+	top:3px;
+	right:10px;
+	width:50px;
+	text-align:right;
+}
+
+.template-staffavailabilityone .price .price-nextweek a
+{
+	font-size:12px;
+	font-weight:bold;	
+}
+
+.template-staffavailabilityone .price .price-nextweek a:hover
+{
+	
+}
+
+.template-staffavailabilityone .price .sprice-label
+{
+	position:absolute;
+	top:3px;
+	right:65px;
+	width:100px;
+	text-align:right;
+}
+
+.template-staffavailabilityone .price .sprice-amount
+{
+	position:absolute;
+	top:3px;
+	right:10px;
+	width:50px;
+	text-align:right;
+	text-decoration:line-through;
+}
+
+.template-staffavailabilityone .price .oprice-label
+{
+	position:absolute;
+	top:22px;
+	right:65px;
+	width:150px;
+	font-size:14px;
+	text-align:right;
+	font-weight:bold;
+	color:#ef286a;
+}
+
+.template-staffavailabilityone .price .oprice-amount
+{
+	position:absolute;
+	top:22px;
+	right:10px;
+	width:50px;
+	font-size:14px;
+	text-align:right;
+	font-weight:bold;
+	color:#ef286a;
+}
+
+.template-staffavailabilityone .time-label
+{
+	position:absolute;
+	top:42px;
+	right:85px;
+	width:100px;
+	text-align:right;
+}
+
+.template-staffavailabilityone .time-choices
+{
+	position:absolute;
+	top:40px;
+	right:10px;
+	width:80px;
+	text-align:right;
+    overflow:hidden;
+}
+
+.template-staffavailabilityone .button
+{
+	position:absolute;
+	bottom:6px;
+	right:10px;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	ORDER SUMMARY ONE TEMPLATE
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.template-ordersummaryone
+{
+	position:relative;
+	padding:10px;
+	background:#fff;
+	border:solid 1px #ccc;
+	margin-bottom:20px;
+}
+
+.template-ordersummaryone table
+{
+	border-collapse:collapse;
+}
+
+.template-ordersummaryone table th
+{
+	padding:3px 10px 2px 20px;
+	text-align:left;
+	font-weight:bold;
+	color:#000;
+	background:#fc94b7;
+}
+
+.template-ordersummaryone table td
+{
+	margin-top:5px;
+	padding:3px 10px 2px 20px;
+	text-align:left;
+	font-weight:normal;
+	color:#333;
+	background:#f2f2f2;
+}
+
+.template-ordersummaryone .subtotal,
+.template-ordersummaryone .additional-fee,
+.template-ordersummaryone .discount,
+.template-ordersummaryone .coupon,
+.template-ordersummaryone .giftcard,
+.template-ordersummaryone .total,
+.template-ordersummaryone .balance
+{
+	margin-top:5px;
+	padding:3px 10px 2px 20px;
+	text-align:right;
+	font-weight:normal;
+	color:#333;
+	background:#f2f2f2;
+}
+
+.template-ordersummaryone .subtotal
+{
+	
+}
+
+
+.template-ordersummaryone .additional-fee
+{
+	
+}
+
+.template-ordersummaryone .discount
+{
+	
+}
+
+.template-ordersummaryone .total
+{
+	
+}
+
+.template-ordersummaryone .balance
+{
+	
+}

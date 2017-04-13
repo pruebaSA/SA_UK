@@ -1,0 +1,421 @@
+﻿/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	OVERVIEW 
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.module-overview a,
+.module-salonoverview a
+{
+	position:relative;
+	cursor: pointer;
+	display:block;
+	padding:5px 15px 5px 15px;
+	padding-top:60px;
+	width:90px;
+	color: #909090;
+	font-size:12px;
+	line-height:24px;
+	font-family:Arial, Hevetica, Sans-Serif;
+	text-align:center;
+	font-weight:bold;
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	outline: none;
+	border: solid 1px #b7b7b7;
+	-moz-border-radius: 6px 6px 6px 6px; /* Firefox */
+	-webkit-border-radius: 6px 6px 6px 6px; /* Safari, Chrome */
+	border-radius: 6px 6px 6px 6px; /* CSS3 */
+}
+
+.module-overview a:hover
+{
+	color:#555;
+	text-decoration:none;
+	border: solid 1px #555;
+}
+
+.module-overview a.option-home
+{
+	background: #fff url('images/overview-home.png') 40px 15px no-repeat;
+}
+
+.module-overview a.option-salons
+{
+	background: #fff url('images/overview-salons.png') 40px 15px no-repeat;
+}
+
+.module-overview a.option-billing
+{
+	background: #fff url('images/overview-billing.png') 40px 17px no-repeat;
+}
+
+.module-overview .billing-badge
+{
+	position:absolute;
+	top:10px;
+	right:30px;
+	width:18px;
+	height:15px;
+	padding-top:1px;
+	padding-left:1px;
+	text-align:center;
+	color:#fff;
+	font-size:11px;
+	line-height:12px;
+	font-weight:normal;
+	background:url('images/mailcount_badge_small.png') no-repeat;
+}
+
+.module-overview a.option-account
+{
+	background: #fff url('images/overview-account.png') 40px 15px no-repeat;
+}
+
+.module-overview a.option-profile
+{
+	background: #fff url('images/overview-profile.png') 40px 15px no-repeat;
+}
+
+.module-overview a.option-reports
+{
+	background: #fff url('images/overview-reports.png') 40px 15px no-repeat;
+}
+
+.module-overview a.option-audit
+{
+	background: #fff url('images/overview-audit.png') 40px 15px no-repeat;
+}
+
+.module-salonoverview a.option-home
+{
+	background: #fff url('images/overview-home.png') 40px 15px no-repeat;
+}
+
+.module-salonoverview a.option-appointments
+{
+	background: #fff url('images/overview-appointments.png') 40px 15px no-repeat;
+}
+
+.module-salonoverview .appointment-badge
+{
+	position:absolute;
+	top:10px;
+	right:30px;
+	width:18px;
+	height:15px;
+	padding-top:1px;
+	padding-left:1px;
+	text-align:center;
+	color:#fff;
+	font-size:11px;
+	line-height:12px;
+	font-weight:normal;
+	background:url('images/mailcount_badge_small.png') no-repeat;
+}
+
+.module-salonoverview a.option-scheduling
+{
+	background: #fff url('images/overview-scheduling.png') 40px 15px no-repeat;
+}
+
+.module-salonoverview a.option-services
+{
+	background: #fff url('images/overview-services.png') 40px 15px no-repeat;
+}
+
+.module-salonoverview a.option-employees
+{
+	background: #fff url('images/overview-employees.png') 40px 15px no-repeat;
+}
+
+.module-salonoverview a.option-settings
+{
+	background: #fff url('images/overview-settings.png') 40px 15px no-repeat;
+}
+
+.module-salonoverview a.option-account
+{
+	background: #fff url('images/overview-account.png') 40px 15px no-repeat;
+}
+
+.module-salonoverview a.option-profile
+{
+	background: #fff url('images/overview-profile.png') 40px 15px no-repeat;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	ADMIN MENU 
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.module-adminmenu
+{
+	position:relative;
+	height:50px;
+}
+
+.module-adminmenu ul
+{
+	margin:0px;
+	padding:0px;
+    list-style-type:none;
+}
+
+.module-adminmenu ul li
+{
+	float:left;
+	margin:0px;
+	padding:0px;
+	padding-right:20px;
+}
+
+.module-adminmenu ul li a
+{
+	position:relative;
+	display:block;
+	float:left;
+	text-align:center;
+	cursor: pointer;
+	padding-top:30px;
+}
+
+.module-adminmenu ul li a:hover
+{
+	color:#000;
+}
+
+.module-adminmenu ul li a.selected
+{
+	font-weight:bold;
+}
+
+.module-adminmenu a:hover
+{
+	color:#555;
+	text-decoration:none;
+}
+
+.module-adminmenu ul li a.option-overview
+{
+	background:url('images/menu-overview.png') 17px 5px no-repeat;
+}
+
+.module-adminmenu ul li a.option-salons
+{
+	background:url('images/menu-salons.png') 10px 5px no-repeat;
+}
+
+.module-adminmenu ul li a.option-billing
+{
+	background:url('images/menu-billing.png') 8px 5px no-repeat;
+}
+
+.module-adminmenu ul li .billing-badge
+{
+	position:absolute;
+	top:0px;
+	right:0px;
+	width:18px;
+	height:15px;
+	padding-top:1px;
+	padding-left:1px;
+	text-align:center;
+	color:#fff;
+	font-size:11px;
+	line-height:12px;
+	font-weight:normal;
+	background:url('images/mailcount_badge_small.png') no-repeat;
+}
+
+.module-adminmenu ul li a.option-account
+{
+	background:url('images/menu-account.png') 12px 5px no-repeat;
+}
+
+.module-adminmenu ul li a.option-profile
+{
+	background:url('images/menu-profile.png') 8px 5px no-repeat;
+}
+
+.module-adminmenu ul li a.option-reports
+{
+	background:url('images/menu-reports.png') 10px 5px no-repeat;
+}
+
+.module-adminmenu ul li a.option-audit
+{
+	background:url('images/menu-audit.png') 5px 5px no-repeat;
+}
+
+.module-salonmenu
+{
+	position:relative;
+	height:50px;
+}
+
+.module-salonmenu ul
+{
+	margin:0px;
+	padding:0px;
+    list-style-type:none;
+}
+
+.module-salonmenu ul li
+{
+	float:left;
+	margin:0px;
+	padding:0px;
+	padding-right:20px;
+}
+
+.module-salonmenu ul li a
+{
+	position:relative;
+	display:block;
+	float:left;
+	text-align:center;
+	cursor: pointer;
+	padding-top:30px;
+}
+
+.module-salonmenu ul li a:hover
+{
+	color:#000;
+}
+
+.module-salonmenu ul li a.selected
+{
+	font-weight:bold;
+}
+
+.module-salonmenu a:hover
+{
+	color:#555;
+	text-decoration:none;
+}
+
+.module-salonmenu ul li a.option-overview
+{
+	background:url('images/menu-overview.png') 17px 5px no-repeat;
+}
+
+.module-salonmenu ul li a.option-appointments
+{
+	background:url('images/menu-appointments.png') 30px 3px no-repeat;
+}
+
+.module-salonmenu .appointment-badge
+{
+	position:absolute;
+	top:0px;
+	right:18px;
+	width:18px;
+	height:15px;
+	padding-top:1px;
+	padding-left:1px;
+	text-align:center;
+	color:#fff;
+	font-size:11px;
+	line-height:12px;
+	font-weight:normal;
+	background:url('images/mailcount_badge_small.png') no-repeat;
+}
+
+.module-salonmenu ul li a.option-scheduling
+{
+	background:url('images/menu-scheduling.png') 22px 5px no-repeat;
+}
+
+.module-salonmenu ul li a.option-services
+{
+	background:url('images/menu-services.png') 17px 5px no-repeat;
+}
+
+.module-salonmenu ul li a.option-employees
+{
+	background:url('images/menu-employees.png') 20px 5px no-repeat;
+}
+
+.module-salonmenu ul li a.option-account
+{
+	background:url('images/menu-account.png') 12px 5px no-repeat;
+}
+
+.module-salonmenu ul li a.option-profile
+{
+	background:url('images/menu-profile.png') 8px 5px no-repeat;
+}
+
+.module-salonmenu ul li a.option-settings
+{
+	background:url('images/menu-settings.png') 15px 5px no-repeat;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	FOOTER 
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.module-footer
+{
+	position:relative;
+	width:760px;
+}
+
+.module-footer a
+{
+	font-size:11px;
+	font-family:Verdana, Arial;
+	color:#777;
+	text-decoration:none;
+}
+
+.module-footer a:hover
+{
+	text-decoration:underline;
+}
+
+.module-footer .terms-privacy
+{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:280px;
+	padding:20px;
+	font-size:11px;
+	font-family:Verdana, Arial;
+	color:#777;
+	line-height:inherit;
+}
+
+.module-footer .partner-statement
+{
+	position:absolute;
+	top:0px;
+	left:290px;
+	width:270px;
+	padding:20px;
+	font-size:11px;
+	font-family:Verdana, Arial;
+	color:#777;
+	line-height:inherit;
+}
+
+.module-footer .poweredby
+{
+	position:absolute;
+	top:12px;
+	right:20px;
+	width:128px;
+	height:48px;
+}
+
+.module-footer .poweredby-logo
+{
+	display:block;
+	width:144px;
+	height:48px;
+	background:url('images/poweredbysalonaddict.png') no-repeat center;
+}

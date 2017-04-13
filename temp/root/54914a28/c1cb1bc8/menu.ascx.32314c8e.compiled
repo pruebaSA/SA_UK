@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/SecureArea/Modules/Menu.ascx" hash="1164489ea708148" filehash="28472cfd789c" flags="110000" assembly="App_Web_eq03z5d4" type="ASP.securearea_modules_menu_ascx">
+    <filedeps>
+        <filedep name="/SecureArea/Modules/Menu.ascx" />
+    </filedeps>
+</preserve>

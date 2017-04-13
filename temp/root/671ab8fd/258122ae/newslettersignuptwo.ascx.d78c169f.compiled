@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Templates/NewsletterSignupTwo.ascx" hash="e9c02dc3c543cf" filehash="7c962b4298ef16e0" flags="110000" assembly="App_Web_04yuxjmp" type="ASP.templates_newslettersignuptwo_ascx">
+    <filedeps>
+        <filedep name="/Modules/TextBoxes/EmailTextBox.ascx" />
+        <filedep name="/Modules/TextBoxes/TextBox.ascx" />
+        <filedep name="/Templates/NewsletterSignupTwo.ascx" />
+    </filedeps>
+</preserve>

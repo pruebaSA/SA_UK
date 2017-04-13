@@ -1,0 +1,3 @@
+﻿<asp:TextBox runat="server" SkinID="DateTextBox" CssClass="textbox-date" />
+
+<asp:TextBox runat="server" SkinID="TextBox" CssClass="textbox" ForeColor="#777777" />

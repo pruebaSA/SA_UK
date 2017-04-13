@@ -1,0 +1,21 @@
+﻿<asp:GridView runat="server" CssClass="default-gridview" >
+	<AlternatingRowStyle CssClass="altrow-style" />
+    <HeaderStyle CssClass="header-style" />
+    <RowStyle CssClass="row-style" />  
+    <PagerStyle CssClass="pager-style" />
+</asp:GridView>
+
+<ajaxToolkit:Rating runat="server"
+   StarCssClass="rating-star"
+   WaitingStarCssClass="rating-star-saved"
+   FilledStarCssClass="rating-star-filled"
+   EmptyStarCssClass="rating-star-empty" />
+
+<asp:DropDownList runat="server" SkinID="BusinessDropDownList" CssClass="business-dropdownlist" />
+<asp:DropDownList runat="server" SkinID="CustomerDropDownList" CssClass="customer-dropdownlist" />
+<asp:DropDownList runat="server" SkinID="StaffDropDownList" CssClass="staff-dropdownlist" />
+
+<asp:Button runat="server" CssClass="default-button" />
+
+<asp:TextBox runat="server" CssClass="default-textbox" />
+<asp:TextBox runat="server" SkinID="ReadOnlyTextBox" CssClass="readonly-textbox" />

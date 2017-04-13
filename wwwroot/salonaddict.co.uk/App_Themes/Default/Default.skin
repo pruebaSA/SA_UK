@@ -1,0 +1,17 @@
+﻿<ajaxToolkit:CalendarExtender runat="server" CssClass="calendar" /> 
+
+<ajaxToolkit:Rating runat="server"
+   StarCssClass="rating-star"
+   WaitingStarCssClass="rating-star-saved"
+   FilledStarCssClass="rating-star-filled"
+   EmptyStarCssClass="rating-star-empty" /> 
+
+<asp:Button runat="server" SkinID="PinkButtonXSmall" CssClass="pink-button-xsmall" />
+<asp:Button runat="server" SkinID="PinkButtonMedium" CssClass="pink-button-med" />
+<asp:Button runat="server" SkinID="BlackButtonSmall" CssClass="black-button-small" />
+<asp:Button runat="server" SkinID="BlackButtonLarge" CssClass="black-button-large" />
+<asp:Button runat="server" SkinID="CalendarButtonMedium" CssClass="calendar-button-med" />
+
+<asp:HyperLink runat="server" SkinID="BlackButtonMedium" CssClass="black-button-med" />
+
+<asp:Label runat="server" SkinID="TextBox" CssClass="textbox" />

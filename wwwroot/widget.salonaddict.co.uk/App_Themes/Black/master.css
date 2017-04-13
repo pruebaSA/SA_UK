@@ -1,0 +1,45 @@
+﻿/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	ROOT 
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.master-root-wrapper
+{
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	ONE COLUMN 
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.master-onecolumn-wrapper
+{
+}
+
+.master-onecolumn-wrapper .master-onecolumn-center
+{
+	position:relative;
+	width:760px;
+	margin:0 auto;
+}
+
+.master-onecolumn-wrapper .master-onecolumn-center .login-view-loggedin
+{
+	position:absolute;
+	top:20px;
+	right:25px;
+	z-index:999;
+    font-size:11px;
+}
+
+.master-onecolumn-wrapper .master-onecolumn-center .login-view-loggedin a
+{
+    font-size:11px;
+}
+
+.master-onecolumn-wrapper .master-onecolumn-footer
+{
+	position:relative;
+	width:760px;
+	margin:0 auto;
+}

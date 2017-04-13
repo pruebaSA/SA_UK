@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Modules/PaymentMethods.ascx" hash="ff1ceda5557081d6" filehash="ffffe5793d51ca9e" flags="110000" assembly="App_Web_0q5m2y1a" type="ASP.modules_paymentmethods_ascx">
+    <filedeps>
+        <filedep name="/Modules/PaymentMethods.ascx" />
+    </filedeps>
+</preserve>

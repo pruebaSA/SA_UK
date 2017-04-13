@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/SalonPortal/SecureArea/Modules/StaffDropDownList.ascx" hash="fffffff3110c36bd" filehash="142a253109be" flags="110000" assembly="App_Web_sifyx01m" type="ASP.securearea_modules_staffdropdownlist_ascx">
+    <filedeps>
+        <filedep name="/SalonPortal/SecureArea/Modules/StaffDropDownList.ascx" />
+    </filedeps>
+</preserve>

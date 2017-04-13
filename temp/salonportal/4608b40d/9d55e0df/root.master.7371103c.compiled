@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/SalonPortal/MasterPages/Root.Master" hash="fffffff3110c36bd" filehash="e38e61ab65fcd8e" flags="110000" assembly="App_Web_x4kapuhy" type="ASP.masterpages_root_master">
+    <filedeps>
+        <filedep name="/SalonPortal/MasterPages/Root.Master" />
+        <filedep name="/SalonPortal/Templates/Footer.ascx" />
+        <filedep name="/SalonPortal/Templates/Header.ascx" />
+    </filedeps>
+</preserve>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/salonportal/Terms-And-Conditions.aspx" hash="e38ba5b87c4a17" filehash="c7b679da4064d265" flags="110000" assembly="App_Web_zux3cuol" type="ASP.terms_and_conditions_aspx">
+    <filedeps>
+        <filedep name="/SalonPortal/MasterPages/OneColumn.master" />
+        <filedep name="/SalonPortal/MasterPages/Root.Master" />
+        <filedep name="/SalonPortal/Modules/ContentTitle.ascx" />
+        <filedep name="/SalonPortal/Modules/Menu.ascx" />
+        <filedep name="/SalonPortal/Modules/Topic.ascx" />
+        <filedep name="/SalonPortal/Modules/WelcomeLoginView.ascx" />
+        <filedep name="/SalonPortal/Templates/Footer.ascx" />
+        <filedep name="/SalonPortal/Templates/Header.ascx" />
+        <filedep name="/salonportal/Terms-And-Conditions.aspx" />
+    </filedeps>
+</preserve>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Confirmation.aspx" hash="feedcbb17ca940fa" filehash="d157ba24bbea9c1d" flags="110000" assembly="App_Web_q3q0fwl1" type="ASP.confirmation_aspx">
+    <filedeps>
+        <filedep name="/Confirmation.aspx" />
+        <filedep name="/MasterPages/OneColumn.master" />
+        <filedep name="/MasterPages/Root.Master" />
+        <filedep name="/Modules/Footer.ascx" />
+        <filedep name="/Modules/NoScript.ascx" />
+    </filedeps>
+</preserve>

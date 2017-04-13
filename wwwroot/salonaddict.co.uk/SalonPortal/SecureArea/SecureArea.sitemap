@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas_microsoft_com/AspNet/SiteMap-File-1_0" >
+  <siteMapNode title="Home" description="Administration Home" >
+    <siteMapNode title="SecureAreaMenu_Dashboard_Title" url="~/SecureArea/Dashboard.aspx" ImageUrl="~/SecureArea/images/ico-dashboard.png" description="SecureAreaMenu_Dashboard_Description" />
+    <siteMapNode title="SecureAreaMenu_Availability_Title" url="~/SecureArea/Schedule.aspx" ImageUrl="~/SecureArea/images/ico-calendar.png" description="SecureAreaMenu_Availability_Description" />
+    <siteMapNode title="SecureAreaMenu_Appointments_Title" url="~/SecureArea/SearchAppointments.aspx" ImageUrl="~/SecureArea/images/ico-report.gif" description="SecureAreaMenu_Appointments_Description" />
+    <siteMapNode title="SecureAreaMenu_Business_Title" url="~/SecureArea/BusinessDetails.aspx" ImageUrl="~/SecureArea/images/ico-business.png" description="SecureAreaMenu_Business_Description" />
+    <siteMapNode title="SecureAreaMenu_Staff_Title" url="~/SecureArea/Employees.aspx" ImageUrl="~/SecureArea/images/ico-staff.png" description="SecureAreaMenu_Staff_Description" />
+    <siteMapNode title="SecureAreaMenu_Services_Title" url="~/SecureArea/Services.aspx" ImageUrl="~/SecureArea/images/ico-services.png" description="SecureAreaMenu_Services_Description" />
+  </siteMapNode>
+</siteMap>

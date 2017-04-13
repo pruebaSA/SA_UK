@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Templates/SearchPanelOne.ascx" hash="ff1b4d3010a95fe1" filehash="7fdc5cfaa9aadee2" flags="110000" assembly="App_Web_xyeug2kv" type="ASP.templates_searchpanelone_ascx">
+    <filedeps>
+        <filedep name="/Modules/DropDownLists/CityTownDropDownList.ascx" />
+        <filedep name="/Modules/DropDownLists/LocalityDropDownList.ascx" />
+        <filedep name="/Modules/DropDownLists/ServiceCategoryDropDownList.ascx" />
+        <filedep name="/Modules/DropDownLists/ServiceTypeDropDownList.ascx" />
+        <filedep name="/Modules/TextBoxes/TextBox.ascx" />
+        <filedep name="/Templates/SearchPanelOne.ascx" />
+    </filedeps>
+</preserve>

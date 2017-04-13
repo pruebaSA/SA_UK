@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Modules/TextBoxes/EmailTextBox.ascx" hash="e4afc3b708556c" filehash="465880b36ac" flags="110000" assembly="App_Web_ddgx25cz" type="ASP.modules_textboxes_emailtextbox_ascx">
+    <filedeps>
+        <filedep name="/Modules/TextBoxes/EmailTextBox.ascx" />
+    </filedeps>
+</preserve>

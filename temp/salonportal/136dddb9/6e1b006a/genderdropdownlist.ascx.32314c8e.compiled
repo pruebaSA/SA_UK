@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/SalonPortal/SecureArea/Modules/GenderDropDownList.ascx" hash="fffffff3110c36bd" filehash="ffffd7fcce18d523" flags="110000" assembly="App_Web_sifyx01m" type="ASP.securearea_modules_genderdropdownlist_ascx">
+    <filedeps>
+        <filedep name="/SalonPortal/SecureArea/Modules/GenderDropDownList.ascx" />
+    </filedeps>
+</preserve>

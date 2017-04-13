@@ -1,0 +1,28 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MasterPages/Root.Master" AutoEventWireup="true" CodeBehind="OneColumn.master.cs" Inherits="IFRAME.MasterPages.OneColumn" %>
+<%@ Register TagPrefix="IFRM" TagName="NoScript" Src="~/Modules/NoScript.ascx" %>
+<%@ Register TagPrefix="IFRM" TagName="Footer" Src="~/Modules/Footer.ascx" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="ph" runat="server">
+    <div class="master-onecolumn-wrapper" >
+       <IFRM:NoScript ID="cntlNoScript" runat="server" />
+       <div class="master-onecolumn-center" >
+           <div class="login-view-loggedin" >
+               <asp:LoginView ID="lv" runat="server" EnableViewState="false" >
+                  <LoggedInTemplate>
+                      <asp:HyperLink ID="hlUsername" runat="server" >
+                        <asp:Literal ID="ltrUsername" runat="server" ></asp:Literal>
+                      </asp:HyperLink> 
+                      |
+                      <a href='<%= IFRMHelper.GetURL(Page.ResolveUrl("~/logout.aspx")) %>' ><%= base.GetLocalResourceObject("hlLogout.Text") %></a>
+                  </LoggedInTemplate>
+               </asp:LoginView>
+           </div>
+           <asp:ContentPlaceHolder ID="ph1c" runat="server"></asp:ContentPlaceHolder>
+       </div>
+       <div class="clear" ></div>
+       <div class="master-onecolumn-footer" >
+          <IFRM:Footer ID="cntlFooter" runat="server" />
+       </div>
+    </div>
+</asp:Content>
+

@@ -1,0 +1,8 @@
+﻿<asp:GridView runat="server" CssClass="gridview" >
+	<AlternatingRowStyle CssClass="altrow-style" />
+    <HeaderStyle CssClass="header-style" />
+    <RowStyle CssClass="row-style" />  
+    <PagerStyle CssClass="pager-style" />
+</asp:GridView>
+
+<ajaxToolkit:ValidatorCalloutExtender runat="Server" CssClass="validator" HighlightCssClass="validator-highlight" />

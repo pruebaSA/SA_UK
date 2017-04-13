@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/securearea/Employee-Create.aspx" hash="feeea05a47124133" filehash="41b0280843d50daf" flags="110000" assembly="App_Web_abybvad4" type="ASP.securearea_employee_create_aspx">
+    <filedeps>
+        <filedep name="/MasterPages/OneColumn.master" />
+        <filedep name="/MasterPages/Root.Master" />
+        <filedep name="/Modules/Footer.ascx" />
+        <filedep name="/Modules/NoScript.ascx" />
+        <filedep name="/securearea/Employee-Create.aspx" />
+        <filedep name="/SecureArea/Modules/Menu.ascx" />
+    </filedeps>
+</preserve>

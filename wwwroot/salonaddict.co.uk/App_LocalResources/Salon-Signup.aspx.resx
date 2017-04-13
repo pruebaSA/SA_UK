@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnStep1.Text" xml:space="preserve">
+    <value>Continue</value>
+  </data>
+  <data name="ContentTitle.Text" xml:space="preserve">
+    <value>&lt;span class="pink"&gt;Signup&lt;/span&gt; with &lt;span class="pink"&gt;SalonAddict&lt;/span&gt;.co.uk</value>
+  </data>
+  <data name="lblAddress1.Text" xml:space="preserve">
+    <value>Address 1: *</value>
+  </data>
+  <data name="lblAddress2.Text" xml:space="preserve">
+    <value>Address 2:</value>
+  </data>
+  <data name="lblHeaderCompany.Text" xml:space="preserve">
+    <value>Company Information</value>
+  </data>
+  <data name="lblPhone.Text" xml:space="preserve">
+    <value>Phone: *</value>
+  </data>
+  <data name="Page.Title" xml:space="preserve">
+    <value>SalonAddict.co.uk - Add your salon</value>
+  </data>
+  <data name="txtAddress1.ErrorMessage" xml:space="preserve">
+    <value>Address 1 is a required field.</value>
+  </data>
+  <data name="txtCompany.ErrorMessage" xml:space="preserve">
+    <value>Company Name is a required field.</value>
+  </data>
+  <data name="txtSalonPhone.ErrorMessage" xml:space="preserve">
+    <value>Phone is a required field.</value>
+  </data>
+  <data name="lblCountry.Text" xml:space="preserve">
+    <value>Country: *</value>
+  </data>
+  <data name="btnStep2.Text" xml:space="preserve">
+    <value>I agree to the terms of this License</value>
+  </data>
+  <data name="lblAddress13.Text" xml:space="preserve">
+    <value>Address 1: *</value>
+  </data>
+  <data name="lblAddress23.Text" xml:space="preserve">
+    <value>Address 2:</value>
+  </data>
+  <data name="lblCompany.Text" xml:space="preserve">
+    <value>Company Name: *</value>
+  </data>
+  <data name="lblCountry3.Text" xml:space="preserve">
+    <value>Country: *</value>
+  </data>
+  <data name="lblEmail3.Text" xml:space="preserve">
+    <value>Company Email:</value>
+  </data>
+  <data name="lblHeaderCompany3.Text" xml:space="preserve">
+    <value>{0} Details</value>
+  </data>
+  <data name="txtAddress13.ErrorMessage" xml:space="preserve">
+    <value>Address 1 is a required field.</value>
+  </data>
+  <data name="txtCompany3.ErrorMessage" xml:space="preserve">
+    <value>Company Name is a required field.</value>
+  </data>
+  <data name="lblShortDescription.Text" xml:space="preserve">
+    <value>Company Description:</value>
+  </data>
+  <data name="btnStep3.Text" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="lblContactEmail.Text" xml:space="preserve">
+    <value>Email:</value>
+  </data>
+  <data name="lblContactFirstName.Text" xml:space="preserve">
+    <value>First Name: *</value>
+  </data>
+  <data name="lblContactPhone.Text" xml:space="preserve">
+    <value>Phone:</value>
+  </data>
+  <data name="lblContactSurname.Text" xml:space="preserve">
+    <value>Surname: *</value>
+  </data>
+  <data name="lblWebsite3.Text" xml:space="preserve">
+    <value>Website:</value>
+  </data>
+  <data name="txtContactFirstName.ErrorMessage" xml:space="preserve">
+    <value>First Name is a required field.</value>
+  </data>
+  <data name="txtContactSurname.ErrorMessage" xml:space="preserve">
+    <value>Surname is a required field.</value>
+  </data>
+  <data name="lblHeaderContact.Text" xml:space="preserve">
+    <value>Contact Details</value>
+  </data>
+  <data name="Opportunity.Topic" xml:space="preserve">
+    <value>Salon Signup</value>
+  </data>
+  <data name="Message.Text" xml:space="preserve">
+    <value>Thank you for your interest in SalonAddict. One of our Representatives will be in touch with you within 48 hours.</value>
+  </data>
+  <data name="ContentTopic1.Body" xml:space="preserve">
+    <value>If you are a Salon Owner or Marketing Manager, you should consider featuring your salon on the world's best salon booking website.</value>
+  </data>
+  <data name="ContentTopic1.Title" xml:space="preserve">
+    <value>Would you like to have your Salon featured on SalonAddict.co.uk?</value>
+  </data>
+  <data name="ContentTopic2a.Body" xml:space="preserve">
+    <value>&lt;p&gt;&lt;i&gt;Note: Please print and read this licence in full before clicking the “I Agree to the terms of this License” button at the bottom of the page.&lt;/i&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;THIS AGREEMENT&lt;/b&gt; dated on $DATETIME_DAY$ of $DATETIME_MONTH$ $DATETIME_YEAR$.&lt;/p&gt;&lt;p&gt;Between&lt;/p&gt;&lt;p&gt;SalonAddict Limited&lt;br /&gt;("SA" or "SalonAddict.co.uk")&lt;br /&gt;Whose registered office is at Unit 3, Sandyford Office Park, Sandyford, Dublin 18, Ireland&lt;/p&gt;&lt;p&gt;and&lt;/p&gt;&lt;p&gt;$COMPANY$&lt;br /&gt;$ADDRESS1$&lt;br /&gt;$ADDRESS2$&lt;br/&gt;$COUNTRY$&lt;br /&gt;The "Licensee"&lt;/p&gt;</value>
+  </data>
+  <data name="ContentTopic2a.Title" xml:space="preserve">
+    <value>License Agreement</value>
+  </data>
+  <data name="ContentTopic2b.Body" xml:space="preserve">
+    <value>&lt;ul&gt;&lt;li&gt;To provide Information Technology ("IT") services to the Licensee such that the Licensee's products and/or services ("Product") may be booked online over the Internet by third party customers ("Customers").&lt;/li&gt;&lt;li&gt;That the Customer's credit/debit card will be debited for a deposit amount upon booking, the balance of which is payable at Licensee’s premises. There is no cancellation fee payable in the event of a no-show by the Customer but they will be restricted from using salonaddict from future bookings.&lt;/li&gt;&lt;li&gt;To promote the Licensee's product on some or all of its websites and through its network of affiliates.&lt;/li&gt;&lt;/ul&gt;</value>
+  </data>
+  <data name="ContentTopic2b.Title" xml:space="preserve">
+    <value>&lt;b&gt;SalonAddict.co.uk agrees:&lt;/b&gt;</value>
+  </data>
+  <data name="ContentTopic2c.Body" xml:space="preserve">
+    <value>&lt;ul&gt;&lt;li&gt;To make sufficient Services available to salonaddict.co.uk such that visitors to Salonaddict's sites will have Product available for purchase.&lt;/li&gt;&lt;li&gt;To offer Services on Salonaddict.co.uk websites at a price not exceeding the lowest price at which the Licensee offers such Services elsewhere (including on the Licensee's own websites).&lt;/li&gt;&lt;li&gt;To honour all bookings made through the Salonaddict.co.uk network. This includes bookings made for special event periods.&lt;/li&gt;&lt;li&gt;To perform checks as necessary to ensure that all bookings taken by salonaddict.co.uk are processed correctly such that the Customer can avail of the Services purchased.&lt;/li&gt;&lt;li&gt;That the deposit retained by salonaddict.co.uk in respect of the reservation of the Services (the 'Deposit') will equal the charge for the IT services provided by salonaddict.co.uk and that no further monies will be collected from or payable by salonaddict.co.uk.&lt;/li&gt;&lt;li&gt;The Deposit retained by SA will be 10% of the price of the Service.&lt;/li&gt;&lt;li&gt;Any payments to salonaddict.co.uk by the Licensee under this agreement shall be made free and clear of all taxes, deductions or withholdings. If such taxes, deductions or withholdings are required by law, the Licensee shall pay to salonaddict.co.uk such additional amount as may be necessary in order that the net amount received by salonaddict.co.uk after such taxes, deductions and withholdings shall not be less than the amount salonaddict.co.uk would have been entitled to receive in the absence of any such taxes, deduction or withholding.&lt;/li&gt;&lt;li&gt;That in the event of the Licensee not honouring any booking, the Licensee shall find an equivalent service for the Customer without recourse to salonaddict.co.uk.&lt;/li&gt;&lt;li&gt;To charge the Customer the balance payable in respect of Service only upon arrival or presentation, the balance being the difference between the full price quoted on the internet and the Deposit retained by salonaddict.co.uk.&lt;/li&gt;&lt;li&gt;That the Licensee is responsible for updating and maintaining the pricing for its Services through the salonaddict.co.uk Inbox and that the Licensee is responsible for any data entry errors which may arise in respect of pricing. This responsibility includes ensuring that correct pricing and availability is displayed for special event periods.&lt;/li&gt;&lt;li&gt;That salonaddict.co.uk has no responsibility to the Customer for the making of bookings and that bookings are agreements between the Customer and the Licensee and that the Licensee shall indemnify salonaddict.co.uk in respect of loss and damage arising from any Customer claims.&lt;/li&gt;&lt;li&gt;To respond in a timely manner in relation to any queries.&lt;/li&gt;&lt;li&gt;To comply with all applicable laws in its use of Salonaddict.co.uk technology and dealings with Salonaddict.co.uk, including but not limited to, laws relating to privacy and data protection insofar as they relate to Customer data.&lt;/li&gt;&lt;li&gt;Not to disclose any credit card information provided by any Customer to any person other than as necessary to effect a lawful payment for Product or as required by law.&lt;/li&gt;&lt;/ul&gt;</value>
+  </data>
+  <data name="ContentTopic2c.Title" xml:space="preserve">
+    <value>&lt;b&gt;The Licensee Agrees:&lt;/b&gt;</value>
+  </data>
+  <data name="ContentTopic2d.Body" xml:space="preserve">
+    <value>&lt;ul&gt;&lt;li&gt;The IT services are provided by Salonaddict.co.uk on an 'as is' basis. Salonaddict.co.uk makes no representations, warranties or undertakings with respect to the services provided under this agreement. To the greatest extent permitted by applicable law, all representations, warranties and conditions, express or implied, statutory or otherwise, are hereby excluded, including without limitation warranties as to quality or fitness for a particular purpose.&lt;/li&gt;&lt;li&gt;The Licensee warrants that (i) any content which relates to the Licensee's Product (including information, reviews and photographs) provided to Salonaddict.co.uk by the Licensee (the "Content") is owned by the Licensee; and (ii) the Content is true and accurate and not misleading.&lt;/li&gt;&lt;li&gt;The Licensee shall provide Salonaddict.co.uk, where requested, with accurate information as to any additional local or value added taxes to be paid by the Customer in respect of the Product.&lt;/li&gt;&lt;li&gt;The Licensee hereby grants Salonaddict.co.uk (and any sub-licensee of Salonaddict.co.uk) a royalty free licence to use the Content.&lt;/li&gt;&lt;li&gt;The Licensee agrees to indemnify and hold Salonaddict.co.uk and its sub-licensees harmless in respect of any claim by any third party arising from the use of the Content by Salonaddict.co.uk or its sub licensee.&lt;/li&gt;&lt;/ul&gt;</value>
+  </data>
+  <data name="ContentTopic2d.Title" xml:space="preserve">
+    <value>&lt;b&gt;Liability&lt;/b&gt;</value>
+  </data>
+  <data name="ContentTopic2e.Body" xml:space="preserve">
+    <value>&lt;ul&gt;&lt;li&gt;The Licensee hereby warrants, confirms and undertakes that it is not a national or controlled by a national of Cuba, Iran, Syria, Sudan, Myanmar (Burma) or North Korea (each a "Restricted Nation") and that the Licensee's [products and/or services] in respect of which information services are provided are not and will not be situate or delivered in a Restricted Nation. The Licensee agrees that this Agreement shall terminate immediately upon the Licensee becoming or becoming controlled by a national of a Restricted Nation.&lt;/li&gt;&lt;/ul&gt;</value>
+  </data>
+  <data name="ContentTopic2e.Title" xml:space="preserve">
+    <value>&lt;b&gt;Restricted Nations&lt;/b&gt;</value>
+  </data>
+  <data name="ContentTopic2f.Body" xml:space="preserve">
+    <value>&lt;ul&gt;&lt;li&gt;Either party may terminate this agreement by giving not less than 28 days written notice.&lt;/li&gt;&lt;li&gt;Any outstanding bookings must be honoured by the Licensee notwithstanding termination of this agreement.&lt;/li&gt;&lt;li&gt;The Licensee undertakes on termination of this agreement to cease using and to refrain from further use of any software or service provided by Salonaddict.co.uk&lt;/li&gt;&lt;li&gt;Salonaddict.co.uk reserves the right to terminate this agreement with immediate effect in the event either:&lt;ol&gt;&lt;li&gt;the Licensee's average rating by Customers on any of salonaddict.co.uk's websites falling below 50% (fifty percent); or&lt;/li&gt;&lt;li&gt;failure by the Licensee to comply with the terms of this agreement.&lt;/li&gt;&lt;/ol&gt;&lt;/li&gt;&lt;/ul&gt;</value>
+  </data>
+  <data name="ContentTopic2f.Title" xml:space="preserve">
+    <value>&lt;b&gt;Termination of the Agreement&lt;/b&gt;</value>
+  </data>
+  <data name="ContentTopic2g.Body" xml:space="preserve">
+    <value>&lt;p&gt;This agreement shall be governed by and construed in accordance with the laws of the United Kingdom &amp; Northern Ireland, and SalonAddict.co.uk and the Licensee agree to submit to the jurisdiction of the courts of the United Kingdom &amp; Northern Ireland.&lt;/p&gt;&lt;p&gt;This agreement is personal to the Licensee and may not be assigned, sub-contracted or otherwise transferred in whole or in part without Salonaddict.co.uk's prior written consent. SalonAddict.co.uk and the Licensee are independent contractors and nothing in this agreement shall render them partners, joint venture partners or principal and agent.&lt;/p&gt;</value>
+  </data>
+  <data name="ContentTopic2g.Title" xml:space="preserve">
+    <value>&lt;b&gt;General&lt;/b&gt;</value>
+  </data>
+  <data name="ContentTopic3.Body" xml:space="preserve">
+    <value>&lt;p&gt;&lt;i&gt;Note: only fields marked with an asterik(*) are required.&lt;/i&gt;&lt;/p&gt;</value>
+  </data>
+  <data name="ContentTopic3.Title" xml:space="preserve">
+    <value>Feature your Salon on SalonAddict.co.uk</value>
+  </data>
+</root>

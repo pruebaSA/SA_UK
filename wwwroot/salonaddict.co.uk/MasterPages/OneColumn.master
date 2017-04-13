@@ -1,0 +1,12 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MasterPages/Root.Master" AutoEventWireup="true" CodeBehind="OneColumn.master.cs" Inherits="SalonAddict.MasterPages.OneColumn" %>
+<%@ Register TagPrefix="SA" TagName="Menu" Src="~/Modules/Menu.ascx" %>
+<%@ Register TagPrefix="SA" TagName="ContentTitle" Src="~/Modules/ContentTitle.ascx" %>
+<%@ MasterType VirtualPath="~/MasterPages/Root.Master" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="ph" runat="server">
+    <div class="master-onecolumn" >
+       <SA:ContentTitle ID="ContentTitle" runat="server" />
+       <div class="clear" ></div>
+       <asp:ContentPlaceHolder ID="ph1c" runat="server"></asp:ContentPlaceHolder>
+    </div>
+</asp:Content>

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Agreement.aspx" hash="feedcbb17ca940fa" filehash="b2ccb25b2b898a4b" flags="110000" assembly="App_Web_q3q0fwl1" type="ASP.agreement_aspx">
+    <filedeps>
+        <filedep name="/Agreement.aspx" />
+        <filedep name="/MasterPages/Root.Master" />
+    </filedeps>
+</preserve>

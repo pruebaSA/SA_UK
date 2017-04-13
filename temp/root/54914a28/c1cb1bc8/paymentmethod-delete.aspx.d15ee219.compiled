@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/securearea/PaymentMethod-Delete.aspx" hash="feeea05a47124133" filehash="635214ae69dea985" flags="110000" assembly="App_Web_hy545vhw" type="ASP.securearea_paymentmethod_delete_aspx">
+    <filedeps>
+        <filedep name="/MasterPages/OneColumn.master" />
+        <filedep name="/MasterPages/Root.Master" />
+        <filedep name="/Modules/Footer.ascx" />
+        <filedep name="/Modules/NoScript.ascx" />
+        <filedep name="/SecureArea/Modules/Menu.ascx" />
+        <filedep name="/securearea/PaymentMethod-Delete.aspx" />
+    </filedeps>
+</preserve>

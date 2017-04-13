@@ -1,0 +1,44 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="SalonAddict.Administration.Main" %>
+<%@ Register TagPrefix="SA" TagName="Header" Src="~/Administration/Templates/Header.ascx" %>
+<%@ Register TagPrefix="SA" TagName="Navbar" Src="~/Administration/Modules/Navbar.ascx" %>
+<%@ Register TagPrefix="SA" TagName="Menu" Src="~/Administration/Modules/Menu.ascx" %>
+<%@ Register TagPrefix="SA" TagName="Footer" Src="~/Administration/Templates/Footer.ascx" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>SalonAddict Web Administration</title>
+    <meta http-equiv="cache-control" content="no-store" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="cache-control" content="must-revalidate" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="pragma" content="no-cache" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="sm" runat="server" EnableScriptGlobalization="true" ></asp:ScriptManager>
+        <script type="text/javascript" language="javascript" >
+           function logout()
+           {
+               var url = new Array();
+               url.push('<%= Page.ResolveUrl("~/Logout.aspx") %>');
+               url.push('?');
+               url.push('Timeout=true');
+               window.location = url.join('');
+           }
+        </script>
+        <div class="master-wrapper-page">
+            <div class="master-wrapper-content">
+                <SA:Header ID="cntlHeader" runat="server" />
+                <SA:Menu ID="cntlMenu" runat="server" />
+                <SA:Navbar ID="cntlNavbar" runat="server" />
+                <div class="content-wrapper" >
+                    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+                </div>
+                <SA:Footer ID="cntlFooter" runat="server" />
+            </div>
+        </div>
+    </form>
+</body>
+</html>

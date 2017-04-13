@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/widget/Forms/ContactSalesEmailForm.aspx" hash="fffffff3110c36bd" filehash="ffffe74ce97790fc" flags="110000" assembly="App_Web_dcvtneyp" type="ASP.widget_forms_contactsalesemailform_aspx">
+    <filedeps>
+        <filedep name="/widget/Forms/ContactSalesEmailForm.aspx" />
+    </filedeps>
+</preserve>

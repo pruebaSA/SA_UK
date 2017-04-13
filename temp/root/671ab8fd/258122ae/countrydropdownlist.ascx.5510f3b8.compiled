@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Modules/DropDownLists/CountryDropDownList.ascx" hash="ff1d0f3e0053a097" filehash="1b1b6c8d19f4" flags="110000" assembly="App_Web_3bwdv4mk" type="ASP.modules_dropdownlists_countrydropdownlist_ascx">
+    <filedeps>
+        <filedep name="/Modules/DropDownLists/CountryDropDownList.ascx" />
+    </filedeps>
+</preserve>

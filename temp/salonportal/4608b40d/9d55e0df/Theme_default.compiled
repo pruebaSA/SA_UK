@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/SalonPortal/App_Themes/default/" hash="fffffff3110c36bd" filehash="7b8649bffb891f4c" flags="110000" assembly="App_Theme_default.yzpbmcqe" type="ASP.default">
+    <filedeps>
+        <filedep name="/SalonPortal/App_Themes/default/" />
+    </filedeps>
+</preserve>

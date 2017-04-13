@@ -1,0 +1,159 @@
+﻿/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	GRID VIEW
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.default-gridview
+{
+	font-family: arial;
+	font-size: 11px;
+	border: 1px solid #808080;
+	background-color: #fff;
+	margin-left: 0px;
+	color: #245d75;
+	width: 100%;
+}
+
+.default-gridview td a
+{
+	color: #d16400;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.default-gridview .altrow-style
+{
+	background-color: #f4faff;
+}
+
+.default-gridview .header-style th
+{
+	background: url('images/bg_gridview.gif') repeat-x 50%;
+	color: #fff;
+	padding: 5px 10px 5px 10px;
+	text-align: center;
+	vertical-align: middle;
+	font-weight: bold;
+	border: solid 1px #676767;
+}
+
+.default-gridview .header-style th a
+{
+	font-weight: bold;
+	text-decoration: none;
+	text-align: center;
+	color: #fff;
+	display: block;
+	padding-right: 10px;
+}
+
+.default-gridview .row-style td, .default-gridview .altrow-style td
+{
+	padding: 4px 10px 4px 10px;
+	border-right: solid 1px #a0c0e7;
+	border-right-color: #808080;
+}
+
+.default-gridview .pager-style
+{
+	height: 28px;
+	background: #eee;
+	vertical-align: middle;
+}
+
+.default-gridview .pager-style tr
+{
+	border:none;
+}
+
+.default-gridview .pager-style td
+{
+	border:none;
+}
+
+.default-gridview .pager-style td a
+{
+	margin-left:2px;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	BUTTON
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+.default-button
+{
+	cursor:pointer;
+	background: url(images/bg_grey_button.gif) no-repeat 25% 50% #333;
+	border: 1px solid #000;
+	margin-bottom: 3px;
+	color: #fff;
+	height: 22px;
+	padding: 0 10px 0 10px;
+	font-size: 11px;
+	font-weight: bold;
+}
+
+.default-button:hover
+{
+	border: 1px solid #fff;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	TEXTBOX
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.default-textbox
+{
+	border: 1px solid #acacac;
+	width: 250px;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	AJAX TOOL KIT - Validaion Extenders
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.validator-highlight
+{
+	background-color: #fffbd5;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	RATINGS
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.rating-star 
+{
+    font-size: 0pt;
+    width: 13px;
+    height: 12px;
+    margin: 0px;
+    padding: 0px;
+    cursor: pointer;
+    display: block;
+}
+
+.rating-star-filled 
+{
+    background: url('images/gold_star.png') no-repeat;
+
+}
+
+.rating-star-empty 
+{
+    background: url('images/grey_star.png') no-repeat;
+}
+
+.rating-star-saved 
+{
+    background: url('images/grey_star.png') no-repeat;
+}

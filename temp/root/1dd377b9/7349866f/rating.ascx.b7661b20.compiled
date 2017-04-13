@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Modules/Rating.ascx" hash="e5c9eca6977318" filehash="2cf43645fec5" flags="110000" assembly="App_Web_iuwcbyzr" type="ASP.modules_rating_ascx">
+    <filedeps>
+        <filedep name="/Modules/Rating.ascx" />
+    </filedeps>
+</preserve>

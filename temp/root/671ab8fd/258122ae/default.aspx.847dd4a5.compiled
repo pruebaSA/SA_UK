@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/rss/Default.aspx" hash="ff1b8a99e8f85f93" filehash="ffffe6848bd7c54a" flags="110000" assembly="App_Web_4kp4pm2x" type="ASP.rss_default_aspx">
+    <filedeps>
+        <filedep name="/rss/Default.aspx" />
+    </filedeps>
+</preserve>

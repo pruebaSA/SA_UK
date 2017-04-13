@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/securearea/Employee-Delete.aspx" hash="feeea05a47124133" filehash="d6de5c5a2b4e3c6d" flags="110000" assembly="App_Web_hy545vhw" type="ASP.securearea_employee_delete_aspx">
+    <filedeps>
+        <filedep name="/MasterPages/OneColumn.master" />
+        <filedep name="/MasterPages/Root.Master" />
+        <filedep name="/Modules/Footer.ascx" />
+        <filedep name="/Modules/NoScript.ascx" />
+        <filedep name="/securearea/Employee-Delete.aspx" />
+        <filedep name="/SecureArea/Modules/Menu.ascx" />
+    </filedeps>
+</preserve>

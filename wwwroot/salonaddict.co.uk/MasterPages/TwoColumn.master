@@ -1,0 +1,16 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MasterPages/Root.Master" AutoEventWireup="true" CodeBehind="TwoColumn.master.cs" Inherits="SalonAddict.MasterPages.TwoColumn" %>
+<%@ Register TagPrefix="SA" TagName="ContentTitle" Src="~/Modules/ContentTitle.ascx" %>
+<%@ MasterType VirtualPath="~/MasterPages/Root.Master" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="ph" runat="server">
+<div class="master-twocolumn" >
+    <SA:ContentTitle ID="ContentTitle" runat="server" />
+    <div class="clear" ></div>
+    <div class="left" >
+       <asp:ContentPlaceHolder ID="TwoColumnSideContentPlaceHolder" runat="server"></asp:ContentPlaceHolder>
+    </div>
+    <div class="right" >
+       <asp:ContentPlaceHolder ID="TwoColumnContentPlaceHolder" runat="server"></asp:ContentPlaceHolder>
+    </div>
+</div>
+</asp:Content>

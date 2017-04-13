@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Book-Appointment.aspx" hash="ff1d2e3087ca3b56" filehash="5783c8d96f90a47d" flags="110000" assembly="App_Web_dbnfrg1u" type="ASP.book_appointment_aspx">
+    <filedeps>
+        <filedep name="/Book-Appointment.aspx" />
+        <filedep name="/MasterPages/Root.Master" />
+        <filedep name="/MasterPages/TwoColumn.master" />
+        <filedep name="/Modules/ContentTitle.ascx" />
+        <filedep name="/Modules/DropDownLists/CityTownDropDownList.ascx" />
+        <filedep name="/Modules/DropDownLists/LocalityDropDownList.ascx" />
+        <filedep name="/Modules/DropDownLists/ServiceCategoryDropDownList.ascx" />
+        <filedep name="/Modules/DropDownLists/ServiceTypeDropDownList.ascx" />
+        <filedep name="/Modules/Footer.ascx" />
+        <filedep name="/Modules/Header.ascx" />
+        <filedep name="/Modules/Menu.ascx" />
+        <filedep name="/Modules/Message.ascx" />
+        <filedep name="/Modules/Navbar.ascx" />
+        <filedep name="/Modules/SalonMenu.ascx" />
+        <filedep name="/Modules/TextBoxes/EmailTextBox.ascx" />
+        <filedep name="/Modules/TextBoxes/TextBox.ascx" />
+        <filedep name="/Modules/WebAnalytics.ascx" />
+        <filedep name="/Templates/ChangeSearchDateOne.ascx" />
+        <filedep name="/Templates/NewsletterSignupOne.ascx" />
+        <filedep name="/Templates/NewsletterSignupTwo.ascx" />
+        <filedep name="/Templates/SearchPanelTwo.ascx" />
+        <filedep name="/Templates/SortMenuTwo.ascx" />
+        <filedep name="/Templates/StaffAvailabilityOne.ascx" />
+    </filedeps>
+</preserve>

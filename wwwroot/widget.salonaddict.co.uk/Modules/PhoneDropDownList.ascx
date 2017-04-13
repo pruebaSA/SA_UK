@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="PhoneDropDownList.ascx.cs" Inherits="IFRAME.Modules.PhoneDropDownList" %>
+<asp:DropDownList ID="ddlValue" runat="server" SkinID="PhoneDropDownList" ></asp:DropDownList>

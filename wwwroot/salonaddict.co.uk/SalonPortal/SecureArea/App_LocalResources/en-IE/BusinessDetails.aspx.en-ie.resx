@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnSave.Text" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="btnSave.ToolTip" xml:space="preserve">
+    <value>Save salon details.</value>
+  </data>
+  <data name="ContentTitle.Text" xml:space="preserve">
+    <value>&lt;span class="highlight" &gt;Salon&lt;/span&gt; Details...</value>
+  </data>
+  <data name="Header.Text" xml:space="preserve">
+    <value>Edit Salon Details</value>
+  </data>
+  <data name="lblEmail.Text" xml:space="preserve">
+    <value>Email:</value>
+  </data>
+  <data name="lblEmail.ToolTip" xml:space="preserve">
+    <value>Salon's email address (note: this email address is only used for internal purposes).</value>
+  </data>
+  <data name="lblFaxNumber.Text" xml:space="preserve">
+    <value>Fax:</value>
+  </data>
+  <data name="lblFaxNumber.ToolTip" xml:space="preserve">
+    <value>Salon's fax number.</value>
+  </data>
+  <data name="lblMinimumUploadedHours.Text" xml:space="preserve">
+    <value>Hours:</value>
+  </data>
+  <data name="lblMinimumUploadedHours.ToolTip" xml:space="preserve">
+    <value>The number of required uploaded hours for the current week.</value>
+  </data>
+  <data name="lblName.Text" xml:space="preserve">
+    <value>Name:</value>
+  </data>
+  <data name="lblName.ToolTip" xml:space="preserve">
+    <value>Salon name.</value>
+  </data>
+  <data name="lblPhoneNumber.Text" xml:space="preserve">
+    <value>Phone:</value>
+  </data>
+  <data name="lblPhoneNumber.ToolTip" xml:space="preserve">
+    <value>Salon's phone number including area code.</value>
+  </data>
+  <data name="lblPublished.Text" xml:space="preserve">
+    <value>Published:</value>
+  </data>
+  <data name="lblPublished.ToolTip" xml:space="preserve">
+    <value>A value indicating whether the salon is available on the salonaddict.ie website.</value>
+  </data>
+  <data name="lblRating.Text" xml:space="preserve">
+    <value>Rating:</value>
+  </data>
+  <data name="lblRating.ToolTip" xml:space="preserve">
+    <value>Salon's overall customer rating.</value>
+  </data>
+  <data name="lblSendEmailNotifications.Text" xml:space="preserve">
+    <value>Send emails alert:</value>
+  </data>
+  <data name="lblSendEmailNotifications.ToolTip" xml:space="preserve">
+    <value>A value indicating whether to send email notifications to the salon's registered email address.</value>
+  </data>
+  <data name="lblWebsite.Text" xml:space="preserve">
+    <value>Website:</value>
+  </data>
+  <data name="lblWebsite.ToolTip" xml:space="preserve">
+    <value>Salon's website.</value>
+  </data>
+  <data name="pnlBusinessInfo.HeaderText" xml:space="preserve">
+    <value>Salon Info</value>
+  </data>
+  <data name="lblLogo.Text" xml:space="preserve">
+    <value>Logo:</value>
+  </data>
+  <data name="lblLogo.ToolTip" xml:space="preserve">
+    <value>Salon logo (note: this logo will be used to represent your salon).</value>
+  </data>
+  <data name="pnlAddress.HeaderText" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="btnUploadLogo.Text" xml:space="preserve">
+    <value>Change</value>
+  </data>
+  <data name="btnUploadLogo.ToolTip" xml:space="preserve">
+    <value>Add/Update salon logo.</value>
+  </data>
+  <data name="lblAddressline1.Text" xml:space="preserve">
+    <value>Address line 1:</value>
+  </data>
+  <data name="lblAddressline1.ToolTip" xml:space="preserve">
+    <value>Salon address.</value>
+  </data>
+  <data name="lblAddressline2.Text" xml:space="preserve">
+    <value>Address line 2:</value>
+  </data>
+  <data name="lblAddressline2.ToolTip" xml:space="preserve">
+    <value>Address continued.</value>
+  </data>
+  <data name="lblCountry.Text" xml:space="preserve">
+    <value>Country:</value>
+  </data>
+  <data name="lblCountry.ToolTip" xml:space="preserve">
+    <value>Salon's country address.</value>
+  </data>
+  <data name="lblCounty.Text" xml:space="preserve">
+    <value>County:</value>
+  </data>
+  <data name="lblCounty.ToolTip" xml:space="preserve">
+    <value>Salon's county address.</value>
+  </data>
+  <data name="txtAddressline1.ErrorMessage" xml:space="preserve">
+    <value>Address is a required field.</value>
+  </data>
+  <data name="lblArea.Text" xml:space="preserve">
+    <value>Area:</value>
+  </data>
+  <data name="lblArea.ToolTip" xml:space="preserve">
+    <value>Descriptive area that describes the salon's location.</value>
+  </data>
+  <data name="lblMetaKeywords.Text" xml:space="preserve">
+    <value>Keywords:</value>
+  </data>
+  <data name="lblMetaKeywords.ToolTip" xml:space="preserve">
+    <value>Comma seperated list of keywords to improve your search engine presence.</value>
+  </data>
+  <data name="lblShortDescription.Text" xml:space="preserve">
+    <value>Short description:&lt;br/&gt;&lt;small&gt;&lt;i&gt;(400 characters max)&lt;/i&gt;&lt;/small&gt;</value>
+  </data>
+  <data name="lblShortDescription.ToolTip" xml:space="preserve">
+    <value>Text used to describe your salon on salonaddict.ie.</value>
+  </data>
+  <data name="lblZipPostalCode.Text" xml:space="preserve">
+    <value>Zip/Postal code:</value>
+  </data>
+  <data name="lblZipPostalCode.ToolTip" xml:space="preserve">
+    <value>Zip/Postal code.</value>
+  </data>
+  <data name="pnlSEO.HeaderText" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="lblMessage.Text" xml:space="preserve">
+    <value>Salon details successfully saved.</value>
+  </data>
+  <data name="lblMessage.Text.Error" xml:space="preserve">
+    <value>Whoops! We were unable to save your salon details.</value>
+  </data>
+  <data name="lblMessage.Text.Logo" xml:space="preserve">
+    <value>Logo successfully changed.</value>
+  </data>
+  <data name="lblMessage.Text.Logo.Error" xml:space="preserve">
+    <value>Whoops! We were unable to upload your logo.</value>
+  </data>
+  <data name="lblStatus.Text" xml:space="preserve">
+    <value>Status:</value>
+  </data>
+  <data name="lblStatus.ToolTip" xml:space="preserve">
+    <value>Account status.</value>
+  </data>
+  <data name="Status.Guest" xml:space="preserve">
+    <value>Demo</value>
+  </data>
+  <data name="Status.Live" xml:space="preserve">
+    <value>Live</value>
+  </data>
+  <data name="ltrLogoRequirements.Text" xml:space="preserve">
+    <value>&lt;p&gt;This logo will be used to represent your salon on our site. Photographs must be in .jpg or .gif format and less than 600 pixels wide.&lt;/p&gt;</value>
+  </data>
+  <data name="lblCityTown.Text" xml:space="preserve">
+    <value>City/Town:</value>
+  </data>
+  <data name="lblCityTown.ToolTip" xml:space="preserve">
+    <value>Salon's City/Town address.</value>
+  </data>
+  <data name="lblStateProvince.Text" xml:space="preserve">
+    <value>State/Province:</value>
+  </data>
+  <data name="lblStateProvince.ToolTip" xml:space="preserve">
+    <value>Salon's State/Province address.</value>
+  </data>
+</root>

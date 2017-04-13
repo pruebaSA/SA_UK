@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Modules/DropDownLists/CityTownDropDownList.ascx" hash="ff1d0f3e0053a097" filehash="ffffc78ae2f94745" flags="110000" assembly="App_Web_3bwdv4mk" type="ASP.modules_dropdownlists_citytowndropdownlist_ascx">
+    <filedeps>
+        <filedep name="/Modules/DropDownLists/CityTownDropDownList.ascx" />
+    </filedeps>
+</preserve>

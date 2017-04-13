@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Modules/Navbar.ascx" hash="ff1ceda5557081d6" filehash="5e1059349bffcf41" flags="110000" assembly="App_Web_0q5m2y1a" type="ASP.modules_navbar_ascx">
+    <filedeps>
+        <filedep name="/Modules/Navbar.ascx" />
+        <filedep name="/Modules/TextBoxes/EmailTextBox.ascx" />
+        <filedep name="/Modules/TextBoxes/TextBox.ascx" />
+        <filedep name="/Templates/NewsletterSignupOne.ascx" />
+    </filedeps>
+</preserve>

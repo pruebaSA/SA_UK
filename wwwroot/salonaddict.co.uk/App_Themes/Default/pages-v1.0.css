@@ -1,0 +1,36 @@
+﻿table.details
+{
+	margin: 0px;
+	padding:0px;
+	color: #333;
+	font-size: 12px;
+	border-collapse: collapse;
+}
+
+table.details td.title
+{
+	white-space:nowrap;
+	padding: 4px 14px 3px 8px;
+	vertical-align:top;
+}
+
+table.details td.data-item
+{
+	padding: 4px 4px 8px 8px;
+	vertical-align:top;
+}
+
+.grey-panel
+{
+	padding:10px;
+	background:#f7f7f7;
+	border-left:solid 1px #eee;
+}
+
+.pink-panel
+{
+	padding:10px;
+	border:solid 1px #eee;
+	background:#fff;
+	border-top:solid 4px #ef286a;
+}

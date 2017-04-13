@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode title="Home"  description="Administration Home" url="~/Administration/Default.aspx" >
+    <siteMapNode title="Guest Dashboard" url="~/Administration/GuestDashboard.aspx" roles="OWNER, VP_SALES, SALES_MGR, CSR_MGR, CSR" ImageUrl="~/Administration/images/ico-dashboard.png" description="View guest dashboard" >
+    <siteMapNode title="Dashboard" url="~/Administration/Dashboard.aspx" roles="OWNER, VP_SALES" ImageUrl="~/Administration/images/ico-dashboard.png" description="View the dashboard" />
+    </siteMapNode>
+
+    <siteMapNode title="Catalog" url="~/Administration/CatalogHome.aspx" roles="SYS_ADMIN" ImageUrl="~/Administration/images/ico-catalog.png" description="Catalog Home">
+      <siteMapNode title="Services" url="~/Administration/ServicesHome.aspx" roles="SYS_ADMIN" description="Services Home">
+        <siteMapNode title="Service Types" url="~/Administration/ServiceTypes.aspx" description="Manage Service Types"/>
+        <siteMapNode title="Service Categories" url="~/Administration/ServiceCategories.aspx" description="Manage Service Categories"/>
+      </siteMapNode>
+    </siteMapNode>
+
+    <siteMapNode title="Sales" url="~/Administration/SalesHome.aspx" roles="OWNER, VP_SALES, SALES_MGR, SALES, SYS_ADMIN, CSR_MGR, CSR" ImageUrl="~/Administration/images/ico-sales.png" description="Sales Home">
+      <siteMapNode title="Orders" url="~/Administration/Orders.aspx" roles="OWNER, VP_SALES, SALES_MGR, SALES, CSR_MGR, CSR" description="Manage Customer Orders"/>
+      <siteMapNode title="Guest Orders" url="~/Administration/GuestOrders.aspx" roles="OWNER, VP_SALES, SALES_MGR, SALES, SYS_ADMIN, CSR_MGR, CSR" description="Manage Guest Orders"/>
+      <siteMapNode title="Gift Cards" url="~/Administration/GiftCards.aspx" roles="OWNER, VP_SALES, SALES_MGR, SYS_ADMIN, CSR_MGR, CSR" description="Manage Gift Cards" />
+      <siteMapNode title="Coupons" url="~/Administration/Coupons.aspx" roles="OWNER, VP_SALES, SALES_MGR, SYS_ADMIN, CSR_MGR, CSR" description="Manage Coupons"/>
+      <siteMapNode title="Discounts" url="~/Administration/Discounts.aspx" roles="SYS_ADMIN" description="Manage Discounts"/>
+      <siteMapNode title="Payments" url="~/Administration/PaymentHome.aspx" roles="SYS_ADMIN" description="Payment Settings Home" >
+        <siteMapNode title="Payment Providers" url="~/Administration/PaymentProviders.aspx" roles="SYS_ADMIN" description="Manage Payment Providers"/>
+        <siteMapNode title="Payment Methods" url="~/Administration/PaymentMethods.aspx" roles="SYS_ADMIN" description="Manage Payment Methods"/>
+      </siteMapNode>
+      <siteMapNode title="Tax" url="~/Administration/TaxHome.aspx" roles="SYS_ADMIN" description="Tax Settings Home" >
+        <siteMapNode title="Tax Categories" url="~/Administration/TaxCategories.aspx" roles="SYS_ADMIN" description="Manage Product Tax Categories"/>
+        <siteMapNode title="Tax Rates" url="~/Administration/TaxRates.aspx" roles="SYS_ADMIN" description="Manage Tax Rates"/>
+        <siteMapNode title="Tax Providers" url="~/Administration/TaxProviders.aspx" roles="SYS_ADMIN" description="Manage Tax Providers"/>
+      </siteMapNode>
+    </siteMapNode>
+
+    <siteMapNode title="Marketing" url="~/Administration/MarketingHome.aspx" roles="OWNER, VP_SALES, SALES_MGR, MRK_MGR, MRK" ImageUrl="~/Administration/images/ico-marketing.gif" description="Marketing Home">
+      <siteMapNode title="SMS Providers" url="~/Administration/SMSProviders.aspx" roles="SYS_ADMIN" description="Manage SMS Providers" />
+      <siteMapNode title="Leads" url="~/Administration/Leads.aspx" roles="OWNER, VP_SALES, SALES_MGR" description="Manage Leads"/>
+      <siteMapNode title="Review Sessions" url="~/Administration/ReviewSessions.aspx" roles="OWNER, MRK_MGR, MRK" description="Manage Review Sessions" />
+      <siteMapNode title="Business Reviews" url="~/Administration/BusinessReviews.aspx" roles="OWNER, MRK_MGR" description="Manage Business Reviews"/>
+      <siteMapNode title="Staff Reviews" url="~/Administration/StaffReviews.aspx" roles="OWNER, MRK_MGR" description="Manage Staff Reviews"/>
+    </siteMapNode>
+
+    <siteMapNode title="Customers" url="~/Administration/CustomersHome.aspx" roles="OWNER, SYS_ADMIN, VP_SALES, SALES_MGR, SALES" ImageUrl="~/Administration/images/ico-customers.png" description="Customers Home">
+      <siteMapNode title="Manage Customers" url="~/Administration/Customers.aspx" roles="SYS_ADMIN" description="Manage Customers"/>
+      <siteMapNode title="Customer Roles" url="~/Administration/CustomerRoles.aspx" roles="SYS_ADMIN" description="Manage Customer Roles"/>
+      <siteMapNode title="Businesses" url="~/Administration/BusinessHome.aspx" roles="OWNER, VP_SALES, SALES_MGR, SALES" description="Businesses Home" >
+        <siteMapNode title="Manage Businesses" url="~/Administration/Businesses.aspx" roles="OWNER, VP_SALES, SALES_MGR, SALES" description="Manage Businesses"/>
+        <siteMapNode title="Business Users" url="~/Administration/BusinessUsers.aspx" roles="OWNER, VP_SALES, SALES_MGR, SALES" description="Manage Business Users"/>
+        <siteMapNode title="Business User Roles" url="~/Administration/BusinessUserRoles.aspx" roles="OWNER, VP_SALES, SALES_MGR" description="Manage Business User Roles"/>
+      </siteMapNode>
+    </siteMapNode>
+
+    <siteMapNode title="Content Management" url="~/Administration/ContentManagementHome.aspx" roles="OWNER, SYS_ADMIN, VP_SALES, SALES_MGR" ImageUrl="~/Administration/images/ico-content.png" description="Content Management Home">
+      <siteMapNode title="Quick Searches" url="~/Administration/QuickSearches.aspx" roles="OWNER, MRK_MGR" description="Manage Quick Searches"/>
+      <siteMapNode title="Promotions" url="~/Administration/Promotions.aspx" roles="OWNER, VP_SALES, SALES_MGR" description="Manage Promotions"/>
+      <siteMapNode title="Topics" url="~/Administration/Topics.aspx" roles="SYS_ADMIN" description="Manage Topics"/>
+      <siteMapNode title="Templates" url="~/Administration/TemplatesHome.aspx" roles="SYS_ADMIN" description="Templates Home">
+		<siteMapNode title="SMS templates" url="~/Administration/SMSTemplates.aspx" roles="SYS_ADMIN" description="Manage SMS Templates"/>
+        <siteMapNode title="Message templates" url="~/Administration/MessageTemplates.aspx" roles="SYS_ADMIN" description="Manage Message Templates"/>
+      </siteMapNode>
+      <siteMapNode title="Localization" url="~/Administration/LocaleStringResources.aspx" roles="SYS_ADMIN" description="Manage Store Localization"/>
+    </siteMapNode>
+
+    <siteMapNode title="Configuration" url="~/Administration/ConfigurationHome.aspx" roles="SYS_ADMIN" ImageUrl="~/Administration/images/ico-configuration.png" description="Configuration Home">
+      <siteMapNode title="Global Settings" url="~/Administration/StoreGlobalSettings.aspx" roles="SYS_ADMIN" description="Configure Global Settings" />
+      <siteMapNode title="Blacklist" url="~/Administration/Blacklist.aspx" roles="SYS_ADMIN" description="Manage banned IP addresses and networks"/>
+      <siteMapNode title="Currencies" url="~/Administration/Currencies.aspx" roles="SYS_ADMIN" description="Manage Store Currencies"/>
+      <siteMapNode title="Languages" url="~/Administration/Languages.aspx" roles="SYS_ADMIN" description="Configure Language Settings"/>
+      <siteMapNode title="Location Management" url="~/Administration/LocationManagementHome.aspx" roles="SYS_ADMIN" description="Location Management Home">
+        <siteMapNode title="Countries" url="~/Administration/Countries.aspx" roles="SYS_ADMIN" description="Manage Countries"/>
+        <siteMapNode title="States/Provinces" url="~/Administration/StateProvinces.aspx" roles="SYS_ADMIN" description="Manage States / Provinces"/>
+        <siteMapNode title="Counties" url="~/Administration/Counties.aspx" roles="SYS_ADMIN" description="Manage Counties"/>
+        <siteMapNode title="Cities/Towns" url="~/Administration/CityTowns.aspx" roles="SYS_ADMIN" description="Manage Cities / Towns"/>
+        <siteMapNode title="Areas/Districts" url="~/Administration/Areas.aspx" roles="SYS_ADMIN" description="Manage Areas"/>
+        <siteMapNode title="Localities" url="~/Administration/Localities.aspx" roles="SYS_ADMIN" description="Manage Localities"/>
+      </siteMapNode>
+      <siteMapNode title="All Settings" url="~/Administration/Settings.aspx" roles="SYS_ADMIN" description="Manage All Settings"/>
+    </siteMapNode>
+
+    <siteMapNode title="System" url="~/Administration/SystemHome.aspx" roles="OWNER, VP_SALES, SYS_ADMIN" ImageUrl="~/Administration/images/ico-system.png" description="System Home">
+      <siteMapNode title="Log" url="~/Administration/Logs.aspx" roles="SYS_ADMIN" description="View Application Log"/>
+      <siteMapNode title="Message queue" url="~/Administration/MessageQueue.aspx" roles="OWNER, VP_SALES, SYS_ADMIN" description="Manage Message Queue"/>
+      <siteMapNode title="SMS queue" url="~/Administration/SMSQueue.aspx" roles="OWNER, VP_SALES, SYS_ADMIN" description="Manage SMS Queue" />
+      <siteMapNode title="Maintenance" url="~/Administration/MaintenanceHome.aspx" roles="SYS_ADMIN" description="Maintenance Manager" >
+        <siteMapNode title="Purge Guest Orders" url="~/Administration/PurgeGuestOrders.aspx" roles="SYS_ADMIN" description="Purge All Guest Orders"/>
+        <siteMapNode title="Purge Leads" url="~/Administration/PurgeLeads.aspx" roles="SYS_ADMIN" description="Purge Lead Records."/>
+        <siteMapNode title="Purge Orphaned Orders" url="~/Administration/PurgeOrphanedOrders.aspx" roles="SYS_ADMIN" description="Purge All Orphaned Records."/>
+        <siteMapNode title="Purge Orphaned Pictures" url="~/Administration/PurgeOrphanedPictures.aspx" roles="SYS_ADMIN" description="Purge All Orphaned Pictures"/>
+        <siteMapNode title="Purge Staff Availability" url="~/Administration/PurgeStaffAvailability.aspx" roles="SYS_ADMIN" description="Purge All Staff Availability" />
+      </siteMapNode>
+      <siteMapNode title="Reports" url="~/Administration/ReportsHome.aspx" roles="OWNER, VP_SALES" >
+        <siteMapNode title="Service Average Report" url="~/Administration/ServiceAverageReport.aspx" roles="OWNER, VP_SALES" ></siteMapNode>
+      </siteMapNode>
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>

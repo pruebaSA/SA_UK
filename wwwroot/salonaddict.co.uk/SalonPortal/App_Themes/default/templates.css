@@ -1,0 +1,69 @@
+﻿/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	HEADER TEMPLATE
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.header-template
+{
+	position:relative;
+	height:80px;
+	width:100%;
+	margin-bottom:17px;
+}
+
+.header-template a.logo
+{
+	position:absolute;
+	top:5px;
+	left:25px;
+	display:block;
+	width:277px;
+	height:65px;
+	background:url('images/logo.png') no-repeat center;
+}
+
+.header-template .datetime
+{
+	position:absolute;
+	top:30px;
+	right:35px;
+	font-size:16px;
+	font-weight:bold;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	FOOTER TEMPLATE
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.footer-template
+{
+	width:950px;
+	text-align:center;
+	padding-top:15px;
+	border-top:solid 1px #d5d5d5;
+	margin-bottom:20px;
+	margin-top:50px;
+}
+
+.footer-template ul.quick-link
+{
+	padding:0px;
+	margin:0px;
+}
+
+.footer-template ul.quick-link li
+{
+	display:inline;
+	padding:0px 3px 0px 3px;
+}
+
+.footer-template ul.quick-link li a
+{
+	font-weight:normal;
+	color:#262626;
+}
+
+.footer-template ul.quick-link li a:hover
+{
+}

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="2" virtualPath="/SalonPortal/App_Browsers/" hash="ffffffff9c395486" filehash="3c48db2d14ef" flags="110000" assembly="App_Browsers.v4vzjph2" type="ASP.ApplicationBrowserCapabilitiesFactory">
+    <filedeps>
+        <filedep name="/SalonPortal/App_Browsers/CSSFriendlyAdapters.browser" />
+    </filedeps>
+</preserve>

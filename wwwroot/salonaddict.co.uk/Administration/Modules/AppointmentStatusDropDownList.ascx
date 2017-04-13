@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="AppointmentStatusDropDownList.ascx.cs" Inherits="SalonAddict.Administration.Modules.AppointmentStatusDropDownList" %>
+<asp:DropDownList ID="ddlValue" runat="server" ></asp:DropDownList>

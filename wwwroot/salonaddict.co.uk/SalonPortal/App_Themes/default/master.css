@@ -1,0 +1,97 @@
+﻿/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	ROOT
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.master-wrapper-page
+{
+	background:url('images/bg.png') repeat-x top; 
+}
+
+.master-wrapper-content
+{
+	width:970px;
+	padding:0px 10px 0px 10px;
+	margin:0 auto;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	ONE COLUMN
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.menu-wrapper-1
+{
+	position:relative;
+	width:950px;
+	height:122px;
+	background:url('images/bg_menu_wrapper.png') no-repeat;
+	margin-bottom:10px;
+}
+
+.master-wrapper-center-1
+{
+	padding:10px 20px 10px 20px;
+	width:910px;
+	min-height:200px;
+	background:#f7f7f7;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	TWO COLUMN
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.master-wrapper-side-2
+{
+	float:left;
+	clear:right;
+	width:192px;
+	min-height:250px;
+	padding:10px;
+	border:solid 1px #d5d5d5;
+}
+
+.master-wrapper-center-2
+{
+	min-height:200px;
+	width:708px;
+	padding-left:15px;
+	padding-right:15px;
+	float:left;
+	clear:right;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	TWO COLUMN
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.master-wrapper-side-2x1
+{
+	position:relative;
+	float:left;
+	clear:right;
+	width:192px;
+	min-height:200px;
+	padding:10px;
+	z-index:999;
+	border:solid 1px #d5d5d5;
+}
+
+.master-wrapper-center-2x1
+{
+	position:relative;
+	min-height:200px;
+	width:708px;
+	padding-left:15px;
+	padding-right:15px;
+	float:left;
+	z-index:999;
+	clear:right;
+}
+
+.master-wrapper-row-2x1
+{
+	position:relative;
+}

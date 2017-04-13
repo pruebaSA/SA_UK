@@ -1,0 +1,18 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MasterPages/Root.Master" AutoEventWireup="true" CodeBehind="TwoColumn.master.cs" Inherits="SalonPortal.MasterPages.TwoColumn" %>
+<%@ Register TagPrefix="SA" TagName="Menu" Src="~/Modules/Menu.ascx" %>
+<%@ Register TagPrefix="SA" TagName="ContentTitle" Src="~/Modules/ContentTitle.ascx" %>
+<%@ Register TagPrefix="SA" TagName="WelcomeLoginView" Src="~/Modules/WelcomeLoginView.ascx" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="RootMasterContentPlaceHolder" runat="server">
+<div class="menu-wrapper-1" >
+   <SA:Menu ID="cntlMenu" runat="server" />
+   <SA:ContentTitle ID="cntlContentTitle" runat="server" />
+   <SA:WelcomeLoginView ID="cntlWelcome" runat="server" />
+</div>
+<div class="master-wrapper-side-2" >
+   <asp:ContentPlaceHolder ID="TwoColumnSideContentPlaceHolder" runat="server"></asp:ContentPlaceHolder>
+</div>
+<div class="master-wrapper-center-2" >
+   <asp:ContentPlaceHolder ID="TwoColumnContentPlaceHolder" runat="server"></asp:ContentPlaceHolder>
+</div>
+</asp:Content>

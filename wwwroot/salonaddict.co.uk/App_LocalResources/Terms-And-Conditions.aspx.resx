@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ContentTitle.Text" xml:space="preserve">
+    <value>&lt;span class="pink"&gt;Terms&lt;/span&gt; &amp;amp; &lt;span class="pink"&gt;Conditions&lt;/span&gt;</value>
+  </data>
+  <data name="ContentTopic1.Body" xml:space="preserve">
+    <value>THIS AGREEMENT is between you, the user of this Website, and SalonAddict.co.uk</value>
+  </data>
+  <data name="ContentTopic1.Title" xml:space="preserve">
+    <value>SalonAddict.co.uk Terms, Conditions and Notices</value>
+  </data>
+  <data name="ContentTopic10.Body" xml:space="preserve">
+    <value>&lt;p&gt;ALL USE BY YOU OF THIS WEBSITE IS AT YOUR OWN RISK. YOU ASSUME COMPLETE RESPONSIBILITY FOR AND FOR ALL RISK OR LOSS RESULTING FROM YOUR DOWNLOADING AND/OR USE OF OR REFERRING TO OR RELYING ON INFORMATION, PRODUCTS, SERVICES OR MATERIALS PROVIDED ON THIS WEBSITE, OR ANY OTHER INFORMATION OBTAINED FROM YOUR USE OF THIS WEBSITE. YOU AGREE THAT Salonaddict.co.uk AND THE PROVIDERS OF TELECOMMUNICATIONS AND NETWORK SERVICES TO Salonaddict.co.uk WILL NOT BE LIABLE FOR DAMAGES ARISING AFTER YOUR USE OR INABILITY TO USE THIS WEBSITE AND YOU HEREBY WAIVE ANY AND ALL CLAIMS WITH RESPECT THERETO WHETHER BASED ON CONTRACT, TORT OR OTHER GROUNDS.&lt;/p&gt;&lt;p&gt;THIS WEBSITE IS AVAILABLE TO ALL USERS "AS IS". Salonaddict.co.uk MAKES NO REPRESENTATIONS, WARRANTIES OR UNDERTAKINGS THAT THIS WEBSITE, OR THE SERVER THAT MAKES IT AVAILABLE, WILL BE FREE FROM DEFECTS, INCLUDING, BUT NOT LIMITED TO VIRUSES OR OTHER HARMFUL ELEMENTS. Salonaddict.co.uk ACCEPTS NO LIABILITY FOR ANY INFECTION BY COMPUTER VIRUS, BUG, TAMPERING, UNAUTHORISED ACCESS, INTERVENTION, ALTERATION OR USE, FRAUD, THEFT, TECHNICAL FAILURE, ERROR, OMISSION, INTERRUPTION, DELETION, DEFECT, DELAY, OR ANY EVENT OR OCCURRENCE BEYOND ITS CONTROL, WHICH CORRUPTS OR AFFECTS THE ADMINISTRATION, SECURITY, FAIRNESS AND THE INTEGRITY OR PROPER CONDUCT OF ANY ASPECT OF THIS WEBSITE. TO THE GREATEST EXTENT PERMITTED BY APPLICABLE LAW, ALL REPRESENTATIONS, WARRANTIES AND CONDITIONS, WHETHER EXPRESS OR IMPLIED, STATUTORY OR OTHERWISE ARE HEREBY EXCLUDED, INCLUDING WITHOUT LIMITATION REPRESENTATIONS, WARRANTIES OR UNDERTAKINGS ABOUT ANY OF THE SERVICES, INFORMATION AND/OR MATERIALS ON THIS WEBSITE, INCLUDING WITHOUT LIMITATION, THEIR ACCURACY, THEIR COMPLETENESS OR THEIR MERCHANTABILITY, QUALITY OR FITNESS FOR A PARTICULAR PURPOSE.&lt;/p&gt;</value>
+  </data>
+  <data name="ContentTopic10.Title" xml:space="preserve">
+    <value>&lt;b&gt;DISCLAIMER&lt;/b&gt;</value>
+  </data>
+  <data name="ContentTopic11.Body" xml:space="preserve">
+    <value>Salonaddict.co.uk’s failure to enforce at any time or for any period any one or more of the Terms shall not be a waiver of them or the rights attaching to any of them.</value>
+  </data>
+  <data name="ContentTopic11.Title" xml:space="preserve">
+    <value>&lt;b&gt;WAIVER&lt;/b&gt;</value>
+  </data>
+  <data name="ContentTopic12.Body" xml:space="preserve">
+    <value>&lt;p&gt;The headings used in these Terms are for convenience only and shall not affect the meaning or scope of these Terms or otherwise be given other legal effect.&lt;/p&gt;</value>
+  </data>
+  <data name="ContentTopic12.Title" xml:space="preserve">
+    <value>&lt;b&gt;HEADINGS&lt;/b&gt;</value>
+  </data>
+  <data name="ContentTopic13.Body" xml:space="preserve">
+    <value>Salonaddict.co.uk reserves the right to change these Terms as well as the contents of this website for any reason and without notice, and without liability to you, any other user or any third party. This right shall not affect the Terms accepted by you upon making a legitimate reservation or purchase using this website. You should check these Terms for any changes each time you access the website.</value>
+  </data>
+  <data name="ContentTopic13.Title" xml:space="preserve">
+    <value>&lt;b&gt;MODIFICATION OF THESE TERMS AND CONDITIONS&lt;/b&gt;</value>
+  </data>
+  <data name="ContentTopic14.Body" xml:space="preserve">
+    <value>&lt;p&gt;These Terms and your use of this website are governed by the laws of the United Kingdom &amp; Northern Ireland. You hereby consent to the exclusive jurisdiction of the United Kingdom &amp; Northern Ireland courts in all disputes arising out of or relating to the use of this website each time you access the website. Use of this website is unauthorised in any jurisdiction that does not give effect to all provisions of these terms and conditions including without limitation this paragraph.&lt;/p&gt;&lt;p&gt;You agree that no joint venture, partnership, employment, or agency relationship exists between you and Salonaddict.co.uk as a result of these Terms or your use of this website. Salonaddict.co.uk's performance of these Terms is subject to existing laws and legal process and nothing contained in this agreement is in derogation of Salonaddict.co.uk's right to comply with law enforcement requests or requirements relating to your use of this website or information provided to or gathered by Salonaddict.co.uk with respect to such use.&lt;/p&gt;&lt;p&gt;If any part of these Terms is determined to be invalid or unenforceable, including but not limited to the warranty disclaimers and liability limitations set forth above, then the invalid or unenforceable provision will be deemed superseded by a valid, enforceable provision that most closely matches the intent of the original provision and the remainder of these Terms shall continue in effect.&lt;/p&gt;&lt;p&gt;These Terms constitute the entire agreement between you and Salonaddict.co.uk with respect to this website and supersede all prior or contemporaneous communications and proposals, whether electronic, oral or written, between you and Salonaddict.co.uk with respect to this website. A printed version of these Terms and of any notice given in electronic form shall be admissible in judicial or administrative proceedings based upon or relating to this agreement to the same extent and subject to the same conditions as other business documents and records originally generated and maintained in printed form.&lt;/p&gt;&lt;p&gt;Although Salonaddict.co.uk cannot monitor the conduct of its users offsite, it is a violation of these Terms to use any information obtained from this website in order to harass, abuse or harm other persons, or in order to contact, advertise to, solicit or sell to any user or person without their prior express consent.&lt;/p&gt;&lt;p&gt;Any questions, please contact Salonaddict.co.uk, &lt;a href="mailto:info@salonaddict.co.uk"&gt;info@salonaddict.co.uk&lt;/a&gt;&lt;/p&gt;</value>
+  </data>
+  <data name="ContentTopic14.Title" xml:space="preserve">
+    <value>&lt;b&gt;GENERAL TERMS AND CONDITIONS&lt;/b&gt;</value>
+  </data>
+  <data name="ContentTopic2.Body" xml:space="preserve">
+    <value>&lt;p&gt;You should note that Salonaddict.co.uk does not warrant that the information published on this website will be error free and in using this website you acknowledge that the appointment details and all other information including information relating to salon services published on this website may include inaccuracies or typographical errors.&lt;/p&gt;&lt;p&gt;All bookings for salon services on this website are made with the salon services provider concerned and not with Salonaddict.co.uk. Salonaddict.co.uk only facilitates the making of reservations with the salon services provider. Salonaddict.co.uk is not a party to the contract between you and the salon services provider and has no responsibility or liability to you in respect of the terms of that contract whether directly or indirectly.&lt;/p&gt;&lt;p&gt;Prior to making a booking, you should ensure that you have reviewed the service provider's terms and conditions and that they are acceptable to you.&lt;/p&gt;&lt;p&gt;NEITHER Salonaddict.co.uk NOR ANY OF ITS DIRECTORS, EMPLOYEES, AFFILIATES OR OTHER REPRESENTATIVES WILL BE LIABLE FOR LOSS OR DAMAGES ARISING OUT OF OR IN CONNECTION WITH YOUR USE OF ANY INFORMATION, PRODUCTS, SERVICES AND/OR THE MATERIALS OFFERED THROUGH THIS WEBSITE, INCLUDING BUT NOT LIMITED TO, LOSS OF DATA, INCOME, PROFIT OR OPPORTUNITY, LOSS OF OR DAMAGE TO PROPERTY AND CLAIMS OF THIRD PARTIES, OR ANY INDIRECT OR CONSEQUENTIAL LOSS OR DAMAGES, EVEN IF Salonaddict.co.uk HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH LOSS OR DAMAGE, OR SUCH LOSS OR DAMAGES WERE REASONABLY FORESEEABLE.&lt;/p&gt;&lt;p&gt;While Salonaddict.co.uk makes all reasonable efforts to ensure that the services listed are of reasonable standard the listing of any services in the website is not and should not be taken as a recommendation from Salonaddict.co.uk or a representation that the services will be suitable for the user's purpose.&lt;/p&gt;&lt;p&gt;Salonaddict.co.uk shall in no way be liable to you in the event that the services are not suitable for your purpose.&lt;/p&gt;</value>
+  </data>
+  <data name="ContentTopic2.Title" xml:space="preserve">
+    <value>&lt;b&gt;NO LIABILITY&lt;/b&gt;</value>
+  </data>
+  <data name="ContentTopic3.Body" xml:space="preserve">
+    <value>&lt;p&gt;(a) You hereby confirm and undertake to Salonaddict.co.uk that you are not a national of Cuba (a "Restricted National") and acknowledge that use of the website by or on behalf of a Restricted National is prohibited; and (b) You hereby confirm and undertake to Salonaddict.co.uk that if you are a national of Iran, Syria, Sudan, Myanmar (Burma) or North Korea ("Other Restricted Territory") that your credit card is not issued through an "Other Restricted Territory" nor is your booking made while you are present in an "Other Restricted Territory" (c) You undertake to Salonaddict.co.uk that you will not use this website for any purpose that is unlawful or prohibited by these Terms.&lt;/p&gt;</value>
+  </data>
+  <data name="ContentTopic3.Title" xml:space="preserve">
+    <value>&lt;b&gt;AS A CONDITION OF YOUR USE OF THIS WEBSITE&lt;/b&gt;</value>
+  </data>
+  <data name="ContentTopic4.Body" xml:space="preserve">
+    <value>&lt;p&gt;You confirm that you are of sufficient legal age to use this website and to create binding legal obligations for any liability you may incur as a result of the use of this website. You understand that you are financially responsible for all uses of this website by you and those using your log-in information.&lt;/p&gt;</value>
+  </data>
+  <data name="ContentTopic4.Title" xml:space="preserve">
+    <value>&lt;b&gt;AGE AND RESPONSIBILITY&lt;/b&gt;</value>
+  </data>
+  <data name="ContentTopic5.Body" xml:space="preserve">
+    <value>&lt;p&gt;This website may contain hyperlinks to websites operated by parties other than Salonaddict.co.uk. Such hyperlinks are provided for your reference only. Salonaddict.co.uk does not control such websites and is not responsible for their contents. The inclusion of hyperlinks on this website to such other websites does not imply any endorsement of the material on such websites or any association with their operators.&lt;/p&gt;</value>
+  </data>
+  <data name="ContentTopic5.Title" xml:space="preserve">
+    <value>&lt;b&gt;LINKS TO THIRD PARTY SITES&lt;/b&gt;</value>
+  </data>
+  <data name="ContentTopic6.Body" xml:space="preserve">
+    <value>&lt;p&gt;The following conditions apply to bookings of services made by you through this website.&lt;/p&gt;&lt;p&gt;&lt;b&gt;(1) Making a reservation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;On making a reservation, you shall pay a non-refundable deposit (being a fixed percentage -- USUALLY 10% or 15% -- of the total value of your reservation). You will be responsible to the services provider for payment of the balance of the cost of the services booked by you together with the payment of charges for any additional services subsequently contracted for with the services provider and, where applicable, payment of the services provider's service charges and taxes pursuant to the terms and conditions of trade applied by such travel services provider.&lt;/p&gt;&lt;p&gt;You must use a credit card or debit card to guarantee a reservation. Your non-arrival by the agreed appointment time will result in the cancellation of your entire reservation.&lt;/p&gt;&lt;p&gt;Any amendments to your reservation must be notified to and agreed with the services provider directly.&lt;/p&gt;&lt;p&gt;In making a reservation, it shall be your responsibility to disclose to the services provider any physical or mental condition to which you or a member of your party is subject to and of which the services provider should be notified and which may require special facilities.&lt;/p&gt;&lt;p&gt;&lt;b&gt;(2) When a reservation is confirmed&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Salonaddict.co.uk will issue the booking confirmation on behalf of the services provider for each reservation, but does not undertake to include charges for additional services or details of the service charge or taxes charged by the services provider.&lt;/p&gt;&lt;p&gt;Salonaddict.co.uk recommends you check and confirm with the services provider the precise terms and conditions upon which the salon services provider makes the reserved service available to you upon receipt of the booking confirmation. The reservation numbers included on the booking confirmation should be quoted in all enquiries, cancellation or modification of the reservation.&lt;/p&gt;&lt;p&gt;&lt;b&gt;(3) Cancellations&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Salonaddict.co.uk does not accept responsibility for cancellations by you or by the services provider regardless of the circumstances in which the cancellation is made.&lt;/p&gt;&lt;p&gt;salonaddict.co.uk shall not accept any liability for losses, additional expenses or any claim whatsoever due to changes in services, sickness, weather, strikes or any other cause. All such losses, additional expenses or claims will be borne by you unless otherwise agreed between you and the service provider.&lt;/p&gt;</value>
+  </data>
+  <data name="ContentTopic6.Title" xml:space="preserve">
+    <value>&lt;b&gt;BOOKING CONDITIONS&lt;/b&gt;</value>
+  </data>
+  <data name="ContentTopic7.Body" xml:space="preserve">
+    <value>&lt;p&gt;Salonaddict.co.uk makes all reasonable efforts to ensure that all credit card and debit card transactions are secure. HOWEVER, if unauthorised charges appear on your credit card or debit card statement for any card used on this website at any time during or after you make your reservation, conduct your transaction or disclose your card details on this website, Salonaddict.co.uk shall not be liable or responsible in any way in respect of any damage or loss of whatsoever nature suffered by you arising from or in any way connected with said use, transaction or disclosure, subject only to any statutory rights which you may have.&lt;/p&gt;</value>
+  </data>
+  <data name="ContentTopic7.Title" xml:space="preserve">
+    <value>&lt;b&gt;NO LIABILITY IN CREDIT CARD OR DEBIT CARD TRANSACTIONS&lt;/b&gt;</value>
+  </data>
+  <data name="ContentTopic8.Body" xml:space="preserve">
+    <value>&lt;p&gt;The information, content, graphics, text, sounds, images, buttons, trade marks, service marks, trade names and logos ("Materials") contained in this website are protected by copyright, trademark, database right, sui generis right and other intellectual property laws under national laws and international treaties. Salonaddict.co.uk or its licensors (as the case may be) retain all right, title, interest and intellectual property rights in and to the Materials. You may not modify, copy, distribute, transmit, display, perform, reproduce, publish, license, create derivative works from, transfer, or sell any information, Materials, software, products or services obtained from this website. Other than expressly provided herein, nothing in these terms and conditions shall be construed as inferring by implication or otherwise any licence or right under any copyright, trademark, database right, sui generis right or other intellectual property or proprietary interest of Salonaddict.co.uk, its licensors or any third party. Any persons breaching any of this provision will be prosecuted.&lt;/p&gt;</value>
+  </data>
+  <data name="ContentTopic8.Title" xml:space="preserve">
+    <value>&lt;b&gt;COPYRIGHT, NOTICE AND LIMITED LICENCE&lt;/b&gt;</value>
+  </data>
+  <data name="ContentTopic9.Body" xml:space="preserve">
+    <value>You agree to indemnify and hold Salonaddict.co.uk, its subsidiaries, affiliates, officers, agents and other partners and employees, harmless from any loss, liability, claim or demand, including reasonable attorney's fees, made by any third party due to or arising out of your use of the website.</value>
+  </data>
+  <data name="ContentTopic9.Title" xml:space="preserve">
+    <value>&lt;b&gt;INDEMNITY&lt;/b&gt;</value>
+  </data>
+  <data name="Page.Title" xml:space="preserve">
+    <value>SalonAddict.co.uk - Terms and Conditions</value>
+  </data>
+</root>

@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Tokens>
+  <Token name="-- BILLING INFORMATION --" value=" " />
+  <Token name="Billing First Name" value="$BILLING_FIRSTNAME$" />
+  <Token name="Billing Last Name" value="$BILLING_LASTNAME$" />
+  <Token name="Billing Full Name" value="$BILLING_FULLNAME$" />
+  <Token name="Billing Phone" value="$BILLING_PHONE$" />
+  <Token name="Billing Email" value="$BILLING_EMAIL$" />
+  <Token name="Billing Payment Method" value="$PAYMENT_METHOD_NAME$" />
+  <Token name="Billing Card Number" value="$CARD_NUMBER$" />
+
+
+  <Token name="--BUSINESS INFORMATION --" value=" " />
+  <Token name="Business Name" value="$BUSINESS_NAME$" />
+  <Token name="Business Phone" value="$BUSINESS_PHONE$" />
+  <Token name="Business Email" value="$BUSINESS_EMAIL$" />
+  <Token name="Business Address 1" value="$BUSINESS_ADDRESSLINE1$" />
+  <Token name="Business Address 2" value="$BUSINESS_ADDRESSLINE2$" />
+  <Token name="Business City/Town" value="$BUSINESS_CITYTOWN_NAME$" />
+  <Token name="Business Area" value="$BUSINESS_AREA_NAME$" />
+  <Token name="Business County" value="$BUSINESS_COUNTY_NAME$" />
+  <Token name="Business State/Province" value="$BUSINESS_STATEPROVINCE_NAME$" />
+  <Token name="Business Zip/Postal Code" value="$BUSINESS_ZIP_POSTALCODE$" />
+  <Token name="Business Country" value="$BUSINESS_COUNTRY_NAME$" />
+  <Token name="Business Address IE" value="$BUSINESS_ADDRESS_IRELAND_FORMAT$" />
+
+  <Token name="--ORDER INFORMATION --" value=" " />
+  <Token name="Order Date" value="$ORDER_DATE$" />
+  <Token name="Appointment Start Time (HH:mm)" value="$APPOINTMENT_START_TIME$" />
+  <Token name="Appointment Start Date (ddd dd MMM yyyy)" value="$APPOINTMENT_START_DATE$" />
+  <Token name="Appointment End Time (HH:mm)" value="$APPOINTMENT_END_TIME$" />
+  <Token name="Appointment End Date (ddd dd MMM yyyy)" value="$APPOINTMENT_END_DATE$" />
+  <Token name="Additional Fee" value="$ADDITIONAL_FEE$" />
+  <Token name="Balance in Customer Currency" value="$BALANCE_IN_CUSTOMER_CURRENCY$" />
+  <Token name="Deposit in Customer Currency" value="$DEPOSIT_IN_CUSTOMER_CURRENCY$"  />
+  <Token name="Order Reference No." value="$REFERENCE_NO$" />
+  <Token name="Order Total" value="$ORDER_TOTAL$" />
+  <Token name="Order Total in Customer Currency" value="$ORDER_TOTAL_IN_CUSTOMER_CURRENCY$" />
+  <Token name="Staff" value="$APPOINTMENT_STAFF_DISPLAYNAME$" />
+  <Token name="Service" value="$APPOINTMENT_SERVICE_DISPLAYNAME$" />
+  <Token name="Total" value="$TOTAL$" />
+  <Token name="Total in Customer Currency" value="$TOTAL_IN_CUSTOMER_CURRENCY$" />
+</Tokens>

@@ -1,0 +1,412 @@
+﻿/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	NO-SCRIPT 
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.module-noscript
+{
+	position:relative;
+	width:760px;
+	margin:0 auto;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	HOMEPAGE SALON HOURS
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.module-homepage-salon-hours
+{
+	padding:10px;
+	border: solid 1px #f2f2f2;
+	-moz-border-radius: 6px 6px 6px 6px; /* Firefox */
+	-webkit-border-radius: 6px 6px 6px 6px; /* Safari, Chrome */
+	border-radius: 6px 6px 6px 6px; /* CSS3 */
+}
+
+.module-homepage-salon-hours table.details
+{
+}
+
+.module-homepage-salon-hours table td.title
+{
+	font-size:10px;
+	min-width:40px;
+	padding: 2px 4px 2px 4px;
+}
+
+.module-homepage-salon-hours table td.data-item
+{
+	font-size:10px;
+	padding: 2px 4px 2px 4px;
+}
+
+.module-homepage-salon-hours table td.title-alt
+{
+	font-size:10px;
+	min-width:40px;
+	padding: 2px 4px 2px 4px;
+	background:#f7f7f7;
+}
+
+.module-homepage-salon-hours table td.data-item-alt
+{
+	font-size:10px;
+	padding: 2px 4px 2px 4px;
+	background:#f7f7f7;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	VIEW TYPES (MENU) 
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.module-viewtypes
+{
+	height:30px;
+	margin-bottom:15px;
+}
+
+.module-viewtypes ul
+{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+}
+
+.module-viewtypes ul li
+{
+	float:left;
+	padding-right:10px;
+}
+
+.module-viewtypes ul li a
+{
+	display:block;
+	padding:5px 10px 5px 10px;
+	color:#333;
+	font-size:14px;
+	font-family:Arial, Hevetica, Sans-Serif;
+	text-align:center;
+    font-weight:normal;
+    text-decoration:none;
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	background: #fff;
+	outline: none;
+	border: solid 1px #e70a52;
+	-moz-border-radius: 6px 6px 0px 0px; /* Firefox */
+	-webkit-border-radius: 6px 6px 0px 0px; /* Safari, Chrome */
+	border-radius: 6px 6px 0px 0px; /* CSS3 */
+}
+
+.module-viewtypes ul li a:hover
+{
+	text-decoration:none;
+	color:#fff;
+	background: #e70a52;
+	border: solid 1px #e70a52;
+}
+
+.module-viewtypes ul li a.selected
+{
+	display:block;
+	padding:5px 10px 5px 10px;
+	color:#fff;
+	font-size:14px;
+	font-family:Arial, Hevetica, Sans-Serif;
+	text-align:center;
+    font-weight:bold;
+    text-decoration:none;
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	background: #f0276a;
+	outline: none;
+	border: solid 1px #e70a52;
+	-moz-border-radius: 6px 6px 0px 0px; /* Firefox */
+	-webkit-border-radius: 6px 6px 0px 0px; /* Safari, Chrome */
+	border-radius: 6px 6px 0px 0px; /* CSS3 */
+}
+
+.module-viewtypes ul li a.selected:hover
+{
+	text-decoration:none;
+	background: #e70a52;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	OVERVIEW 
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.module-overview a
+{
+	position:relative;
+	cursor: pointer;
+	display:block;
+	padding:5px 15px 5px 15px;
+	padding-top:60px;
+	width:90px;
+	color: #909090;
+	font-size:12px;
+	line-height:24px;
+	font-family:Arial, Hevetica, Sans-Serif;
+	text-align:center;
+	font-weight:bold;
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	outline: none;
+	border: solid 1px #b7b7b7;
+	-moz-border-radius: 6px 6px 6px 6px; /* Firefox */
+	-webkit-border-radius: 6px 6px 6px 6px; /* Safari, Chrome */
+	border-radius: 6px 6px 6px 6px; /* CSS3 */
+}
+
+.module-overview a:hover
+{
+	color:#555;
+	text-decoration:none;
+	border: solid 1px #555;
+}
+
+.module-overview a.option-home
+{
+	background: #fff url('images/overview-home.png') 40px 15px no-repeat;
+}
+
+.module-overview a.option-appointments
+{
+	background: #fff url('images/overview-appointments.png') 40px 15px no-repeat;
+}
+
+.module-overview .appointment-badge
+{
+	position:absolute;
+	top:10px;
+	right:30px;
+	width:18px;
+	height:15px;
+	padding-top:1px;
+	padding-left:1px;
+	text-align:center;
+	color:#fff;
+	font-size:11px;
+	line-height:12px;
+	font-weight:normal;
+	background:url('images/mailcount_badge_small.png') no-repeat;
+}
+
+.module-overview a.option-scheduling
+{
+	background: #fff url('images/overview-scheduling.png') 40px 15px no-repeat;
+}
+
+.module-overview a.option-services
+{
+	background: #fff url('images/overview-services.png') 40px 15px no-repeat;
+}
+
+.module-overview a.option-employees
+{
+	background: #fff url('images/overview-employees.png') 40px 15px no-repeat;
+}
+
+.module-overview a.option-account
+{
+	background: #fff url('images/overview-account.png') 40px 15px no-repeat;
+}
+
+.module-overview a.option-profile
+{
+	background: #fff url('images/overview-profile.png') 40px 15px no-repeat;
+}
+
+.module-overview a.option-settings
+{
+	background: #fff url('images/overview-settings.png') 40px 15px no-repeat;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	USER MENU 
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.module-usermenu
+{
+	position:relative;
+	height:50px;
+}
+
+.module-usermenu ul
+{
+	margin:0px;
+	padding:0px;
+    list-style-type:none;
+}
+
+.module-usermenu ul li
+{
+	float:left;
+	margin:0px;
+	padding:0px;
+	padding-right:20px;
+}
+
+.module-usermenu ul li a
+{
+	position:relative;
+	display:block;
+	float:left;
+	text-align:center;
+	cursor: pointer;
+	padding-top:30px;
+}
+
+.module-usermenu ul li a:hover
+{
+	color:#000;
+}
+
+.module-usermenu ul li a.selected
+{
+	font-weight:bold;
+}
+
+.module-usermenu a:hover
+{
+	color:#555;
+	text-decoration:none;
+}
+
+.module-usermenu ul li a.option-overview
+{
+	background:url('images/menu-overview.png') 17px 5px no-repeat;
+}
+
+.module-usermenu ul li a.option-appointments
+{
+	background:url('images/menu-appointments.png') 30px 3px no-repeat;
+}
+
+.module-usermenu .appointment-badge
+{
+	position:absolute;
+	top:0px;
+	right:18px;
+	width:18px;
+	height:15px;
+	padding-top:1px;
+	padding-left:1px;
+	text-align:center;
+	color:#fff;
+	font-size:11px;
+	line-height:12px;
+	font-weight:normal;
+	background:url('images/mailcount_badge_small.png') no-repeat;
+}
+
+.module-usermenu ul li a.option-scheduling
+{
+	background:url('images/menu-scheduling.png') 22px 5px no-repeat;
+}
+
+.module-usermenu ul li a.option-services
+{
+	background:url('images/menu-services.png') 17px 5px no-repeat;
+}
+
+.module-usermenu ul li a.option-employees
+{
+	background:url('images/menu-employees.png') 20px 5px no-repeat;
+}
+
+.module-usermenu ul li a.option-account
+{
+	background:url('images/menu-account.png') 12px 5px no-repeat;
+}
+
+.module-usermenu ul li a.option-profile
+{
+	background:url('images/menu-profile.png') 8px 5px no-repeat;
+}
+
+.module-usermenu ul li a.option-settings
+{
+	background:url('images/menu-settings.png') 15px 5px no-repeat;
+}
+
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	FOOTER 
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.module-footer
+{
+	position:relative;
+	width:760px;
+}
+
+.module-footer a
+{
+	font-size:11px;
+	font-family:Verdana, Arial;
+	color:#777;
+	text-decoration:none;
+}
+
+.module-footer a:hover
+{
+	text-decoration:underline;
+}
+
+.module-footer .terms-privacy
+{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:280px;
+	padding:20px;
+	font-size:11px;
+	font-family:Verdana, Arial;
+	color:#777;
+	line-height:inherit;
+}
+
+.module-footer .partner-statement
+{
+	position:absolute;
+	top:0px;
+	left:290px;
+	width:270px;
+	padding:20px;
+	font-size:11px;
+	font-family:Verdana, Arial;
+	color:#777;
+	line-height:inherit;
+}
+
+.module-footer .poweredby
+{
+	position:absolute;
+	top:12px;
+	right:20px;
+	width:128px;
+	height:48px;
+}
+
+.module-footer .poweredby-logo
+{
+	display:block;
+	width:144px;
+	height:48px;
+	background:url('images/poweredbysalonaddict.png') no-repeat center;
+}

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Modules/QuickSearchSummary.ascx" hash="ff1ceda5557081d6" filehash="296b63acaee0" flags="110000" assembly="App_Web_0q5m2y1a" type="ASP.modules_quicksearchsummary_ascx">
+    <filedeps>
+        <filedep name="/Modules/QuickSearchSummary.ascx" />
+    </filedeps>
+</preserve>

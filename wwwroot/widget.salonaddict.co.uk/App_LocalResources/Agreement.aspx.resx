@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ltrAccess.Paragraph[0].Text" xml:space="preserve">
+    <value>Much of the information on the SalonAddict Site is updated on a real time basis and is proprietary or licensed to SalonAddict by its Salon or third parties. By using the SalonAddict Site, you agree not to:&lt;ul&gt;&lt;li&gt;Use any robot, spider, scraper or other automatic device, process or means to access the SalonAddict Site for any purpose without SalonAddict’s express written permission.&lt;/li&gt;&lt;li&gt;Implement any manual processes to monitor or copy SalonAddict Content from the SalonAddict Site without express written permission.&lt;/li&gt;&lt;li&gt;Take any action that imposes or may impose (in SalonAddict’s sole discretion) an unreasonable or disproportionately large load on our infrastructure.&lt;/li&gt;&lt;li&gt;Utilise any device, software or routine that will interfere or attempt to interfere with the functionality of the SalonAddict Site.&lt;/li&gt;&lt;li&gt;You must have JavaScript enabled to use this site. Portions of the SalonAddict Site, including but not limited to: making, modifying or cancelling appointments, may not be accessible with JavaScript disabled.&lt;/li&gt;&lt;/ul&gt;</value>
+  </data>
+  <data name="ltrAccess.Text" xml:space="preserve">
+    <value>8. ACCESS AND INTERFERENCE</value>
+  </data>
+  <data name="ltrChoiceOfLaw.Paragraph[0].Text" xml:space="preserve">
+    <value>The Terms of Use is made under and shall be governed by and construed in accordance with the laws of the United Kingdom without regard to its conflicts of law provisions. Any claim or controversy arising out of or related to these Terms of Use shall be instituted exclusively in the United Kingdom courts.</value>
+  </data>
+  <data name="ltrChoiceOfLaw.Text" xml:space="preserve">
+    <value>16. CHOICE OF LAW</value>
+  </data>
+  <data name="ltrDisclaimer.Paragraph[0].Text" xml:space="preserve">
+    <value>THE INFORMATION, PROGRAMMES, PRODUCTS, AND MATERIALS CONTAINED IN OR ACCESSED ON THE SALONADDICT SITE, INCLUDING, WITHOUT LIMITATION, THE SERVICES AND THE SALONADDICT CONTENT, ARE PROVIDED TO USER ON AN 'AS IS' BASIS AND WITHOUT WARRANTY OF ANY KIND. SALONADDICT DISCLAIMS ALL WARRANTIES, EXPRESSED OR IMPLIED, WITH RESPECT TO THE SERVICES, THE SALONADDICT SITE, THE SALONADDICT CONTENT AND RELATED MATERIALS PROVIDED HEREUNDER INCLUDING, WITHOUT LIMITATION, ANY WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT OR ARISING FROM A COURSE OF DEALING.</value>
+  </data>
+  <data name="ltrDisclaimer.Text" xml:space="preserve">
+    <value>10. DISCLAIMER OF WARRANTY</value>
+  </data>
+  <data name="ltrEmailPolicy.Paragraph[0].Text" xml:space="preserve">
+    <value>While you cannot unsubscribe from all service messages, you may receive periodic emails from SalonAddict if you opted to receive such email at the time of registration with the SalonAddict Site. If you would rather not receive email from SalonAddict, following the "unsubscribe" instructions provided and you will be unsubscribed from receiving further mailings. USER acknowledges and agrees, however, that USER will still receive appointment confirmation emails, no-show confirmation emails, appointment change confirmation emails, appointment cancellation confirmation emails and other emails relating to appointments booked by USER through the SalonAddict Site, even if USER has opted not to receive periodic email from SalonAddict. You will never receive email from any third party affiliated with SalonAddict, such as a Salon, unless you have affirmatively opted to receive such email. In accordance with our Privacy Policy, we do not share any of your individual information without your prior consent.</value>
+  </data>
+  <data name="ltrEmailPolicy.Text" xml:space="preserve">
+    <value>5. EMAIL POLICY</value>
+  </data>
+  <data name="ltrHeader.Text" xml:space="preserve">
+    <value>SalonAddict User Agreement</value>
+  </data>
+  <data name="ltrIdemnity.Paragraph[0].Text" xml:space="preserve">
+    <value>You will indemnify SalonAddict and its officers, directors, employees, representatives and agents (collectively, the “Indemnitees”), against any loss, damage or cost incurred by us arising out of your use of the SalonAddict Site, including, without limitation, the Services, the SalonAddict Content or any other information accessible over or through the SalonAddict Site, including information obtained from linked sites, your submission or transmission of information or material on or through the SalonAddict Site or your violation of this Agreement, our privacy policy or any other laws, regulations and rules. You will also indemnify the Indemnitees against any claims that information or material which you have submitted to us is in violation of any law or in breach of any third party rights (including, but not limited to, claims in respect of defamation, invasion of privacy, breach of confidence, infringement of copyright or infringement of any other intellectual property right). We reserve the right to exclusively defend and control any claims arising from the above and any such indemnification matters and that you will fully cooperate with us in any such defences.</value>
+  </data>
+  <data name="ltrIdemnity.Text" xml:space="preserve">
+    <value>11.  INDEMNITY</value>
+  </data>
+  <data name="ltrIntellectualProperty.Paragraph[0].Text" xml:space="preserve">
+    <value>The materials and services provided for and depicted on the SalonAddict Site are protected by copyright, trademark, patent and other intellectual property laws. All text, graphics, video, data or other content on the SalonAddict Site ("SalonAddict Content") is provided to USER by SalonAddict for the sole purpose of using the Services. USER shall not copy, display, modify, create derivative works of, publish, or sell the SalonAddict Content or any information, software, or services provided by SalonAddict hereunder. The SalonAddict Content may be modified from time to time by SalonAddict in its sole discretion. Except as expressly set forth herein, no license is granted to USER for any other purpose, and any other use of the Services or the SalonAddict Content by USER shall constitute a material breach of this Agreement. Nothing in this Agreement shall affect any rights of SalonAddict or its licensors in the Services or SalonAddict Content, and any associated patents, trademarks, copyrights, mask work rights, trade secrets or other intellectual property rights. No license, right or interest in any trademarks of SalonAddict or any third party is granted under this Agreement. Nothing in this Agreement shall affect any rights of SalonAddict or its licensors in the Services or SalonAddict Content, and any associated patents, trademarks, copyrights, mask work rights, trade secrets or other intellectual property rights. No license, right or interest in any trademarks of SalonAddict or any third party is granted under this Agreement.</value>
+  </data>
+  <data name="ltrIntellectualProperty.Text" xml:space="preserve">
+    <value>6. INTELLECTUAL PROPERTY AND GRANT OF RIGHTS TO USER</value>
+  </data>
+  <data name="ltrLiability.Paragraph[0].Text" xml:space="preserve">
+    <value>EXCEPT AS PROHIBITED BY LAW, IN NO EVENT SHALL SALONADDICT BE LIABLE FOR ANY INJURY, LOSS, CLAIM, DAMAGE OR ANY SPECIAL, EXEMPLARY, PUNITIVE, INCIDENTAL OR CONSEQUENTIAL DAMAGES OF ANY KIND, WHETHER BASED IN CONTRACT, TORT OR OTHERWISE, WHICH ARISES OUT OF OR IS ANY WAY CONNECTED WITH (I) ANY USE OF THE SERVICES, THE SALONADDICT SITE OR THE SALONADDICT CONTENT, (II) ANY FAILURE OR DELAY (INCLUDING, BUT NOT LIMITED TO, THE USE OR INABILITY TO USE ANY COMPONENT OF THE SERVICES OR THE SALONADDICT SITE FOR BOOKING APPOINTMENTS), OR (III) THE PERFORMANCE OR NON-PERFORMANCE OF ANY SALON IN CONNECTION WITH THE SERVICES. IN ADDITION, ALL USERS SPECIFICALLY UNDERSTAND AND AGREE THAT ANY THIRD PARTY DIRECTING USERS TO THE SALONADDICT SITE BY REFERRAL, LINK OR ANY OTHER MEANS IS NOT LIABLE TO USER FOR ANY REASON WHATSOEVER, INCLUDING BUT NOT LIMITED TO DAMAGES OR LOSS ASSOCIATED WITH THE USE OF THE SERVICES, THE SALONADDICT SITE OR THE SALONADDICT CONTENT. SALONADDICT IS NEITHER AN AGENT OF NOR IS CONNECTED WITH ANY AFFILIATED SALON IN WHICH A USER HAS MADE AN APPOINTMENT. SALONADDICT IS NOT LIABLE FOR ANY INJURY, LOSS, CLAIM, DAMAGE OR ANY SPECIAL, EXEMPLARY, PUNITIVE, INCIDENTAL OR CONSEQUENTIAL DAMAGES OF ANY KIND, WHETHER BASED IN CONTRACT, TORT OR OTHERWISE, WHICH ARISES OUT OF OR IS IN ANY WAY CONNECTED WITH A USER’S VISIT TO AN AFFILIATED SALON.</value>
+  </data>
+  <data name="ltrLiability.Text" xml:space="preserve">
+    <value>9. LIABILITY LIMITATIONS</value>
+  </data>
+  <data name="ltrNoAssignment.Paragraph[0].Text" xml:space="preserve">
+    <value>This Agreement and the rights granted and obligations undertaken hereunder may not be transferred, assigned or delegated in any manner by USER, but may be so transferred, assigned or delegated by SalonAddict.</value>
+  </data>
+  <data name="ltrNoAssignment.Text" xml:space="preserve">
+    <value>14. NO ASSIGNMENT</value>
+  </data>
+  <data name="ltrNoShow.Paragraph[0].Text" xml:space="preserve">
+    <value>SalonAddict is committed to providing superior quality services to its USERS and Salons. To assist us in maintaining a consistently high level of service with the participating Salons and patrons, USERS are asked to cancel any appointments that they will be unable to honour at least 1 hour in advance on the day of the appointment. You may cancel your booking online or call the salon directly. </value>
+  </data>
+  <data name="ltrNoShow.Paragraph[1].Text" xml:space="preserve">
+    <value>If you are unable to keep your appointment and you fail to cancel, SalonAddict may send you an email letting you know that our records indicate that you were a no-show. By using the Services, USER agrees to receive no-show confirmations by email after a Salon and/or the SalonAddict Site reports your appointment as not honoured, whether or not that was in fact the case.</value>
+  </data>
+  <data name="ltrNoShow.Text" xml:space="preserve">
+    <value>2. NO SHOW POLICY</value>
+  </data>
+  <data name="ltrPrivacy.Paragraph[0].Text" xml:space="preserve">
+    <value>SalonAddict is committed to safeguarding your privacy online. Please review our &lt;a href="http://www.salonaddict.co.uk/privacy-policy.aspx" target="_blank" &gt;&lt;u&gt;privacy policy&lt;/u&gt;&lt;/a&gt;.</value>
+  </data>
+  <data name="ltrPrivacy.Text" xml:space="preserve">
+    <value>3. PRIVACY POLICY</value>
+  </data>
+  <data name="ltrReviews.Paragraph[0].Text" xml:space="preserve">
+    <value>At SalonAddict’s invitation, USER may submit reviews, comments, and ratings, send e-mails and other communications; and submit suggestions, ideas, comments, questions, or other information for publication and distribution to Salons and other third parties, so long as the content is not illegal, threatening, obscene, racist, defamatory, libellous, pornographic, infringing of intellectual property rights, promoting of illegal activity or harm to groups and/or individuals, invasive of privacy, purposely false or otherwise injurious to third parties or objectionable and does not consist of or contain software, computer viruses, commercial solicitation, political campaigning, chain letters, mass mailings, any form of "spam" or references to illegal activity, malpractice, purposeful overcharging, false advertising or health code violations. You may not use a false e-mail address, impersonate any person or entity, or otherwise mislead as to the origin of content. SalonAddict reserves the right (but not the obligation) to remove or edit such content, but may not regularly review submitted content.</value>
+  </data>
+  <data name="ltrReviews.Text" xml:space="preserve">
+    <value>7. REVIEWS, COMMENTS, COMMUNICATIONS, AND OTHER CONTENT</value>
+  </data>
+  <data name="ltrRevisionDate.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ltrSeverability.Paragraph[0].Text" xml:space="preserve">
+    <value>If any of the provisions, or portions thereof, of this Agreement are found to be invalid under any applicable statute or rule of law, then, that provision notwithstanding, this Agreement shall remain in full force and effect and such provision or portion thereof shall be deemed omitted.</value>
+  </data>
+  <data name="ltrSeverability.Text" xml:space="preserve">
+    <value>13. SEVERABILITY</value>
+  </data>
+  <data name="ltrThirdParty.Paragraph[0].Text" xml:space="preserve">
+    <value>The SalonAddict Site may contain links or other access to Web sites operated by parties other than SalonAddict. Such links or access are provided for USER's reference only and SalonAddict does not control such Web sites and is not responsible for their content. SalonAddict’s inclusion of any links or access to such Web sites does not imply any endorsement of the material on such Web sites or any association with their operators.  SalonAddict is not liable for the statements, conduct, good or services of any third party.</value>
+  </data>
+  <data name="ltrThirdParty.Text" xml:space="preserve">
+    <value>12. ACCESS TO THIRD PARTY SITES</value>
+  </data>
+  <data name="ltrUsage.Paragraph[0].Text" xml:space="preserve">
+    <value>The Services are being offered to USER for USER's personal use. USER agrees to use the Services only to book appointments at participating Salons and then honour those appointments by arriving at the Salon(s) on time and paying for the appointment(s). Resale or attempted resale of appointments is prohibited, and is grounds for, among other things, cancellation. SalonAddict expressly reserves all its rights and remedies under applicable state and federal law.</value>
+  </data>
+  <data name="ltrUsage.Paragraph[1].Text" xml:space="preserve">
+    <value>Any and all other uses which are unlawful or in violation of this Agreement's terms and conditions are prohibited. SalonAddict reserves the right, in its sole discretion, to refuse service, terminate accounts, remove or edit content, or cancel appointments.</value>
+  </data>
+  <data name="ltrUsage.Text" xml:space="preserve">
+    <value>4. USAGE GUIDELINES</value>
+  </data>
+  <data name="ltrUserAgreement.Paragraph[0].Text" xml:space="preserve">
+    <value>This USER Agreement (the "Agreement") and the policies referred to herein contain the complete terms and conditions that apply to your use of the salon booking services (the "Services") being offered at the URL http://www.salonaddict.co.uk and all affiliated websites and mobile applications owned and operated solely by SalonAddict Ltd, along with its parent company, subsidiaries or other affiliated companies(collectively, the "SalonAddict Site"). As used in this Agreement, "SalonAddict" refers to SalonAddict Ltd; its parent company; its subsidiaries and other affiliated companies; and "USER" or "you" refers to you. USE OF THE SERVICES AND THE SALONADDICT SITE CONSTITUTES KNOWING ACCEPTANCE AND ACKNOWLEDGEMENT OF THIS USER AGREEMENT, AND SALON ADDICTS TERMS AND CONDITIONS (COLLECTIVELY, THE “SALONADDICT POLICIES)”.</value>
+  </data>
+  <data name="ltrUserAgreement.Paragraph[1].Text" xml:space="preserve">
+    <value>SalonAddict may modify this Agreement's terms and conditions at any time without notice. Continued use of the Services and the SalonAddict Site after a change in this Agreement, or after implementation of any other new policy constitutes acceptance of such change or policy. IF YOU DO NOT AGREE TO THE TERMS OF THIS AGREEMENT OR ANY REVISED VERSION OF THIS AGREEMENT, PLEASE DO NOT USE THIS SITE.</value>
+  </data>
+  <data name="ltrUserAgreement.Text" xml:space="preserve">
+    <value>User Agreement:</value>
+  </data>
+  <data name="ltrWaiver.Paragraph[0].Text" xml:space="preserve">
+    <value>Any waiver of any provision of this Agreement, or a delay by any party in the enforcement of any right hereunder, shall neither be construed as a continuing waiver nor create an expectation of non-enforcement of that or any other provision or right.</value>
+  </data>
+  <data name="ltrWaiver.Text" xml:space="preserve">
+    <value>15. WAIVER</value>
+  </data>
+  <data name="ltrWhatWeDo.Paragraph[0].Text" xml:space="preserve">
+    <value>SalonAddict provides the Services to USER for the purpose of assisting USER in securing appointments at participating third party salons (each a "Salon"). In response to a USER's online request, the SalonAddict Site contacts the Salon's database of appointments. The availability of appointments is determined at the time of USER's query. Once an appointment is made by USER, SalonAddict will provide confirmation of the appointment to USER by email. By using the Services, USER agrees to receive appointment confirmations by email after booking an appointment through the SalonAddict Site.</value>
+  </data>
+  <data name="ltrWhatWeDo.Text" xml:space="preserve">
+    <value>1. WHAT WE DO</value>
+  </data>
+  <data name="Page.Title" xml:space="preserve">
+    <value>Salon booking availability</value>
+  </data>
+</root>

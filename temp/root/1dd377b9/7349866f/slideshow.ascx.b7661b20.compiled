@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Modules/SlideShow.ascx" hash="e5c9eca6977318" filehash="201914c2c647e34a" flags="110000" assembly="App_Web_iuwcbyzr" type="ASP.modules_slideshow_ascx">
+    <filedeps>
+        <filedep name="/Modules/DropDownLists/CityTownDropDownList.ascx" />
+        <filedep name="/Modules/DropDownLists/LocalityDropDownList.ascx" />
+        <filedep name="/Modules/DropDownLists/ServiceCategoryDropDownList.ascx" />
+        <filedep name="/Modules/DropDownLists/ServiceTypeDropDownList.ascx" />
+        <filedep name="/Modules/SlideShow.ascx" />
+        <filedep name="/Modules/TextBoxes/TextBox.ascx" />
+        <filedep name="/Templates/SearchPanelOne.ascx" />
+    </filedeps>
+</preserve>

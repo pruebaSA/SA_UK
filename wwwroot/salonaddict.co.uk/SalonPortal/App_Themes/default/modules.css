@@ -1,0 +1,337 @@
+﻿/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	WELCOME LOGIN VIEW CONTROL
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.welcome-login-view-module
+{
+	position:absolute;
+	bottom:15px;
+	right:15px;
+}
+
+.welcome-login-view-module ul
+{
+	list-style:none;
+	padding:0px;
+	margin:0px;
+}
+
+.welcome-login-view-module ul li
+{
+	display:inline;
+}
+
+.welcome-login-view-module ul li a
+{
+    text-decoration:underline;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	CONTENT TITLE CONTROL
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.content-title-module
+{
+	font-size:27px;
+	font-family:Arial;
+	font-weight:bold;
+	margin:5px;
+	margin-left:35px;
+	color:#fff;
+}
+
+.highlight
+{
+	color:#ef2869;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	MENU CONTROL
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.menu-module
+{
+	position:relative;
+	padding-top:9px;
+	height:61px;
+}
+
+.menu-module ul
+{
+	padding:0px;
+	margin:0px;
+	list-style:none;
+}
+
+.menu-module ul li
+{
+	float:left;
+}
+
+.menu-module ul li a
+{
+	display:block;
+	float:left;
+	height:52px;
+	font-size:15px;
+	font-family:Arial;
+	font-weight:bold;
+	color:#e7e7e7;
+	line-height:42px;
+	padding-left:8px;
+	padding-right:8px;
+	text-decoration:none;
+}
+
+.menu-module ul li a:hover
+{
+	color:#fff;
+	background:url('images/bg_menu_item_ro.png') no-repeat center;
+}
+
+.menu-module ul li.selected a
+{
+	color:#fff;
+	text-decoration:underline;
+	background:url('images/bg_menu_item_ro.png') no-repeat center;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	MENU CONTROL (Secure Area)
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.secure-area-menu-module
+{
+}
+
+.secure-area-menu-module .title
+{
+	font-size:18px;
+	color:#ef2869;
+	font-weight:bold;
+	display:block;
+	padding-bottom:10px;
+}
+
+.secure-area-menu
+{
+}
+
+.secure-area-menu .AspNet-Menu-Vertical
+{
+}
+
+.secure-area-menu .AspNet-Menu-Vertical ul.AspNet-Menu
+{
+
+}
+
+.secure-area-menu .AspNet-Menu-Vertical ul.AspNet-Menu li
+{
+	width:180px;
+	padding: 0 3px 0 3px;
+	border-top:solid 1px #d5d5d5;
+}
+
+.secure-area-menu .AspNet-Menu-Vertical ul.AspNet-Menu li.AspNet-Menu-Leaf
+{
+	display: block;
+}
+
+.secure-area-menu ul.AspNet-Menu li a
+{
+	display:block;
+	padding-top:5px;
+	padding-bottom:5px;
+}
+
+.secure-area-menu ul.AspNet-Menu li a, ul.AspNet-Menu li span
+{
+	font-family:Tahoma;
+	font-size:13px;
+	color:#666;
+	font-weight:normal;
+	display:block;
+}
+
+.secure-area-menu ul.AspNet-Menu li.AspNet-Menu-Leaf a
+{
+	padding-left:20px;
+    background:url('images/bullet.gif') no-repeat left center;
+}
+
+.secure-area-menu ul.AspNet-Menu li.AspNet-Menu-Leaf a:hover
+{
+	font-weight:bold;
+}
+
+.secure-area-menu ul.AspNet-Menu li a img
+{
+
+}
+/* selected / active link */
+
+.secure-area-menu .AspNet-Menu-Selected /* this tier is selected */
+{
+	font-weight: bold !important;
+}
+
+.secure-area-menu .AspNet-Menu-ChildSelected /* a tier below this one is selected */
+{
+	font-weight: bold !important;
+}
+
+.secure-area-menu .AspNet-Menu-ParentSelected /* a tier above this one is selected */
+{
+
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	SCHEDULE CALENDAR HEADER
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.calendar-schedule-header-wrapper
+{
+	position:relative;
+	background:#e3e3e3;
+	width:950px;
+}
+
+.calendar-schedule-header-wrapper .calendar-schedule-header
+{
+	position:relative;
+	width:900px;
+	margin:0 auto;
+	height:30px;
+}
+
+.calendar-schedule-header-wrapper .calendar-schedule-header .schedule-header-month,
+.calendar-schedule-header-wrapper .calendar-schedule-header .schedule-header-month-selected,
+.calendar-schedule-header-wrapper .calendar-schedule-header .schedule-header-month-disabled
+{
+	display:block;
+	height:20px;
+	width:24px;
+	padding-left:5px;
+	padding-right:5px;
+	line-height:20px;
+	vertical-align:middle;
+	color:#333;
+	font-weight:bold;
+	margin:0 auto;
+}
+
+.calendar-schedule-header-wrapper .calendar-schedule-header .schedule-header-month-selected,
+.calendar-schedule-header-wrapper .calendar-schedule-header .schedule-header-month:hover
+{
+	color:#fff;
+	background:#333;
+}
+
+.calendar-schedule-header-wrapper .calendar-schedule-header .schedule-header-month-disabled
+{
+	color:#aaa;
+}
+
+.calendar-schedule-header-wrapper .calendar-schedule-daymenu-wrapper
+{
+	background:#ef2869;
+	border-top:solid 1px #fff;
+	height:35px;
+	padding-left:8px;
+}
+
+.calendar-schedule-header-wrapper .calendar-schedule-daymenu
+{
+	height:35px;
+}
+
+.calendar-schedule-header-wrapper .calendar-schedule-daymenu .schedule-header-day,
+.calendar-schedule-header-wrapper .calendar-schedule-daymenu .schedule-header-weekend,
+.calendar-schedule-header-wrapper .calendar-schedule-daymenu .schedule-header-day-selected
+{
+	display:block;
+	padding:2px;
+	margin-left:5px;
+	margin-right:4px;
+	width:17px;
+	height:17px;
+	line-height:20px;
+	vertical-align:middle;
+	color:#000;
+	background:#fff;
+	text-align:center;
+	font-weight:normal;
+}
+
+.calendar-schedule-header-wrapper .calendar-schedule-daymenu .schedule-header-weekend
+{
+	background:#6a6969;
+	color:#fff;
+}
+
+
+.calendar-schedule-header-wrapper .calendar-schedule-daymenu .schedule-header-day-selected,
+.calendar-schedule-header-wrapper .calendar-schedule-daymenu .schedule-header-day:hover,
+.calendar-schedule-header-wrapper .calendar-schedule-daymenu .schedule-header-weekend:hover
+{
+	background:#eee748;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	SCHEDULE CALENDAR
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.schedule-calendar-wrapper
+{
+	padding:9px;
+	width:930px;
+	margin-top:5px;
+	border:solid 1px #e3e3e3;
+}
+
+.schedule-calendar-wrapper .calendar td
+{
+	border-left:solid 1px #e7e7e7;
+	vertical-align:top;
+}
+
+.schedule-calendar-wrapper .calendar .week,
+.schedule-calendar-wrapper .calendar .week-selected
+{
+	width:122px;
+	padding:5px;
+	line-height:15px;
+	color:#333;
+    font-weight:normal;
+	background:#d5d5d5;
+	text-align:center;
+}
+
+.schedule-calendar-wrapper .calendar .week-selected
+{
+	background:#eee748;
+}
+
+.schedule-calendar-wrapper .calendar .calendar-item
+{
+	position:relative;
+	border:solid 1px #d5d5d5;
+	margin:5px;
+	padding:5px;
+	color:#fff;
+	min-height:35px;
+}
+
+.schedule-calendar-delete-button
+{
+	position:absolute;
+	top:0px;
+	right:0px;
+}

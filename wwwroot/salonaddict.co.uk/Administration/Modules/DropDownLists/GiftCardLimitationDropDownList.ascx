@@ -1,0 +1,4 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="GiftCardLimitationDropDownList.ascx.cs" Inherits="SalonAddict.Administration.Modules.GiftCardLimitationDropDownList" %>
+<asp:DropDownList ID="ddlValue" runat="server" AutoPostBack="true" ></asp:DropDownList>
+<asp:RequiredFieldValidator ID="rfvValue" runat="server" ControlToValidate="ddlValue" ErrorMessage="Gift card limitation is a required field." Display="None" ></asp:RequiredFieldValidator>
+<ajaxToolkit:ValidatorCalloutExtender runat="Server" ID="rfvValueExtender" TargetControlID="rfvValue" HighlightCssClass="validator-highlight" />

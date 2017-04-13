@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BackLink" xml:space="preserve">
+    <value>&lt;span class="highlight" &gt;(Back)&lt;/span&gt;</value>
+  </data>
+  <data name="ddlValue_Item_0_Text" xml:space="preserve">
+    <value>-- select  --</value>
+  </data>
+  <data name="Menu_Tab_Home" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="SecureAreaMenu_Availability_Description" xml:space="preserve">
+    <value>Manage staff availability</value>
+  </data>
+  <data name="SecureAreaMenu_Availability_Title" xml:space="preserve">
+    <value>Availability</value>
+  </data>
+  <data name="SecureAreaMenu_Business_Description" xml:space="preserve">
+    <value>Manage salon</value>
+  </data>
+  <data name="SecureAreaMenu_Business_Title" xml:space="preserve">
+    <value>Salon</value>
+  </data>
+  <data name="SecureAreaMenu_Dashboard_Description" xml:space="preserve">
+    <value>View dashboard</value>
+  </data>
+  <data name="SecureAreaMenu_Dashboard_Title" xml:space="preserve">
+    <value>Dashboard</value>
+  </data>
+  <data name="SecureAreaMenu_Appointments_Description" xml:space="preserve">
+    <value>View appointments</value>
+  </data>
+  <data name="SecureAreaMenu_Appointments_Title" xml:space="preserve">
+    <value>Appointments</value>
+  </data>
+  <data name="SecureAreaMenu_Services_Description" xml:space="preserve">
+    <value>Manage salon services</value>
+  </data>
+  <data name="SecureAreaMenu_Services_Title" xml:space="preserve">
+    <value>Services</value>
+  </data>
+  <data name="SecureAreaMenu_Staff_Description" xml:space="preserve">
+    <value>Manage salon staff</value>
+  </data>
+  <data name="SecureAreaMenu_Staff_Title" xml:space="preserve">
+    <value>Staff</value>
+  </data>
+  <data name="SecureAreaMenu_Title" xml:space="preserve">
+    <value>Menu</value>
+  </data>
+  <data name="Validation_EmailRequired" xml:space="preserve">
+    <value>Email is a required field</value>
+  </data>
+  <data name="Validation_WrongEmailFormat" xml:space="preserve">
+    <value>Wrong email format</value>
+  </data>
+  <data name="WelcomeLoginView_Link_Account_Text" xml:space="preserve">
+    <value>Account</value>
+  </data>
+  <data name="WelcomeLoginView_Link_Logout_Text" xml:space="preserve">
+    <value>Logout</value>
+  </data>
+  <data name="WelcomeLoginView_Welcome_Message" xml:space="preserve">
+    <value>Welcome back, {0}</value>
+  </data>
+  <data name="ScheduleCalendar_Header_April" xml:space="preserve">
+    <value>APR</value>
+  </data>
+  <data name="ScheduleCalendar_Header_August" xml:space="preserve">
+    <value>AUG</value>
+  </data>
+  <data name="ScheduleCalendar_Header_December" xml:space="preserve">
+    <value>DEC</value>
+  </data>
+  <data name="ScheduleCalendar_Header_February" xml:space="preserve">
+    <value>FEB</value>
+  </data>
+  <data name="ScheduleCalendar_Header_January" xml:space="preserve">
+    <value>JAN</value>
+  </data>
+  <data name="ScheduleCalendar_Header_July" xml:space="preserve">
+    <value>JUL</value>
+  </data>
+  <data name="ScheduleCalendar_Header_June" xml:space="preserve">
+    <value>JUN</value>
+  </data>
+  <data name="ScheduleCalendar_Header_March" xml:space="preserve">
+    <value>MAR</value>
+  </data>
+  <data name="ScheduleCalendar_Header_May" xml:space="preserve">
+    <value>MAY</value>
+  </data>
+  <data name="ScheduleCalendar_Header_November" xml:space="preserve">
+    <value>NOV</value>
+  </data>
+  <data name="ScheduleCalendar_Header_October" xml:space="preserve">
+    <value>OCT</value>
+  </data>
+  <data name="ScheduleCalendar_Header_September" xml:space="preserve">
+    <value>SEP</value>
+  </data>
+  <data name="Calendar_Delete_Message" xml:space="preserve">
+    <value>Are you sure?</value>
+  </data>
+  <data name="ScheduleCalendar_Header_ChangeWeek" xml:space="preserve">
+    <value>CHANGE WEEK</value>
+  </data>
+  <data name="Footer_Link_Contact" xml:space="preserve">
+    <value>Contact Us</value>
+  </data>
+  <data name="Footer_Link_Home" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="Footer_Link_Privacy" xml:space="preserve">
+    <value>Privacy Policy</value>
+  </data>
+  <data name="Footer_Link_Terms" xml:space="preserve">
+    <value>Terms of Use</value>
+  </data>
+  <data name="Validation_LatitudeRequired" xml:space="preserve">
+    <value>Latitude is a required field.</value>
+  </data>
+  <data name="Validation_LongitudeRequired" xml:space="preserve">
+    <value>Longitude is a required field.</value>
+  </data>
+  <data name="Validation_WrongLatitudeFormat" xml:space="preserve">
+    <value>Invalid latitude.</value>
+  </data>
+  <data name="Validation_WrongLongitudeFormat" xml:space="preserve">
+    <value>Invalid longitude.</value>
+  </data>
+</root>

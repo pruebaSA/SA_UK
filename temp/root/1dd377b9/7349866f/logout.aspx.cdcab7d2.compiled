@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Logout.aspx" hash="ff1d2e3087ca3b56" filehash="f278d250f56796b9" flags="110000" assembly="App_Web_dbnfrg1u" type="ASP.logout_aspx">
+    <filedeps>
+        <filedep name="/Logout.aspx" />
+        <filedep name="/MasterPages/Root.Master" />
+        <filedep name="/Modules/Footer.ascx" />
+        <filedep name="/Modules/Header.ascx" />
+        <filedep name="/Modules/Menu.ascx" />
+        <filedep name="/Modules/Navbar.ascx" />
+        <filedep name="/Modules/TextBoxes/EmailTextBox.ascx" />
+        <filedep name="/Modules/TextBoxes/TextBox.ascx" />
+        <filedep name="/Modules/WebAnalytics.ascx" />
+        <filedep name="/Templates/NewsletterSignupOne.ascx" />
+        <filedep name="/Templates/NewsletterSignupTwo.ascx" />
+    </filedeps>
+</preserve>

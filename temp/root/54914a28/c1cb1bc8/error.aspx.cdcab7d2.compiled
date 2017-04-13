@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Error.aspx" hash="feedcbb17ca940fa" filehash="e910b0968038c508" flags="110000" assembly="App_Web_q3q0fwl1" type="ASP.error_aspx">
+    <filedeps>
+        <filedep name="/Error.aspx" />
+        <filedep name="/MasterPages/OneColumn.master" />
+        <filedep name="/MasterPages/Root.Master" />
+        <filedep name="/Modules/Footer.ascx" />
+        <filedep name="/Modules/NoScript.ascx" />
+    </filedeps>
+</preserve>

@@ -1,0 +1,10 @@
+﻿<asp:Button runat="server" SkinID="SubmitButton" CssClass="button-submit" />
+<asp:Button runat="server" SkinID="SubmitButtonMini" CssClass="button-submit-mini" />
+<asp:Button runat="server" SkinID="SubmitButtonSecure" CssClass="button-submit-secure" />
+<asp:Button runat="server" SkinID="SubmitButtonMiniSecure" CssClass="button-submit-mini-secure" />
+
+<asp:LinkButton runat="server" SkinID="SchedulingAddButton" CssClass="lbutton-scheduled-add" />
+
+<asp:ImageButton runat="server" SkinID="GridRemoveImageButton" ImageUrl="~/App_Themes/Black/images/grid-button-remove.png" CssClass="ibutton-grid-remove" />
+<asp:ImageButton runat="server" SkinID="GridEditImageButton" ImageUrl="~/App_Themes/Black/images/grid-button-edit.png" CssClass="ibutton-grid-edit" />
+<asp:ImageButton runat="server" SkinID="CalendarImageButton" ImageUrl="~/App_Themes/Black/images/ico-calendar.png" CssClass="ibutton-calendar" />

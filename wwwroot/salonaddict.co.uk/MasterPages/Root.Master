@@ -1,0 +1,47 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Root.master.cs" Inherits="SalonAddict.MasterPages.Root" %>
+<%@ Register TagPrefix="SA" TagName="Navbar" Src="~/Modules/Navbar.ascx" %>
+<%@ Register TagPrefix="SA" TagName="Header" Src="~/Modules/Header.ascx" %>
+<%@ Register TagPrefix="SA" TagName="Footer" Src="~/Modules/Footer.ascx" %>
+<%@ Register TagPrefix="SA" TagName="WebAnalytics" Src="~/Modules/WebAnalytics.ascx" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="robots" content="index,follow" />
+    <meta name="revisit-after" content="3 days" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="google-site-verification" content="aTll-wLh1RN32KbY8wbOb_q4JBpg1inkoSVMJbSGNzg" />
+    <asp:Literal ID="image_src" runat="server" EnableViewState="false" ></asp:Literal>
+    <asp:Literal ID="jquery" runat="server" EnableViewState="false" ></asp:Literal>
+    <!--[if lt IE 7]>
+        <style type="text/css" >
+            img, a, input, li a { behavior: url("/files/iepngfix.htc") }
+        </style>
+    <![endif]-->
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="sm" runat="server" EnableScriptGlobalization="true" EnablePartialRendering="true" ></asp:ScriptManager>
+        <asp:ScriptManagerProxy ID="smp" runat="server" >
+           <Scripts>
+              <asp:ScriptReference Path="~/js/SalonAddict.Utilities.js" />
+           </Scripts>
+        </asp:ScriptManagerProxy>
+        <SA:Navbar ID="Navbar" runat="server" />
+        <SA:Header ID="Header" runat="server" />
+        <div class="master-root-wrapper" >
+        <div class="master-root" >
+            <asp:ContentPlaceHolder id="ph" runat="server"></asp:ContentPlaceHolder>
+        </div>
+        </div>
+        <SA:Footer ID="Footer" runat="server" />
+        <SA:WebAnalytics ID="WebAnalytics" runat="server" />
+    </form>
+    <asp:Literal ID="AW" runat="server" EnableViewState="false" ></asp:Literal>
+    <script src="https://www.dwin1.com/4439.js" type="text/javascript" defer="defer"></script>
+</body>
+</html>

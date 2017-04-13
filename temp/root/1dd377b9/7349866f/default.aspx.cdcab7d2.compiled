@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Default.aspx" hash="ff1d2e3087ca3b56" filehash="3fb0a50dfbe10cbc" flags="110000" assembly="App_Web_dbnfrg1u" type="ASP.default_aspx">
+    <filedeps>
+        <filedep name="/Default.aspx" />
+        <filedep name="/MasterPages/Root.Master" />
+        <filedep name="/Modules/DropDownLists/CityTownDropDownList.ascx" />
+        <filedep name="/Modules/DropDownLists/LocalityDropDownList.ascx" />
+        <filedep name="/Modules/DropDownLists/ServiceCategoryDropDownList.ascx" />
+        <filedep name="/Modules/DropDownLists/ServiceTypeDropDownList.ascx" />
+        <filedep name="/Modules/Footer.ascx" />
+        <filedep name="/Modules/Header.ascx" />
+        <filedep name="/Modules/Menu.ascx" />
+        <filedep name="/Modules/Navbar.ascx" />
+        <filedep name="/Modules/PromotionSummary.ascx" />
+        <filedep name="/Modules/QuickSearchSummary.ascx" />
+        <filedep name="/Modules/SlideShow.ascx" />
+        <filedep name="/Modules/TextBoxes/EmailTextBox.ascx" />
+        <filedep name="/Modules/TextBoxes/TextBox.ascx" />
+        <filedep name="/Modules/WebAnalytics.ascx" />
+        <filedep name="/Templates/NewsletterSignupOne.ascx" />
+        <filedep name="/Templates/NewsletterSignupTwo.ascx" />
+        <filedep name="/Templates/SearchPanelOne.ascx" />
+    </filedeps>
+</preserve>

@@ -1,0 +1,4 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="OverrideInitialUnitTypeDropDownList.ascx.cs" Inherits="SalonAddict.Administration.Modules.OverrideInitialUnitTypeDropDownList" %>
+<asp:DropDownList ID="ddlValue" runat="server" AutoPostBack="true" ></asp:DropDownList>
+<asp:RequiredFieldValidator ID="rfvValue" runat="server" ControlToValidate="ddlValue" ErrorMessage="Override initial unit type is a required field." Display="None" ></asp:RequiredFieldValidator>
+<ajaxToolkit:ValidatorCalloutExtender runat="Server" ID="rfvValueExtender" TargetControlID="rfvValue" HighlightCssClass="validator-highlight" />

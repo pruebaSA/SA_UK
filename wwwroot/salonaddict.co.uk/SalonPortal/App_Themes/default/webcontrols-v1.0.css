@@ -1,0 +1,203 @@
+﻿/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	TEXTBOXES
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.default
+{
+	width:180px;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	LABELS
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.label
+{
+	font-weight:bold;
+}
+
+.disabled-textbox
+{
+	display:block;
+	width:180px;
+}
+
+
+.message
+{
+	display:block;
+	padding:15px;
+	width:95%;
+	border:solid 1px green;
+	background:#f7ffe8;
+	margin:5px 0px 15px 0px;
+}
+
+.message-error
+{
+	display:block;
+	padding:15px;
+	width:96%;
+	background:#ffebe8;
+	border:solid 1px #dd3c10;
+	margin:5px 0px 15px 0px;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	BUTTONS
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.button-login
+{
+	width:102px;
+	height:29px;
+	color:#fff;
+	text-transform:uppercase;
+	font-weight:bold;
+	font-size:13px;
+    font-family:Arial;
+    vertical-align:middle;
+	padding-left:5px;
+	padding-right:5px;
+	border:none;
+	cursor:pointer;
+	background:transparent url('images/bg_button_login.png') no-repeat;
+}
+
+.button-login:hover
+{
+	background:transparent url('images/bg_button_login_hover.png') no-repeat;
+}
+
+.button
+{
+	cursor:pointer;
+	background: url(images/bg_grey_button.gif) no-repeat 25% 50% #333;
+	border: 1px solid #000;
+	margin-bottom: 3px;
+	color: #fff;
+	height: 22px;
+	padding: 0 10px 0 10px;
+	font-size: 11px;
+	font-weight: bold;
+}
+
+.button:hover
+{
+	background: url(images/bg_grey_button_hover.png) no-repeat 25% 50% #333;
+}
+
+.small-button-pink
+{
+	cursor:pointer;
+	/*background: #3d8e2b;*/
+	background:#ef2869;
+	border: 1px solid #000;
+	margin-bottom: 3px;
+	color: #fff;
+	height: 15px;
+	padding: 0 8px 0 8px;
+	font-size: 11px;
+	font-weight: bold;
+}
+
+.small-button-grey
+{
+	cursor:pointer;
+	/*background: #bf0a0a;*/
+	background:#666;
+	border: 1px solid #000;
+	margin-bottom: 3px;
+	color: #fff;
+	height: 15px;
+	padding: 0 8px 0 8px;
+	font-size: 11px;
+	font-weight: bold;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	CALENDAR EXTENDER
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.calendar .ajax__calendar_container   
+{
+    background-color: #f5f5f5; 
+    border:solid 1px #cccccc;
+}
+
+.calendar .ajax__calendar_header  
+{
+    background-color: #f7f7f7; 
+    margin-bottom: 4px;
+}
+
+.calendar .ajax__calendar_title,
+.calendar .ajax__calendar_next,
+.calendar .ajax__calendar_prev    
+{
+    color: #000; 
+    padding-top: 3px;
+}
+
+.calendar .ajax__calendar_body    
+{
+	color:#555;
+    background-color: #fff; 
+    border: solid 1px #cccccc;
+}
+
+.calendar .ajax__calendar_footer  
+{
+	color:#555;
+}
+
+.calendar .ajax__calendar_dayname 
+{
+    text-align:center; 
+    font-weight:bold; 
+    margin-bottom: 4px; 
+    margin-top: 2px;
+}
+
+.calendar .ajax__calendar_day 
+{
+    text-align:center;
+}
+
+.calendar .ajax__calendar_hover .ajax__calendar_day,
+.calendar .ajax__calendar_hover .ajax__calendar_month,
+.calendar .ajax__calendar_hover .ajax__calendar_year,
+.calendar .ajax__calendar_active  
+{
+    color: #ef2869;
+    font-weight: bold; 
+    background-color: #ffffff;
+}
+
+.calendar .ajax__calendar_today   
+{
+    font-weight:bold;
+}
+
+.calendar .ajax__calendar_other,
+.calendar .ajax__calendar_hover .ajax__calendar_today,
+.calendar .ajax__calendar_hover .ajax__calendar_title 
+{
+    color: #bbbbbb;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	AJAX TOOL KIT - Validaion Extenders
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.validator-highlight
+{
+	background-color: #fffbd5;
+}
+

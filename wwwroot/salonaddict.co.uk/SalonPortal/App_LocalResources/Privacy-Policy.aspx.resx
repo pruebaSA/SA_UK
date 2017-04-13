@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ContentTitle.Text" xml:space="preserve">
+    <value>&lt;span class="highlight" &gt;Our&lt;/span&gt; Privacy &lt;span class="highlight" &gt;Policy&lt;/span&gt;</value>
+  </data>
+  <data name="Topic.Body" xml:space="preserve">
+    <value>&lt;p&gt;We are committed to protecting the privacy of all visitors to www.salonaddict.co.uk and to complying with our obligations under the Data Protection Acts 1988 and 2003. Please read the following privacy policy which explains how we use and protect the information that you provide us with.&lt;/p&gt;&lt;p&gt;By visiting and/or ordering services on this Website, you consent to the collection, use and transfer of your information under the terms of this policy.&lt;/p&gt;&lt;p&gt;Any external links to other websites are clearly identifiable as such, and we are not responsible for the content or the privacy policies of these other websites.&lt;/p&gt;&lt;br/&gt;&lt;br/&gt;&lt;ol&gt;&lt;li&gt;&lt;b&gt;INFORMATION THAT WE COLLECT FROM YOU&lt;/b&gt;&lt;p&gt;When you visit or make a SalonAddict booking on the Website, you may be asked to provide information about yourself including your name, contact details and credit or debit card information. We may also collect information about your usage of the Website and information about you from the messages you post to the Website and the e-mails or letters you send to us.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;USE OF YOUR INFORMATION&lt;/b&gt;&lt;p&gt;Your information will enable us to provide you with access to the relevant parts of the Website, and to supply the services you have requested. It will also enable us to bill you and to contact you where necessary concerning our services. We will also use and analyse the information we collect so that we can administer, support, improve and develop our business. We may use your information to contact you for your views on our services, and to notify you occasionally about important changes or developments to the Website or our services. If you have consented, we may use your information to let you know about our other products and services that may be of interest to you including services that may be the subject of direct marketing, and we may contact you by telephone / SMS as well as by e-mail. If you change your mind about being contacted in the future, please let us know.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;DISCLOSURE OF YOUR INFORMATION&lt;/b&gt;&lt;p&gt;The information you provide to us may be accessed by or given to our staff working outside Ireland and third parties including companies within the SalonAddict Group who act for us for the purposes set out in this policy or for other purposes approved by you. Those parties process information, process credit card payments and provide support services for us. If you have consented we may allow carefully selected third parties, including our affiliates and associates, to contact you occasionally about services that may be of interest to you. They may contact you by telephone / SMS as well as by e-mail. If you change your mind about being contacted by these companies in the future, please let us know. Finally, if our business enters into a joint venture with or is sold to or merged with another business entity, your information may be disclosed to our new business partners or owners. Countries outside the European Economic Area do not always have strong data protection laws. However, we will always take steps to ensure that your information is used by third parties in accordance with this policy. Unless required to do so by law, we will not otherwise share, sell or distribute any of the information you give us without your consent.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;Cookies&lt;/b&gt;&lt;p&gt;Cookies are small amounts of information which we store on your computer. Unless you have told us you object, our system will issue cookies to your computer when you log on to the Website. Cookies make it easier for you to log on to and use the Website during future visits. They also allow us to monitor website traffic and to personalise the content of the site for you. You may set up your computer to reject cookies but if you do that, you may not be able to use some features on the Website. If you do not wish to receive cookies in the future, please let us know.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;SECURITY AND DATA RETENTION&lt;/b&gt;&lt;p&gt;The nature of the Internet is such that we cannot guarantee or warrant the security of any information you transmit to us via the Internet. No data transmission over the Internet can be guaranteed to be 100% secure. However, we take steps (including appropriate technical and organisational measures) to protect your information from unauthorised access and against unlawful processing, accidental loss, destruction and damage. We will keep your information for a reasonable period or as long as the law requires.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;ACCESSING AND UPDATING&lt;/b&gt;&lt;p&gt;In accordance with our obligations under the Data Protection Acts 1988 and 2003, you have the right to see the information we hold about you and to ask us to make any changes to ensure that it is accurate and up to date. If you wish to do this, please contact us. We have the right to charge a fee of €6.35 to meet our costs in giving this information.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;CHANGES TO OUR PRIVACY POLICY&lt;/b&gt;&lt;p&gt;Any changes to our Privacy Policy will be posted to the Website and, where appropriate, through e-mail notification, so you are always aware of what information we collect, how we use it, and under what circumstances, if any, we disclose it. If at any time we decide to use personal data in a manner significantly different from that stated in this policy, or otherwise disclosed to you at the time it was collected, we will notify you by email, and you will have a choice as to whether or not we use your information in the new manner.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;CONTACT&lt;/b&gt;&lt;p&gt;All comments, queries and requests relating to our use of your information are welcomed and should be addressed to &lt;a href="mailto:info@salonaddict.com" &gt;info@salonaddict.com&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;&lt;/ol&gt;&lt;br/&gt;&lt;br/&gt;</value>
+  </data>
+  <data name="Topic.Title" xml:space="preserve">
+    <value>Legal Information</value>
+  </data>
+</root>

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/SalonPortal/SecureArea/Modules/CalendarSchedule.ascx" hash="fffffff3110c36bd" filehash="99a019aa7218fc68" flags="110000" assembly="App_Web_qhbe2u0l" type="ASP.securearea_modules_calendarschedule_ascx">
+    <filedeps>
+        <filedep name="/SalonPortal/SecureArea/Modules/CalendarSchedule.ascx" />
+        <filedep name="/SalonPortal/SecureArea/Modules/CalendarScheduleHeader.ascx" />
+    </filedeps>
+</preserve>

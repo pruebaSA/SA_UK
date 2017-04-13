@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/SecureArea/Modules/SchedulingLine.ascx" hash="1164489ea708148" filehash="fffff6d2dbafd91f" flags="110000" assembly="App_Web_eq03z5d4" type="ASP.securearea_modules_schedulingline_ascx">
+    <filedeps>
+        <filedep name="/SecureArea/Modules/SchedulingLine.ascx" />
+    </filedeps>
+</preserve>

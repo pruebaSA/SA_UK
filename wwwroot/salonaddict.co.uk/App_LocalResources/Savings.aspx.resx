@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnStart.Text" xml:space="preserve">
+    <value>Go to Homepage</value>
+  </data>
+  <data name="ContentTitle.Text" xml:space="preserve">
+    <value>&lt;span class="pink"&gt;Advance &lt;/span&gt; Discounts...</value>
+  </data>
+  <data name="ContentTopic1.Body" xml:space="preserve">
+    <value>Book in advance and save money on &lt;a href="/"&gt;SalonAddict.co.uk&lt;/a&gt;. If you book an appointment for tomorrow you will pay the same price as if you booked directly over the phone. If you book further in advance you will start to see the pounds fall off the price! The higher the price of the service you are booking, the bigger the amount you will save!</value>
+  </data>
+  <data name="ContentTopic1.Title" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ContentTopic3.Body" xml:space="preserve">
+    <value>&lt;p&gt;Here are some helpful tips:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Browse our site comparing prices and customer reviews.&lt;/li&gt;&lt;li&gt;If your appointment can wait, book the following week for greater savings.&lt;/li&gt;&lt;li&gt;Book the week after that for even greater savings!&lt;/li&gt;&lt;li&gt;Book the week… You get the message!&lt;/li&gt;&lt;li&gt;If you have just had an appointment, book a follow-up straight away on our site. Why not avail of the maximum possible savings!&lt;/li&gt;&lt;/ul&gt;&lt;br/&gt;&lt;p&gt;We know that name and brand mean everything when it comes to your hair and beauty appointments. Our technique is simple... We get exclusive prices from the best salons so that you book online instead of over the phone. For prices that we feel are too good to pass up, we highlight them in our “&lt;a href="/promotions.aspx"&gt;Recommendations&lt;/a&gt;” section for you to pass on to your friends and family.&lt;/p&gt;&lt;p&gt;SalonAddict works closely with top salons to ensure that we get the best prices for our customers. At SalonAddict, we believe in providing the best prices combined with the best services which is why those of you who have booked with us before recommend us to your family and friends.&lt;/p&gt;</value>
+  </data>
+  <data name="ContentTopic3.Title" xml:space="preserve">
+    <value>The key to getting the best value, besides shopping around on our site, is simply by booking in advance.</value>
+  </data>
+  <data name="Page.Title" xml:space="preserve">
+    <value>Book a salon online - save money on salonaddict.co.uk</value>
+  </data>
+  <data name="ContentTopic2.Body" xml:space="preserve">
+    <value>The further in advance you book the bigger the savings. There are literally hundreds of different salons available to choose from. It is free to search on our site, and you won’t pay us a booking fee or a service charge. So if you have the time to search our site, comparing prices and customer reviews can pay off big time!</value>
+  </data>
+  <data name="ContentTopic2.Title" xml:space="preserve">
+    <value>The biggest key to getting the best value besides shopping around on our site is simply by booking in advance.</value>
+  </data>
+</root>

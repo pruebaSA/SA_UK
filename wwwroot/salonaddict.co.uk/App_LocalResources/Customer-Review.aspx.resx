@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnSubmitB.Text" xml:space="preserve">
+    <value>Submit Review and Rate The Staff</value>
+  </data>
+  <data name="btnSubmitS.Text" xml:space="preserve">
+    <value>Submit Staff Review</value>
+  </data>
+  <data name="cbAnonymousB.Text" xml:space="preserve">
+    <value>I do not want my first name to appear on the site.</value>
+  </data>
+  <data name="cbAnonymousS.Text" xml:space="preserve">
+    <value>I do not want my first name to appear on the site.</value>
+  </data>
+  <data name="ContentTitle.Text" xml:space="preserve">
+    <value>&lt;span class="pink"&gt;What &lt;/span&gt;Did You &lt;span class="pink"&gt;Think?&lt;/span&gt;</value>
+  </data>
+  <data name="lblHeader1.Text" xml:space="preserve">
+    <value>{0}, tell us what you think!</value>
+  </data>
+  <data name="lblHeader2.Text" xml:space="preserve">
+    <value>{0}, now tell us what you think about their staff!</value>
+  </data>
+  <data name="lblHeader3.Text" xml:space="preserve">
+    <value>Thank you for your review!</value>
+  </data>
+  <data name="lblInformation1.Text" xml:space="preserve">
+    <value>Thank you for choosing to write a review. Writing a quality review will help others make informed choices. Please have a look at the standards below to help you write a good review.</value>
+  </data>
+  <data name="lblInformation2.Text" xml:space="preserve">
+    <value>Thank you for choosing to write a review. Writing a quality review will help others make informed choices. Please have a look at the standards below to help you write a good review.</value>
+  </data>
+  <data name="lblReviewB.Text" xml:space="preserve">
+    <value>Salon Review:</value>
+  </data>
+  <data name="lblReviewS.Text" xml:space="preserve">
+    <value>Staff Review:</value>
+  </data>
+  <data name="lblSalonRating.Text" xml:space="preserve">
+    <value>Step 1: Rate Your Experience with {0}</value>
+  </data>
+  <data name="lblSalonRating1.Text" xml:space="preserve">
+    <value>Overall Satisfaction:</value>
+  </data>
+  <data name="lblSalonRating2.Text" xml:space="preserve">
+    <value>Value:</value>
+  </data>
+  <data name="lblSalonRating3.Text" xml:space="preserve">
+    <value>Customer Service:</value>
+  </data>
+  <data name="lblSalonRating4.Text" xml:space="preserve">
+    <value>Atmosphere:</value>
+  </data>
+  <data name="lblSalonRating5.Text" xml:space="preserve">
+    <value>Cleanliness:</value>
+  </data>
+  <data name="lblSalonRating6.Text" xml:space="preserve">
+    <value>Expertise:</value>
+  </data>
+  <data name="lblSalonRating7.Text" xml:space="preserve">
+    <value>Liklihood of Repeat:</value>
+  </data>
+  <data name="lblSalonReview.Text" xml:space="preserve">
+    <value>Writing Your Review - {0}</value>
+  </data>
+  <data name="lblStaffRating.Text" xml:space="preserve">
+    <value>Step 2: Rate your Experience with {0}</value>
+  </data>
+  <data name="lblStaffRating1.Text" xml:space="preserve">
+    <value>Overall Satisfaction:</value>
+  </data>
+  <data name="lblStaffRating2.Text" xml:space="preserve">
+    <value>Expertise:</value>
+  </data>
+  <data name="lblStaffRating3.Text" xml:space="preserve">
+    <value>Punctuality:</value>
+  </data>
+  <data name="lblStaffRating4.Text" xml:space="preserve">
+    <value>Customer Service:</value>
+  </data>
+  <data name="lblStaffRating5.Text" xml:space="preserve">
+    <value>Liklihood of Repeat:</value>
+  </data>
+  <data name="lblStaffReview.Text" xml:space="preserve">
+    <value>Writing Your Review - {0}</value>
+  </data>
+  <data name="lblWritingGuidelines.Text" xml:space="preserve">
+    <value>&lt;b&gt;Review Writing Guidelines&lt;/b&gt;&lt;ul&gt;&lt;li&gt;Describe your experience.&lt;/li&gt;&lt;li&gt;Why did you choose this appointment?&lt;/li&gt;&lt;li&gt;What did you love or dislike about the appointment?&lt;/li&gt;&lt;li&gt;How did SalonAddict.co.uk help you?&lt;/li&gt;&lt;/ul&gt;</value>
+  </data>
+  <data name="lblWritingStandards.Text" xml:space="preserve">
+    <value>&lt;ul&gt;&lt;li&gt;Please use Upper and Lower case only.&lt;/li&gt;&lt;li&gt;Reviews that need extensive text editing cannot be published.&lt;/li&gt;&lt;li&gt;Reviews that use offensive language or content cannot be published.&lt;/li&gt;&lt;li&gt;Please do not use HTML Tags.&lt;/li&gt;&lt;/ul&gt;</value>
+  </data>
+  <data name="Message.Text" xml:space="preserve">
+    <value>Thank you for writing your comments for our website. Reviews are updated on a daily basis so your feedback will be added shortly. </value>
+  </data>
+  <data name="Page.Title" xml:space="preserve">
+    <value>What did you think?</value>
+  </data>
+  <data name="lblStandardsHeader.Text" xml:space="preserve">
+    <value>Writing Standards</value>
+  </data>
+  <data name="lbCancelS.Text" xml:space="preserve">
+    <value>Click here if {0} was not the staff member who assisted you.</value>
+  </data>
+</root>

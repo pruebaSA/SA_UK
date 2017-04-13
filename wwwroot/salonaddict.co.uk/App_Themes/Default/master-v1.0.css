@@ -1,0 +1,30 @@
+﻿.master-root
+{
+	position:relative;
+	width:950px;
+	margin:0 auto;
+	padding-bottom:30px;
+}
+
+.master-onecolumn,
+.master-twocolumn
+{
+	position:relative;
+	min-height:400px;
+}
+
+.master-twocolumn .left
+{
+	position:relative;
+	float:left;
+	clear:right;
+	width:212px;
+}
+
+.master-twocolumn .right
+{
+	position:relative;
+	width:738px;
+	float:left;
+	clear:right;
+}

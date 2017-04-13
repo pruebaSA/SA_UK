@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/App_Themes/white/" hash="fffffff0d91b34ed" filehash="21f4f3d9a5d468b8" flags="110000" assembly="App_Theme_white.qm6e-sjv" type="ASP.white">
+    <filedeps>
+        <filedep name="/App_Themes/white/" />
+    </filedeps>
+</preserve>

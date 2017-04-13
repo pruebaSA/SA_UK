@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Tokens>
+  <Token name="-- ORDER INFORMATION" value=" " />
+  <Token name="Order Date" value="$ORDER_DATE$" />
+  <Token name="Order GUID" value="$ORDER_GUID$" />
+  <Token name="Order Reference No." value="$REFERENCE_NO$" />
+  <Token name="Balance" value="$BALANCE$" />
+  <Token name="Balance in Customer Currency" value="$BALANCE_IN_CUSTOMER_CURRENCY$" />
+  <Token name="Balance in Customer Currency (no format)" value="$BALANCE_IN_CUSTOMER_CURRENCY_NO_FORMATTING$" />
+  <Token name="Customer Currency" value="$CUSTOMER_CURRENCY$" />
+
+  <Token name="-- BILLING INFORMATION" value=" " />
+  <Token name="Billing First Name" value="$BILLING_FIRSTNAME$" />
+  <Token name="Billing Last Name" value="$BILLING_LASTNAME$" />
+  <Token name="Billing Full Name" value="$BILLING_FULLNAME$" />
+  <Token name="Billing Phone" value="$BILLING_PHONE$" />
+  <Token name="Billing Email" value="$BILLING_EMAIL$" />
+  
+  <Token name="--BUSINESS INFORMATION --" value=" " />
+  <Token name="Business Name" value="$BUSINESS_NAME$" />
+  <Token name="Business Phone" value="$BUSINESS_PHONE$" />
+  <Token name="Business Address 1" value="$BUSINESS_ADDRESSLINE1$" />
+  <Token name="Business Address 2" value="$BUSINESS_ADDRESSLINE2$" />
+  <Token name="Business City/Town" value="$BUSINESS_CITYTOWN_NAME$" />
+  <Token name="Business Area" value="$BUSINESS_AREA_NAME$" />
+  <Token name="Business County" value="$BUSINESS_COUNTY_NAME$" />
+  <Token name="Business State/Province" value="$BUSINESS_STATEPROVINCE_NAME$" />
+  <Token name="Business Zip/Postal Code" value="$BUSINESS_ZIP_POSTALCODE$" />
+  <Token name="Business Country" value="$BUSINESS_COUNTRY_NAME$" />
+
+  <Token name="--STAFF/SERVICE INFORMATION --" value=" " />
+  <Token name="Staff Name" value="$STAFF_DISPLAY_NAME$" />
+  <Token name="Service Name" value="$SERVICE_DISPLAY_NAME$" />
+  <Token name="Start Time (HH:mm)" value="$START_TIME$" />
+  <Token name="Start Date (ddd dd MMM)" value="$START_DATE_SHORT$" />
+  <Token name="Start Date (ddd dd MMM yyyy)" value="$START_DATE$" />
+  <Token name="End Time (HH:mm)" value="$END_TIME$" />
+  <Token name="End Date (ddd dd MMM yyyy)" value="$END_DATE$" />
+  <Token name="Special Instructions" value="$CUSTOMER_COMMENT$" />
+</Tokens>

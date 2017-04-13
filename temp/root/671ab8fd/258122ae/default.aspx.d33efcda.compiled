@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/widget/Default.aspx" hash="ff1995a5c10b0dc8" filehash="d10a1be9a3564b72" flags="110000" assembly="App_Web_dnmefwcw" type="ASP.widget_default_aspx">
+    <filedeps>
+        <filedep name="/MasterPages/Root.Master" />
+        <filedep name="/Modules/Footer.ascx" />
+        <filedep name="/Modules/Header.ascx" />
+        <filedep name="/Modules/Menu.ascx" />
+        <filedep name="/Modules/Navbar.ascx" />
+        <filedep name="/Modules/TextBoxes/EmailTextBox.ascx" />
+        <filedep name="/Modules/TextBoxes/TextBox.ascx" />
+        <filedep name="/Modules/WebAnalytics.ascx" />
+        <filedep name="/Templates/NewsletterSignupOne.ascx" />
+        <filedep name="/Templates/NewsletterSignupTwo.ascx" />
+        <filedep name="/widget/Default.aspx" />
+    </filedeps>
+</preserve>

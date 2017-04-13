@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Modules/Footer.ascx" hash="ff1ceda5557081d6" filehash="7656e4cb57ca2824" flags="110000" assembly="App_Web_0q5m2y1a" type="ASP.modules_footer_ascx">
+    <filedeps>
+        <filedep name="/Modules/Footer.ascx" />
+        <filedep name="/Modules/TextBoxes/EmailTextBox.ascx" />
+        <filedep name="/Modules/TextBoxes/TextBox.ascx" />
+        <filedep name="/Templates/NewsletterSignupTwo.ascx" />
+    </filedeps>
+</preserve>

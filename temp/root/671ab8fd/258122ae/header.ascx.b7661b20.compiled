@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Modules/Header.ascx" hash="ff1ceda5557081d6" filehash="fbdb20d94a3414f2" flags="110000" assembly="App_Web_ulyyiw53" type="ASP.modules_header_ascx">
+    <filedeps>
+        <filedep name="/Modules/Header.ascx" />
+        <filedep name="/Modules/Menu.ascx" />
+    </filedeps>
+</preserve>

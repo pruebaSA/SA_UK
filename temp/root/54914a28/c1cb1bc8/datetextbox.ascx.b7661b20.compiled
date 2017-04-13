@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Modules/DateTextBox.ascx" hash="11464af1181dfbb" filehash="2ab47bb2fa03" flags="110000" assembly="App_Web_zuwxiras" type="ASP.modules_datetextbox_ascx">
+    <filedeps>
+        <filedep name="/Modules/DateTextBox.ascx" />
+    </filedeps>
+</preserve>

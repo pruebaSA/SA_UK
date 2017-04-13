@@ -1,0 +1,57 @@
+[ISAPI_Rewrite]
+
+#
+# Below there is set of sample rules which can help you to make your own.
+# For detailed information see online documentation on
+# http://www.isapirewrite.com/docs/
+#
+
+# === Sample1: Emulating host-header-based virtual sites on a single site ===
+#Fix missing slash char on folders
+#RewriteCond  Host:  (.*)
+#RewriteRule  ([^.?]+[^.?/]) http\://$1$2/ [I,R]
+
+#Emulate site1
+#RewriteCond  Host:  (?:www\.)?site1\.com
+#RewriteRule  (.*)   /site1$1 [I,L]
+
+#Emulate site2
+#RewriteCond  Host:  (?:www\.)?site2\.com
+#RewriteRule  (.*)   /site2$1 [I,L]
+
+# === Sample2: Emulating host-header-based virtual sites on a single site ===
+# Fix missing slash char on folders
+#RewriteCond  Host:  (.*)
+#RewriteRule  ([^.?]+[^.?/]) http\://$1$2/ [I,R]
+
+#RewriteCond  Host:  (www\.)?(.+)
+#RewriteRule  (.*)   /$2$3
+
+# === Changing physical URLs like http://www.myhost.com/foo.asp?a=A&b=B&c=C
+# to requests like http://www.myhost.com/foo.asp~a~A~b~B~c~C
+#RewriteRule (.*?\.asp)(\?[^~]*)?~([^~]*)~([^~]*)(.*) $1(?2$2&:\?)$3=$4$5 [NS,I]
+ 
+
+# === Moving sites from UNIX to IIS. Redirecting to update old links ===
+#RewriteRule (.*)\.html $1.htm
+#RewriteRule  /~(.*)  http\://myserver/$1 [R]
+ 
+
+# === Moving site location. Redirecting to update old links ===
+#RewriteRule  (.+)  http\://newwebserver$1 [R]
+ 
+
+# === Browser-dependent content ===
+#RewriteCond  User-Agent:  .*MSIE.*
+#RewriteRule  /foo\.htm  /foo.IE.htm  [L]
+
+#RewriteCond  User-Agent:  (?:Lynx|Mozilla/[12]).*
+#RewriteRule  /foo\.htm  /foo.20.htm  [L]
+
+#RewriteRule  /foo\.htm  /foo.32.htm  [L]
+
+
+# === Blocking inline-images (stop hot linking) ===
+#RewriteCond Host: (.+)
+#RewriteCond Referer: (?!http://\1.*).*
+#RewriteRule .*\.(?:gif|jpg|png) /block.gif [I,O]

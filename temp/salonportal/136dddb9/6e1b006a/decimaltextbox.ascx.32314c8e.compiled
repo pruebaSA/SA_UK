@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/SalonPortal/SecureArea/Modules/DecimalTextBox.ascx" hash="fffffff3110c36bd" filehash="189fa63fd944" flags="110000" assembly="App_Web_sifyx01m" type="ASP.securearea_modules_decimaltextbox_ascx">
+    <filedeps>
+        <filedep name="/SalonPortal/SecureArea/Modules/DecimalTextBox.ascx" />
+    </filedeps>
+</preserve>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/MasterPages/Root.Master" hash="fffffff3110c36bd" filehash="b3f5108007c6096b" flags="110000" assembly="App_Web_1fb30w51" type="ASP.masterpages_root_master">
+    <filedeps>
+        <filedep name="/MasterPages/Root.Master" />
+        <filedep name="/Modules/Footer.ascx" />
+        <filedep name="/Modules/Header.ascx" />
+        <filedep name="/Modules/Menu.ascx" />
+        <filedep name="/Modules/Navbar.ascx" />
+        <filedep name="/Modules/TextBoxes/EmailTextBox.ascx" />
+        <filedep name="/Modules/TextBoxes/TextBox.ascx" />
+        <filedep name="/Modules/WebAnalytics.ascx" />
+        <filedep name="/Templates/NewsletterSignupOne.ascx" />
+        <filedep name="/Templates/NewsletterSignupTwo.ascx" />
+    </filedeps>
+</preserve>

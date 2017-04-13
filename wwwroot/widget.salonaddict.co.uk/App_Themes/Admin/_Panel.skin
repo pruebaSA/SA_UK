@@ -1,0 +1,10 @@
+﻿<asp:Panel runat="server" SkinID="BoxPanel" CssClass="panel-box" />
+
+<asp:Panel runat="server" SkinID="SchedulingPanel" CssClass="panel-scheduling" />
+
+<ajaxToolkit:Accordion 
+    runat="server"
+    CssClass="accordion-ajax" 
+    HeaderCssClass="accordion-header" 
+    HeaderSelectedCssClass="accordion-header-selected" 
+    ContentCssClass="accordion-content" /> 
