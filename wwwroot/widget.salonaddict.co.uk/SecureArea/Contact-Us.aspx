@@ -18,10 +18,10 @@
            <tr>
               <td><%= base.GetLocaleResourceString("ltrAddress.Text") %></td>
               <td>
-                 <div style="margin-bottom:5px;">SalonAddict Ltd.</div>
-                 <div style="margin-bottom:5px;">20 Harcourt St.</div>
-                 <div style="margin-bottom:5px;">Dublin 2</div>
-                 <div>Ireland</div>
+                 <div style="margin-bottom:5px;">3rd Floor, 207 Regent Street.</div>
+                 <div style="margin-bottom:5px;">London.</div>
+                 <div style="margin-bottom:5px;">W1B 3HH</div>
+                 <div>UK</div>
               </td>
            </tr>
            <tr>
