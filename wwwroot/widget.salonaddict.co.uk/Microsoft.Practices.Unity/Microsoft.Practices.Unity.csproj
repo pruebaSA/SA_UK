@@ -1,0 +1,203 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>9dd7aeec-899a-4616-ab86-6c08714b818f</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>Microsoft.Practices.Unity</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.ServiceLocation" />
+    <Reference Include="System.Core" />
+    <Reference Include="System" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="Microsoft\Practices\Unity\NamedTypesRegistry.cs" />
+    <Compile Include="Microsoft\Practices\ObjectBuilder2\IBuilderPolicy.cs" />
+    <Compile Include="Microsoft\Practices\ObjectBuilder2\IPropertySelectorPolicy.cs" />
+    <Compile Include="Microsoft\Practices\Unity\ObjectBuilder\SpecifiedPropertiesSelectorPolicy.cs" />
+    <Compile Include="Microsoft\Practices\ObjectBuilder2\ILifetimePolicy.cs" />
+    <Compile Include="Microsoft\Practices\Unity\LifetimeManager.cs" />
+    <Compile Include="Microsoft\Practices\ObjectBuilder2\IRequiresRecovery.cs" />
+    <Compile Include="Microsoft\Practices\Unity\SynchronizedLifetimeManager.cs" />
+    <Compile Include="Microsoft\Practices\Unity\IUnityContainerExtensionConfigurator.cs" />
+    <Compile Include="Microsoft\Practices\ObjectBuilder2\IStrategyChain.cs" />
+    <Compile Include="Microsoft\Practices\ObjectBuilder2\StrategyChain.cs" />
+    <Compile Include="Microsoft\Practices\ObjectBuilder2\IBuildPlanCreatorPolicy.cs" />
+    <Compile Include="Microsoft\Practices\ObjectBuilder2\BuildOperation.cs" />
+    <Compile Include="Microsoft\Practices\ObjectBuilder2\PropertyOperation.cs" />
+    <Compile Include="Microsoft\Practices\ObjectBuilder2\ResolvingPropertyValueOperation.cs" />
+    <Compile Include="Microsoft\Practices\ObjectBuilder2\SelectedMemberWithParameters.cs" />
+    <Compile Include="Microsoft\Practices\ObjectBuilder2\SelectedMemberWithParameters!1.cs" />
+    <Compile Include="Microsoft\Practices\Unity\StaticFactory\IStaticFactoryConfiguration.cs" />
+    <Compile Include="Microsoft\Practices\Unity\ResolverOverride.cs" />
+    <Compile Include="Microsoft\Practices\Unity\ParameterOverride.cs" />
+    <Compile Include="Microsoft\Practices\Unity\InjectionConstructorAttribute.cs" />
+    <Compile Include="Microsoft\Practices\Unity\ResolutionFailedException.cs" />
+    <Compile Include="Microsoft\Practices\ObjectBuilder2\IBuilderStrategy.cs" />
+    <Compile Include="Microsoft\Practices\ObjectBuilder2\BuilderStrategy.cs" />
+    <Compile Include="Microsoft\Practices\Unity\ArrayResolutionStrategy.cs" />
+    <Compile Include="Microsoft\Practices\Unity\PerThreadLifetimeManager.cs" />
+    <Compile Include="Microsoft\Practices\Unity\NamedEventArgs.cs" />
+    <Compile Include="Microsoft\Practices\ObjectBuilder2\BuildKeyMappingStrategy.cs" />
+    <Compile Include="Microsoft\Practices\ObjectBuilder2\IBuilderContext.cs" />
+    <Compile Include="Microsoft\Practices\ObjectBuilder2\BuilderContext.cs" />
+    <Compile Include="Microsoft\Practices\Unity\InjectionMember.cs" />
+    <Compile Include="Microsoft\Practices\Unity\InjectionConstructor.cs" />
+    <Compile Include="Microsoft\Practices\Unity\UnityContainerExtension.cs" />
+    <Compile Include="Microsoft\Practices\Unity\InjectedMembers.cs" />
+    <Compile Include="Microsoft\Practices\ObjectBuilder2\LifetimeStrategy.cs" />
+    <Compile Include="Microsoft\Practices\ObjectBuilder2\BuilderStage.cs" />
+    <Compile Include="Microsoft\Practices\ObjectBuilder2\BuilderAwareStrategy.cs" />
+    <Compile Include="Microsoft\Practices\ObjectBuilder2\IRecoveryStack.cs" />
+    <Compile Include="Microsoft\Practices\Unity\HierarchicalLifetimeStrategy.cs" />
+    <Compile Include="Microsoft\Practices\Unity\ContainerRegistration.cs" />
+    <Compile Include="Microsoft\Practices\Unity\DependencyResolutionAttribute.cs" />
+    <Compile Include="Microsoft\Practices\Unity\OptionalDependencyAttribute.cs" />
+    <Compile Include="Microsoft\Practices\Unity\Utility\Guard.cs" />
+    <Compile Include="Microsoft\Practices\Unity\ObjectBuilder\SpecifiedMemberSelectorHelper.cs" />
+    <Compile Include="Microsoft\Practices\ObjectBuilder2\IConstructorSelectorPolicy.cs" />
+    <Compile Include="Microsoft\Practices\Unity\ObjectBuilder\SpecifiedConstructorSelectorPolicy.cs" />
+    <Compile Include="Microsoft\Practices\ObjectBuilder2\PropertySelectorBase!1.cs" />
+    <Compile Include="Microsoft\Practices\Unity\ObjectBuilder\DefaultUnityPropertySelectorPolicy.cs" />
+    <Compile Include="Microsoft\Practices\Unity\TransientLifetimeManager.cs" />
+    <Compile Include="Microsoft\Practices\ObjectBuilder2\ILifetimeFactoryPolicy.cs" />
+    <Compile Include="Microsoft\Practices\Unity\LifetimeManagerFactory.cs" />
+    <Compile Include="Microsoft\Practices\ObjectBuilder2\NamedTypeBuildKey.cs" />
+    <Compile Include="Microsoft\Practices\ObjectBuilder2\NamedTypeBuildKey!1.cs" />
+    <Compile Include="Microsoft\Practices\ObjectBuilder2\InvokingMethodOperation.cs" />
+    <Compile Include="Microsoft\Practices\ObjectBuilder2\SelectedConstructor.cs" />
+    <Compile Include="Microsoft\Practices\Unity\OverrideCollection!3.cs" />
+    <Compile Include="Microsoft\Practices\Unity\ParameterOverrides.cs" />
+    <Compile Include="Microsoft\Practices\ObjectBuilder2\IBuildPlanPolicy.cs" />
+    <Compile Include="Microsoft\Practices\ObjectBuilder2\DeferredResolveBuildPlanPolicy.cs" />
+    <Compile Include="Microsoft\Practices\ObjectBuilder2\PolicyListExtensions.cs" />
+    <Compile Include="Microsoft\Practices\Unity\InjectionParameterValue.cs" />
+    <Compile Include="Microsoft\Practices\Unity\GenericParameterBase.cs" />
+    <Compile Include="Microsoft\Practices\Unity\GenericParameter.cs" />
+    <Compile Include="Microsoft\Practices\ObjectBuilder2\IDynamicBuilderMethodCreatorPolicy.cs" />
+    <Compile Include="Microsoft\Practices\ObjectBuilder2\DefaultDynamicBuilderMethodCreatorPolicy.cs" />
+    <Compile Include="Microsoft\Practices\ObjectBuilder2\IBuildKeyMappingPolicy.cs" />
+    <Compile Include="Microsoft\Practices\ObjectBuilder2\IllegalInjectionMethodException.cs" />
+    <Compile Include="Microsoft\Practices\Unity\PerResolveLifetimeManager.cs" />
+    <Compile Include="Microsoft\Practices\Unity\CompositeResolverOverride.cs" />
+    <Compile Include="Microsoft\Practices\Unity\Utility\ReflectionHelper.cs" />
+    <Compile Include="Microsoft\Practices\Unity\Utility\ParameterReflectionHelper.cs" />
+    <Compile Include="Microsoft\Practices\ObjectBuilder2\IMethodSelectorPolicy.cs" />
+    <Compile Include="Microsoft\Practices\ObjectBuilder2\MethodSelectorPolicyBase!1.cs" />
+    <Compile Include="Microsoft\Practices\Unity\ObjectBuilder\DefaultUnityMethodSelectorPolicy.cs" />
+    <Compile Include="Microsoft\Practices\Unity\IUnityContainer.cs" />
+    <Compile Include="Microsoft\Practices\ObjectBuilder2\IDependencyResolverPolicy.cs" />
+    <Compile Include="Microsoft\Practices\ObjectBuilder2\FixedTypeResolverPolicy.cs" />
+    <Compile Include="Microsoft\Practices\ObjectBuilder2\IPolicyList.cs" />
+    <Compile Include="Microsoft\Practices\ObjectBuilder2\DependencyMissingException.cs" />
+    <Compile Include="Microsoft\Practices\ObjectBuilder2\OverriddenBuildPlanMarkerPolicy.cs" />
+    <Compile Include="Microsoft\Practices\Unity\UnityServiceLocator.cs" />
+    <Compile Include="Microsoft\Practices\Unity\ContainerControlledLifetimeManager.cs" />
+    <Compile Include="Microsoft\Practices\Unity\RegisterInstanceEventArgs.cs" />
+    <Compile Include="Microsoft\Practices\ObjectBuilder2\RecoveryStack.cs" />
+    <Compile Include="Microsoft\Practices\Unity\UnityDefaultStrategiesExtension.cs" />
+    <Compile Include="Microsoft\Practices\Unity\UnityDefaultBehaviorExtension.cs" />
+    <Compile Include="Microsoft\Practices\Unity\UnityContainer.cs" />
+    <Compile Include="Microsoft\Practices\Unity\ExtensionContext.cs" />
+    <Compile Include="Microsoft\Practices\Unity\ObjectBuilder\UnityBuildStage.cs" />
+    <Compile Include="Microsoft\Practices\Unity\InjectionProperty.cs" />
+    <Compile Include="Microsoft\Practices\ObjectBuilder2\Sequence.cs" />
+    <Compile Include="Microsoft\Practices\ObjectBuilder2\MethodSelectorPolicy!1.cs" />
+    <Compile Include="Microsoft\Practices\ObjectBuilder2\FactoryDelegateBuildPlanPolicy.cs" />
+    <Compile Include="Microsoft\Practices\ObjectBuilder2\DynamicMethodPropertySetterStrategy.cs" />
+    <Compile Include="Microsoft\Practices\ObjectBuilder2\MethodArgumentResolveOperation.cs" />
+    <Compile Include="Microsoft\Practices\Unity\Properties\Resources.cs" />
+    <Compile Include="Microsoft\Practices\Unity\TypeBasedOverride.cs" />
+    <Compile Include="Microsoft\Practices\Unity\TypeBasedOverride!1.cs" />
+    <Compile Include="Microsoft\Practices\ObjectBuilder2\DynamicBuildPlanMethod.cs" />
+    <Compile Include="Microsoft\Practices\ObjectBuilder2\DynamicMethodBuildPlan.cs" />
+    <Compile Include="Microsoft\Practices\ObjectBuilder2\BuilderContextExtensions.cs" />
+    <Compile Include="Microsoft\Practices\Unity\PropertyOverrides.cs" />
+    <Compile Include="Microsoft\Practices\Unity\ChildContainerCreatedEventArgs.cs" />
+    <Compile Include="Microsoft\Practices\Unity\InjectionMethodAttribute.cs" />
+    <Compile Include="Microsoft\Practices\Unity\ExternallyControlledLifetimeManager.cs" />
+    <Compile Include="Microsoft\Practices\ObjectBuilder2\DynamicBuildPlanGenerationContext.cs" />
+    <Compile Include="Microsoft\Practices\ObjectBuilder2\ConstructorSelectorPolicyBase!1.cs" />
+    <Compile Include="Microsoft\Practices\ObjectBuilder2\IBuilderAware.cs" />
+    <Compile Include="Microsoft\Practices\Unity\ObjectBuilder\SpecifiedMethodsSelectorPolicy.cs" />
+    <Compile Include="Microsoft\Practices\Unity\ObjectBuilder\NamedTypeDependencyResolverPolicy.cs" />
+    <Compile Include="Microsoft\Practices\ObjectBuilder2\SelectedMethod.cs" />
+    <Compile Include="Microsoft\Practices\ObjectBuilder2\SettingPropertyOperation.cs" />
+    <Compile Include="Microsoft\Practices\ObjectBuilder2\ILifetimeContainer.cs" />
+    <Compile Include="Microsoft\Practices\Unity\OptionalDependencyResolverPolicy.cs" />
+    <Compile Include="Microsoft\Practices\ObjectBuilder2\IDependencyResolverTrackerPolicy.cs" />
+    <Compile Include="Microsoft\Practices\ObjectBuilder2\BuildKeyMappingPolicy.cs" />
+    <Compile Include="Microsoft\Practices\Unity\Utility\StaticReflection.cs" />
+    <Compile Include="Microsoft\Practices\Unity\Utility\Pair!2.cs" />
+    <Compile Include="Microsoft\Practices\Unity\Utility\Pair.cs" />
+    <Compile Include="Microsoft\Practices\Unity\TypedInjectionValue.cs" />
+    <Compile Include="Microsoft\Practices\Unity\StaticFactory\StaticFactoryExtension.cs" />
+    <Compile Include="Microsoft\Practices\ObjectBuilder2\InvokingConstructorOperation.cs" />
+    <Compile Include="Microsoft\Practices\ObjectBuilder2\LifetimeContainer.cs" />
+    <Compile Include="Microsoft\Practices\Unity\OptionalGenericParameter.cs" />
+    <Compile Include="Microsoft\Practices\Unity\DependencyOverride.cs" />
+    <Compile Include="Microsoft\Practices\Unity\DependencyOverride!1.cs" />
+    <Compile Include="Microsoft\Practices\Unity\Utility\MethodReflectionHelper.cs" />
+    <Compile Include="Microsoft\Practices\Unity\ObjectBuilder\LiteralValueDependencyResolverPolicy.cs" />
+    <Compile Include="Microsoft\Practices\Unity\InjectionMethod.cs" />
+    <Compile Include="Microsoft\Practices\Unity\GenericResolvedArrayParameter.cs" />
+    <Compile Include="Microsoft\Practices\ObjectBuilder2\IStagedStrategyChain.cs" />
+    <Compile Include="Microsoft\Practices\ObjectBuilder2\SelectedProperty.cs" />
+    <Compile Include="Microsoft\Practices\ObjectBuilder2\DynamicMethodCallStrategy.cs" />
+    <Compile Include="Microsoft\Practices\ObjectBuilder2\DynamicMethodConstructorStrategy.cs" />
+    <Compile Include="Microsoft\Practices\ObjectBuilder2\BuildPlanStrategy.cs" />
+    <Compile Include="Microsoft\Practices\Unity\DependencyAttribute.cs" />
+    <Compile Include="Microsoft\Practices\Unity\ObjectBuilder\DefaultUnityConstructorSelectorPolicy.cs" />
+    <Compile Include="Microsoft\Practices\Unity\ResolvedArrayParameter.cs" />
+    <Compile Include="Microsoft\Practices\Unity\ResolvedArrayParameter!1.cs" />
+    <Compile Include="Microsoft\Practices\Unity\InjectionParameter.cs" />
+    <Compile Include="Microsoft\Practices\Unity\InjectionParameter!1.cs" />
+    <Compile Include="Microsoft\Practices\Unity\RegisterEventArgs.cs" />
+    <Compile Include="Microsoft\Practices\ObjectBuilder2\DependencyResolverTrackerPolicy.cs" />
+    <Compile Include="Microsoft\Practices\ObjectBuilder2\PropertySelectorPolicy!1.cs" />
+    <Compile Include="Microsoft\Practices\ObjectBuilder2\ConstructorArgumentResolveOperation.cs" />
+    <Compile Include="Microsoft\Practices\ObjectBuilder2\GenericTypeBuildKeyMappingPolicy.cs" />
+    <Compile Include="Microsoft\Practices\Unity\ResolvedParameter.cs" />
+    <Compile Include="Microsoft\Practices\Unity\ResolvedParameter!1.cs" />
+    <Compile Include="Microsoft\Practices\ObjectBuilder2\DynamicMethodBuildPlanCreatorPolicy.cs" />
+    <Compile Include="Microsoft\Practices\ObjectBuilder2\PolicyList.cs" />
+    <Compile Include="Microsoft\Practices\Unity\HierarchicalLifetimeManager.cs" />
+    <Compile Include="Microsoft\Practices\Unity\OptionalParameter.cs" />
+    <Compile Include="Microsoft\Practices\Unity\OptionalParameter!1.cs" />
+    <Compile Include="Microsoft\Practices\Unity\InjectionFactory.cs" />
+    <Compile Include="Microsoft\Practices\Unity\Utility\ParameterMatcher.cs" />
+    <Compile Include="Microsoft\Practices\Unity\ResolvedArrayWithElementsResolverPolicy.cs" />
+    <Compile Include="Microsoft\Practices\Unity\UnityContainerExtensions.cs" />
+    <Compile Include="Microsoft\Practices\ObjectBuilder2\StagedStrategyChain!1.cs" />
+    <Compile Include="Microsoft\Practices\ObjectBuilder2\ConstructorSelectorPolicy!1.cs" />
+    <Compile Include="Microsoft\Practices\Unity\PropertyOverride.cs" />
+    <Compile Include="Microsoft\Practices\ObjectBuilder2\EnumerableExtensions.cs" />
+    <Compile Include="Microsoft\Practices\Unity\DependencyOverrides.cs" />
+    <EmbeddedResource Include="Microsoft.Practices.Unity.Properties.Resources.resources" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>22a22167-d6b2-4396-8a0b-a464d457ee1c</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>MigraDoc.RtfRendering</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="MigraDoc.DocumentObjectModel" />
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="PdfSharp" />
+    <Reference Include="MigraDoc.Rendering" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="MigraDoc\RtfRendering\Resources\Messages.cs" />
+    <Compile Include="MigraDoc\RtfRendering\RendererBase.cs" />
+    <Compile Include="MigraDoc\RtfRendering\BookmarkFieldRenderer.cs" />
+    <Compile Include="MigraDoc\RtfRendering\BorderRendererBase.cs" />
+    <Compile Include="MigraDoc\RtfRendering\BorderRenderer.cs" />
+    <Compile Include="MigraDoc\RtfRendering\BordersRenderer.cs" />
+    <Compile Include="MigraDoc\RtfRendering\CellFormatRenderer.cs" />
+    <Compile Include="MigraDoc\RtfRendering\StyleAndFormatRenderer.cs" />
+    <Compile Include="MigraDoc\RtfRendering\CellRenderer.cs" />
+    <Compile Include="MigraDoc\RtfRendering\CharacterRenderer.cs" />
+    <Compile Include="MigraDoc\RtfRendering\ShapeRenderer.cs" />
+    <Compile Include="MigraDoc\RtfRendering\ChartRenderer.cs" />
+    <Compile Include="MigraDoc\RtfRendering\ListInfoOverrideRenderer.cs" />
+    <Compile Include="MigraDoc\RtfRendering\FieldRenderer.cs" />
+    <Compile Include="MigraDoc\RtfRendering\DateFieldRenderer.cs" />
+    <Compile Include="MigraDoc\RtfRendering\RtfUnit.cs" />
+    <Compile Include="MigraDoc\RtfRendering\FontRenderer.cs" />
+    <Compile Include="MigraDoc\RtfRendering\FootnoteRenderer.cs" />
+    <Compile Include="MigraDoc\RtfRendering\FormattedTextRenderer.cs" />
+    <Compile Include="MigraDoc\RtfRendering\HeaderFooterRenderer.cs" />
+    <Compile Include="MigraDoc\RtfRendering\HeadersFootersRenderer.cs" />
+    <Compile Include="MigraDoc\RtfRendering\HyperlinkRenderer.cs" />
+    <Compile Include="MigraDoc\RtfRendering\ImageRenderer.cs" />
+    <Compile Include="MigraDoc\RtfRendering\InfoFieldRenderer.cs" />
+    <Compile Include="MigraDoc\RtfRendering\ListInfoRenderer.cs" />
+    <Compile Include="MigraDoc\RtfRendering\NumericFieldRendererBase.cs" />
+    <Compile Include="MigraDoc\RtfRendering\NumPagesFieldRenderer.cs" />
+    <Compile Include="MigraDoc\RtfRendering\PageBreakRenderer.cs" />
+    <Compile Include="MigraDoc\RtfRendering\PageFieldRenderer.cs" />
+    <Compile Include="MigraDoc\RtfRendering\PageRefFieldRenderer.cs" />
+    <Compile Include="MigraDoc\RtfRendering\PageSetupRenderer.cs" />
+    <Compile Include="MigraDoc\RtfRendering\ParagraphFormatRenderer.cs" />
+    <Compile Include="MigraDoc\RtfRendering\ParagraphRenderer.cs" />
+    <Compile Include="MigraDoc\RtfRendering\RendererFactory.cs" />
+    <Compile Include="MigraDoc\RtfRendering\RowRenderer.cs" />
+    <Compile Include="MigraDoc\RtfRendering\RowsRenderer.cs" />
+    <Compile Include="MigraDoc\RtfRendering\RtfDocumentRenderer.cs" />
+    <Compile Include="MigraDoc\RtfRendering\RtfWriter.cs" />
+    <Compile Include="MigraDoc\RtfRendering\SectionFieldRenderer.cs" />
+    <Compile Include="MigraDoc\RtfRendering\SectionPagesFieldRenderer.cs" />
+    <Compile Include="MigraDoc\RtfRendering\SectionRenderer.cs" />
+    <Compile Include="MigraDoc\RtfRendering\ShadingRenderer.cs" />
+    <Compile Include="MigraDoc\RtfRendering\StyleRenderer.cs" />
+    <Compile Include="MigraDoc\RtfRendering\TableRenderer.cs" />
+    <Compile Include="MigraDoc\RtfRendering\TabStopRenderer.cs" />
+    <Compile Include="MigraDoc\RtfRendering\TabStopsRenderer.cs" />
+    <Compile Include="MigraDoc\RtfRendering\TextFrameRenderer.cs" />
+    <Compile Include="MigraDoc\RtfRendering\TextRenderer.cs" />
+    <Compile Include="MigraDoc\RtfRendering\VersionInfo.cs" />
+    <EmbeddedResource Include="MigraDoc.RtfRendering.Resources.Messages.resources" />
+    <EmbeddedResource Include="MigraDoc.RtfRendering.Resources.PDF.png" />
+  </ItemGroup>
+</Project>

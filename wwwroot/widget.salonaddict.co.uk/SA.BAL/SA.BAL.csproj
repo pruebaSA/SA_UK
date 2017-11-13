@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>67ce00fa-b981-418c-9e78-d1a0d3c80167</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>SA.BAL</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="System.Data" />
+    <Reference Include="Microsoft.Practices.Unity" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="SA\BAL\ISchedulingManager.cs" />
+    <Compile Include="SA\BAL\BaseEntity.cs" />
+    <Compile Include="SA\BAL\SalonInvoiceWTDB.cs" />
+    <Compile Include="SA\BAL\LocationType.cs" />
+    <Compile Include="SA\BAL\TicketRowTypeEnum.cs" />
+    <Compile Include="SA\BAL\SchedulingManagerSQL.cs" />
+    <Compile Include="SA\BAL\IReportManager.cs" />
+    <Compile Include="SA\BAL\ReportManagerSQL.cs" />
+    <Compile Include="SA\BAL\IMediaManager.cs" />
+    <Compile Include="SA\BAL\ICacheManager.cs" />
+    <Compile Include="SA\BAL\NullCache.cs" />
+    <Compile Include="SA\BAL\SalonInvoiceADDB.cs" />
+    <Compile Include="SA\BAL\ILogManager.cs" />
+    <Compile Include="SA\BAL\ISalonManager.cs" />
+    <Compile Include="SA\BAL\IDependencyResolver.cs" />
+    <Compile Include="SA\BAL\BaseUnityDependencyResolver.cs" />
+    <Compile Include="SA\BAL\IEmployeeManager.cs" />
+    <Compile Include="SA\BAL\EmployeeManagerSQL.cs" />
+    <Compile Include="SA\BAL\EmployeeDB.cs" />
+    <Compile Include="SA\BAL\WSPDB.cs" />
+    <Compile Include="SA\BAL\IBillingManager.cs" />
+    <Compile Include="SA\BAL\LogDB.cs" />
+    <Compile Include="SA\BAL\OpenTicketDB.cs" />
+    <Compile Include="SA\BAL\SalonReviewDB.cs" />
+    <Compile Include="SA\BAL\StaticCache.cs" />
+    <Compile Include="SA\BAL\IUserManager.cs" />
+    <Compile Include="SA\BAL\UserManagerSQL.cs" />
+    <Compile Include="SA\BAL\TimeBlockDB.cs" />
+    <Compile Include="SA\BAL\ClosingDayDB.cs" />
+    <Compile Include="SA\BAL\QueuedMessageDB.cs" />
+    <Compile Include="SA\BAL\ILocationManager.cs" />
+    <Compile Include="SA\BAL\BillableSalonWTDB.cs" />
+    <Compile Include="SA\BAL\WidgetApiKeyDB.cs" />
+    <Compile Include="SA\BAL\SalonUserDB.cs" />
+    <Compile Include="SA\BAL\TicketStatusTypeEnum.cs" />
+    <Compile Include="SA\BAL\TimeBlockTypeEnum.cs" />
+    <Compile Include="SA\BAL\PictureDB.cs" />
+    <Compile Include="SA\BAL\ITicketManager.cs" />
+    <Compile Include="SA\BAL\HashUtility.cs" />
+    <Compile Include="SA\BAL\WSPExpiringDB.cs" />
+    <Compile Include="SA\BAL\BillingTotalsDB.cs" />
+    <Compile Include="SA\BAL\MediaManagerSQL.cs" />
+    <Compile Include="SA\BAL\Employee_Service_MappingDB.cs" />
+    <Compile Include="SA\BAL\BillingManagerSQL.cs" />
+    <Compile Include="SA\BAL\TicketManagerSQL.cs" />
+    <Compile Include="SA\BAL\ISecurityManager.cs" />
+    <Compile Include="SA\BAL\ScheduleTypeEnum.cs" />
+    <Compile Include="SA\BAL\WSPUpgradeXML.cs" />
+    <Compile Include="SA\BAL\SalonInvoiceInsertXML.cs" />
+    <Compile Include="SA\BAL\ServiceDB.cs" />
+    <Compile Include="SA\BAL\SalonPaymentMethodDB.cs" />
+    <Compile Include="SA\BAL\TicketRowDB.cs" />
+    <Compile Include="SA\BAL\BillingPeriodListItemDB.cs" />
+    <Compile Include="SA\BAL\SymmetricUtility.cs" />
+    <Compile Include="SA\BAL\SecurityManager.cs" />
+    <Compile Include="SA\BAL\SalonInvoiceDB.cs" />
+    <Compile Include="SA\BAL\BookingTotalsDB.cs" />
+    <Compile Include="SA\BAL\RequestCache.cs" />
+    <Compile Include="SA\BAL\BillableSalonDB.cs" />
+    <Compile Include="SA\BAL\ScheduleDB.cs" />
+    <Compile Include="SA\BAL\WidgetOfflineSummaryDB.cs" />
+    <Compile Include="SA\BAL\IMessageManager.cs" />
+    <Compile Include="SA\BAL\IDependencyResolverFactory.cs" />
+    <Compile Include="SA\BAL\DependencyResolverFactory.cs" />
+    <Compile Include="SA\BAL\SqlHelper.cs" />
+    <Compile Include="SA\BAL\SqlHelperParameterCache.cs" />
+    <Compile Include="SA\BAL\CacheKey.cs" />
+    <Compile Include="SA\BAL\AuditManagerSQL.cs" />
+    <Compile Include="SA\BAL\IServiceManager.cs" />
+    <Compile Include="SA\BAL\CategoryNavigation.cs" />
+    <Compile Include="SA\BAL\CategoryDB.cs" />
+    <Compile Include="SA\BAL\SalonRatingDB.cs" />
+    <Compile Include="SA\BAL\PlanTotalsDB.cs" />
+    <Compile Include="SA\BAL\LocationManagerSQL.cs" />
+    <Compile Include="SA\BAL\LocationSalonMappingDB.cs" />
+    <Compile Include="SA\BAL\IoC.cs" />
+    <Compile Include="SA\BAL\TicketSummaryDB.cs" />
+    <Compile Include="SA\BAL\OpeningHoursDB.cs" />
+    <Compile Include="SA\BAL\LocationDB.cs" />
+    <Compile Include="SA\BAL\HMACUtility.cs" />
+    <Compile Include="SA\BAL\CyclePeriodTypeEnum.cs" />
+    <Compile Include="SA\BAL\MessageManagerSQL.cs" />
+    <Compile Include="SA\BAL\LocationSalonSummaryDB.cs" />
+    <Compile Include="SA\BAL\TicketAlertDB.cs" />
+    <Compile Include="SA\BAL\ServiceManagerSQL.cs" />
+    <Compile Include="SA\BAL\SalonDB.cs" />
+    <Compile Include="SA\BAL\SalonManagerSQL.cs" />
+    <Compile Include="SA\BAL\InactivePaymentMethodDB.cs" />
+  </ItemGroup>
+</Project>

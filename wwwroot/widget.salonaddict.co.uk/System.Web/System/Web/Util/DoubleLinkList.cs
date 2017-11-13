@@ -1,0 +1,42 @@
+﻿namespace System.Web.Util
+{
+    using System;
+
+    internal class DoubleLinkList : DoubleLink
+    {
+        internal DoubleLinkList()
+        {
+        }
+
+        internal DoubleLinkListEnumerator GetEnumerator() => 
+            new DoubleLinkListEnumerator(this);
+
+        internal virtual void InsertHead(DoubleLink entry)
+        {
+            entry.InsertAfter(this);
+        }
+
+        internal virtual void InsertTail(DoubleLink entry)
+        {
+            entry.InsertBefore(this);
+        }
+
+        internal bool IsEmpty() => 
+            (base._next == this);
+
+        internal int Length
+        {
+            get
+            {
+                int num = 0;
+                DoubleLinkListEnumerator enumerator = this.GetEnumerator();
+                while (enumerator.MoveNext())
+                {
+                    num++;
+                }
+                return num;
+            }
+        }
+    }
+}
+

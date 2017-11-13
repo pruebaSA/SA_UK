@@ -1,0 +1,220 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>10f44709-cf37-40bb-a12e-8b56601bb0a2</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>System.ServiceModel.Web</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="SMDiagnostics" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="System\ServiceModel\SR2.cs" />
+    <Compile Include="System\ServiceModel\SR2DescriptionAttribute.cs" />
+    <Compile Include="System\ServiceModel\SR2CategoryAttribute.cs" />
+    <Compile Include="System\ServiceModel\SR2DisplayNameAttribute.cs" />
+    <Compile Include="System\ServiceModel\Web\Fx.cs" />
+    <Compile Include="System\ServiceModel\Description\WebHttpBehavior.cs" />
+    <Compile Include="System\ServiceModel\Description\WebScriptEnablingBehavior.cs" />
+    <Compile Include="System\ServiceModel\Dispatcher\WebFaultClientMessageInspector.cs" />
+    <Compile Include="System\ServiceModel\WebScriptServiceHost.cs" />
+    <Compile Include="System\ServiceModel\Activation\WebScriptServiceHostFactory.cs" />
+    <Compile Include="System\ServiceModel\Channels\JsonMessageEncoderFactory.cs" />
+    <Compile Include="System\ServiceModel\Channels\WebContentTypeMapper.cs" />
+    <Compile Include="System\ServiceModel\Channels\WebMessageEncoderFactory.cs" />
+    <Compile Include="System\ServiceModel\Channels\WebMessageEncodingBindingElement.cs" />
+    <Compile Include="System\ServiceModel\Channels\WebBodyFormatMessageProperty.cs" />
+    <Compile Include="System\ServiceModel\Dispatcher\DataContractJsonSerializerOperationBehavior.cs" />
+    <Compile Include="System\ServiceModel\Dispatcher\DataContractJsonSerializerOperationFormatter.cs" />
+    <Compile Include="System\ServiceModel\Channels\WebScriptMetadataMessage.cs" />
+    <Compile Include="System\ServiceModel\Channels\WebScriptMetadataMessageEncoderFactory.cs" />
+    <Compile Include="System\ServiceModel\Channels\WebScriptMetadataMessageEncodingBindingElement.cs" />
+    <Compile Include="System\ServiceModel\Description\WebScriptClientGenerator.cs" />
+    <Compile Include="System\ServiceModel\Dispatcher\WebScriptMetadataFormatter.cs" />
+    <Compile Include="System\ServiceModel\Dispatcher\WebScriptMetadataInstanceContextProvider.cs" />
+    <Compile Include="System\ServiceModel\Configuration\WebMessageEncodingElement.cs" />
+    <Compile Include="System\ServiceModel\Configuration\WebEncodingValidator.cs" />
+    <Compile Include="System\ServiceModel\Configuration\WebEncodingValidatorAttribute.cs" />
+    <Compile Include="System\ServiceModel\Configuration\WebScriptEnablingElement.cs" />
+    <Compile Include="System\Runtime\Serialization\Json\DataContractJsonSerializer.cs" />
+    <Compile Include="System\Runtime\Serialization\Json\JsonDataContract.cs" />
+    <Compile Include="System\Runtime\Serialization\Json\JsonClassDataContract.cs" />
+    <Compile Include="System\Runtime\Serialization\Json\JsonStringDataContract.cs" />
+    <Compile Include="System\Runtime\Serialization\Json\JsonQNameDataContract.cs" />
+    <Compile Include="System\Runtime\Serialization\Json\JsonUriDataContract.cs" />
+    <Compile Include="System\Runtime\Serialization\Json\JsonByteArrayDataContract.cs" />
+    <Compile Include="System\Runtime\Serialization\Json\JsonCollectionDataContract.cs" />
+    <Compile Include="System\Runtime\Serialization\Json\JsonEnumDataContract.cs" />
+    <Compile Include="System\Runtime\Serialization\Json\JsonXmlDataContract.cs" />
+    <Compile Include="System\Runtime\Serialization\Json\JsonObjectDataContract.cs" />
+    <Compile Include="System\Runtime\Serialization\BitFlagsGenerator.cs" />
+    <Compile Include="System\Runtime\Serialization\Json\ByteArrayHelperWithString.cs" />
+    <Compile Include="System\Runtime\Serialization\Json\JsonReaderDelegator.cs" />
+    <Compile Include="System\Runtime\Serialization\Json\JsonWriterDelegator.cs" />
+    <Compile Include="System\Runtime\Serialization\Json\XmlObjectSerializerReadContextComplexJson.cs" />
+    <Compile Include="System\Runtime\Serialization\Json\XmlObjectSerializerWriteContextComplexJson.cs" />
+    <Compile Include="System\Runtime\Serialization\JsonFormatGeneratorStatics.cs" />
+    <Compile Include="System\Runtime\Serialization\Json\JsonFormatClassWriterDelegate.cs" />
+    <Compile Include="System\Runtime\Serialization\Json\JsonFormatCollectionWriterDelegate.cs" />
+    <Compile Include="System\Runtime\Serialization\Json\JsonFormatWriterGenerator.cs" />
+    <Compile Include="System\Runtime\Serialization\Json\JsonFormatClassReaderDelegate.cs" />
+    <Compile Include="System\Runtime\Serialization\Json\JsonFormatCollectionReaderDelegate.cs" />
+    <Compile Include="System\Runtime\Serialization\Json\JsonFormatGetOnlyCollectionReaderDelegate.cs" />
+    <Compile Include="System\Runtime\Serialization\Json\JsonFormatReaderGenerator.cs" />
+    <Compile Include="System\Runtime\Serialization\Json\JsonGlobals.cs" />
+    <Compile Include="System\Runtime\Serialization\Json\IXmlJsonReaderInitializer.cs" />
+    <Compile Include="System\Runtime\Serialization\Json\IXmlJsonWriterInitializer.cs" />
+    <Compile Include="System\Runtime\Serialization\Json\JsonReaderWriterFactory.cs" />
+    <Compile Include="System\Runtime\Serialization\Json\XmlJsonWriter.cs" />
+    <Compile Include="System\Runtime\Serialization\Json\JsonEncodingStreamWrapper.cs" />
+    <Compile Include="System\Runtime\Serialization\Json\JsonNodeType.cs" />
+    <Compile Include="System\Runtime\Serialization\Json\XmlJsonReader.cs" />
+    <Compile Include="System\ServiceModel\Web\WebServiceHost.cs" />
+    <Compile Include="System\ServiceModel\Web\WebChannelFactory!1.cs" />
+    <Compile Include="System\ServiceModel\Activation\WebServiceHostFactory.cs" />
+    <Compile Include="System\ServiceModel\WebHttpBinding.cs" />
+    <Compile Include="System\ServiceModel\WebHttpSecurity.cs" />
+    <Compile Include="System\ServiceModel\WebHttpSecurityMode.cs" />
+    <Compile Include="System\ServiceModel\WebHttpSecurityModeHelper.cs" />
+    <Compile Include="System\ServiceModel\Web\WebGetAttribute.cs" />
+    <Compile Include="System\ServiceModel\Web\WebInvokeAttribute.cs" />
+    <Compile Include="System\ServiceModel\Web\WebMessageFormat.cs" />
+    <Compile Include="System\ServiceModel\Web\WebMessageFormatHelper.cs" />
+    <Compile Include="System\ServiceModel\Web\WebOperationContext.cs" />
+    <Compile Include="System\ServiceModel\Web\IncomingWebRequestContext.cs" />
+    <Compile Include="System\ServiceModel\Web\IncomingWebResponseContext.cs" />
+    <Compile Include="System\ServiceModel\Web\OutgoingWebRequestContext.cs" />
+    <Compile Include="System\ServiceModel\Web\OutgoingWebResponseContext.cs" />
+    <Compile Include="System\ServiceModel\Web\WebMessageBodyStyle.cs" />
+    <Compile Include="System\ServiceModel\Web\WebMessageBodyStyleHelper.cs" />
+    <Compile Include="System\ServiceModel\Channels\HttpStreamMessage.cs" />
+    <Compile Include="System\ServiceModel\Channels\HttpStreamXmlDictionaryWriter.cs" />
+    <Compile Include="System\ServiceModel\Channels\HttpStreamXmlDictionaryReader.cs" />
+    <Compile Include="System\ServiceModel\Channels\HttpStreamMessageEncoderFactory.cs" />
+    <Compile Include="System\ServiceModel\Channels\WebContentFormat.cs" />
+    <Compile Include="System\ServiceModel\Channels\WebContentFormatHelper.cs" />
+    <Compile Include="System\ServiceModel\Channels\WebHttpBindingDefaults.cs" />
+    <Compile Include="System\ServiceModel\Channels\RawContentTypeMapper.cs" />
+    <Compile Include="System\ServiceModel\Configuration\WebHttpElement.cs" />
+    <Compile Include="System\ServiceModel\Configuration\InternalEnumValidator.cs" />
+    <Compile Include="System\ServiceModel\Configuration\InternalEnumValidatorAttribute.cs" />
+    <Compile Include="System\ServiceModel\Configuration\WebHttpBindingCollectionElement.cs" />
+    <Compile Include="System\ServiceModel\Configuration\WebHttpBindingElement.cs" />
+    <Compile Include="System\ServiceModel\Configuration\WebHttpSecurityElement.cs" />
+    <Compile Include="System\ServiceModel\Dispatcher\CompositeClientFormatter.cs" />
+    <Compile Include="System\ServiceModel\Dispatcher\CompositeDispatchFormatter.cs" />
+    <Compile Include="System\ServiceModel\Dispatcher\WebHttpDispatchOperationSelector.cs" />
+    <Compile Include="System\ServiceModel\Dispatcher\HttpUnhandledOperationInvoker.cs" />
+    <Compile Include="System\ServiceModel\Dispatcher\QueryStringConverter.cs" />
+    <Compile Include="System\ServiceModel\Dispatcher\UriTemplateClientFormatter.cs" />
+    <Compile Include="System\ServiceModel\Dispatcher\UriTemplateDispatchFormatter.cs" />
+    <Compile Include="System\ServiceModel\Dispatcher\JsonQueryStringConverter.cs" />
+    <Compile Include="System\ServiceModel\Dispatcher\SingleBodyParameterMessageFormatter.cs" />
+    <Compile Include="System\ServiceModel\Dispatcher\SingleBodyParameterDataContractMessageFormatter.cs" />
+    <Compile Include="System\ServiceModel\Dispatcher\SingleBodyParameterXmlSerializerMessageFormatter.cs" />
+    <Compile Include="System\ServiceModel\Dispatcher\HttpStreamFormatter.cs" />
+    <Compile Include="System\ServiceModel\Dispatcher\UnwrappedTypesXmlSerializerManager.cs" />
+    <Compile Include="System\ServiceModel\Dispatcher\DemultiplexingDispatchMessageFormatter.cs" />
+    <Compile Include="System\ServiceModel\Dispatcher\DemultiplexingClientMessageFormatter.cs" />
+    <Compile Include="System\ServiceModel\Dispatcher\ContentTypeSettingDispatchMessageFormatter.cs" />
+    <Compile Include="System\ServiceModel\Dispatcher\ContentTypeSettingClientMessageFormatter.cs" />
+    <Compile Include="System\ServiceModel\Dispatcher\WebErrorHandler.cs" />
+    <Compile Include="System\ServiceModel\Syndication\Atom10Constants.cs" />
+    <Compile Include="System\ServiceModel\Syndication\SyndicationFeedFormatter.cs" />
+    <Compile Include="System\ServiceModel\Syndication\Atom10FeedFormatter.cs" />
+    <Compile Include="System\ServiceModel\Syndication\Atom10FeedFormatter!1.cs" />
+    <Compile Include="System\ServiceModel\Syndication\SyndicationItemFormatter.cs" />
+    <Compile Include="System\ServiceModel\Syndication\Atom10ItemFormatter.cs" />
+    <Compile Include="System\ServiceModel\Syndication\Atom10ItemFormatter!1.cs" />
+    <Compile Include="System\ServiceModel\Syndication\IExtensibleSyndicationObject.cs" />
+    <Compile Include="System\ServiceModel\Syndication\SyndicationCategory.cs" />
+    <Compile Include="System\ServiceModel\Syndication\SyndicationContent.cs" />
+    <Compile Include="System\ServiceModel\Syndication\SyndicationElementExtensionCollection.cs" />
+    <Compile Include="System\ServiceModel\Syndication\SyndicationFeed.cs" />
+    <Compile Include="System\ServiceModel\Syndication\FeedUtils.cs" />
+    <Compile Include="System\ServiceModel\Syndication\SyndicationVersions.cs" />
+    <Compile Include="System\ServiceModel\Syndication\ExtensibleSyndicationObject.cs" />
+    <Compile Include="System\ServiceModel\Syndication\NullNotAllowedCollection!1.cs" />
+    <Compile Include="System\ServiceModel\Syndication\SyndicationItem.cs" />
+    <Compile Include="System\ServiceModel\Syndication\SyndicationLink.cs" />
+    <Compile Include="System\ServiceModel\Syndication\SyndicationElementExtension.cs" />
+    <Compile Include="System\ServiceModel\Syndication\SyndicationPerson.cs" />
+    <Compile Include="System\ServiceModel\Syndication\Rss20Constants.cs" />
+    <Compile Include="System\ServiceModel\Syndication\Rss20FeedFormatter.cs" />
+    <Compile Include="System\ServiceModel\Syndication\Rss20FeedFormatter!1.cs" />
+    <Compile Include="System\ServiceModel\Syndication\Rss20ItemFormatter.cs" />
+    <Compile Include="System\ServiceModel\Syndication\Rss20ItemFormatter!1.cs" />
+    <Compile Include="System\ServiceModel\Syndication\TextSyndicationContent.cs" />
+    <Compile Include="System\ServiceModel\Syndication\TextSyndicationContentKind.cs" />
+    <Compile Include="System\ServiceModel\Syndication\TextSyndicationContentKindHelper.cs" />
+    <Compile Include="System\ServiceModel\Syndication\UrlSyndicationContent.cs" />
+    <Compile Include="System\ServiceModel\Syndication\XmlSyndicationContent.cs" />
+    <Compile Include="System\ServiceModel\Syndication\ServiceDocument.cs" />
+    <Compile Include="System\ServiceModel\Syndication\Workspace.cs" />
+    <Compile Include="System\ServiceModel\Syndication\ResourceCollectionInfo.cs" />
+    <Compile Include="System\ServiceModel\Syndication\CategoriesDocument.cs" />
+    <Compile Include="System\ServiceModel\Syndication\InlineCategoriesDocument.cs" />
+    <Compile Include="System\ServiceModel\Syndication\ReferencedCategoriesDocument.cs" />
+    <Compile Include="System\ServiceModel\Syndication\ServiceDocumentFormatter.cs" />
+    <Compile Include="System\ServiceModel\Syndication\CreateInlineCategoriesDelegate.cs" />
+    <Compile Include="System\ServiceModel\Syndication\CreateReferencedCategoriesDelegate.cs" />
+    <Compile Include="System\ServiceModel\Syndication\AtomPub10ServiceDocumentFormatter.cs" />
+    <Compile Include="System\ServiceModel\Syndication\AtomPub10ServiceDocumentFormatter!1.cs" />
+    <Compile Include="System\ServiceModel\Syndication\App10Constants.cs" />
+    <Compile Include="System\ServiceModel\Syndication\CategoriesDocumentFormatter.cs" />
+    <Compile Include="System\ServiceModel\Syndication\AtomPub10CategoriesDocumentFormatter.cs" />
+    <Compile Include="System\UriTemplatePartType.cs" />
+    <Compile Include="System\UriTemplateHelpers.cs" />
+    <Compile Include="System\UriTemplate.cs" />
+    <Compile Include="System\UriTemplateEquivalenceComparer.cs" />
+    <Compile Include="System\UriTemplateMatchException.cs" />
+    <Compile Include="System\UriTemplateMatch.cs" />
+    <Compile Include="System\UriTemplateTableMatchCandidate.cs" />
+    <Compile Include="System\UriTemplateTable.cs" />
+    <Compile Include="System\Collections\ObjectModel\FreezableCollection!1.cs" />
+    <Compile Include="System\UriTemplatePathSegment.cs" />
+    <Compile Include="System\UriTemplateLiteralPathSegment.cs" />
+    <Compile Include="System\UriTemplateCompoundPathSegment.cs" />
+    <Compile Include="System\UriTemplateVariablePathSegment.cs" />
+    <Compile Include="System\UriTemplateQueryValue.cs" />
+    <Compile Include="System\UriTemplateLiteralQueryValue.cs" />
+    <Compile Include="System\UriTemplateVariableQueryValue.cs" />
+    <Compile Include="System\UriTemplatePathPartiallyEquivalentSet.cs" />
+    <Compile Include="System\UriTemplateTrieIntraNodeLocation.cs" />
+    <Compile Include="System\UriTemplateTrieLocation.cs" />
+    <Compile Include="System\UriTemplateTrieNode.cs" />
+    <EmbeddedResource Include="System.ServiceModel.SR2.resources" />
+  </ItemGroup>
+</Project>

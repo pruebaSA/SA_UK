@@ -1,0 +1,926 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2005 sp2 U (http://www.altova.com) by Markus Horstmann (Microsoft Corporation) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:asm.v1" xmlns:asm.v3="urn:schemas-microsoft-com:asm.v3" xmlns:asm.v2="urn:schemas-microsoft-com:asm.v2" xmlns:asm.v1="urn:schemas-microsoft-com:asm.v1" xmlns:xrml="http://www.xrml.org/schema/2001/11/xrml2core" xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:enc="http://www.w3.org/2001/04/xmlenc#" targetNamespace="urn:schemas-microsoft-com:asm.v1" elementFormDefault="qualified" attributeFormDefault="unqualified">
+    <xs:annotation>
+        <xs:documentation>Base schema for OS componentization + extensions for security, state and shell.</xs:documentation>
+    </xs:annotation>
+    <xs:import namespace="urn:schemas-microsoft-com:asm.v2" schemaLocation="manifest.2.0.0.15-pre.adaptive_elements.xsd" />
+    <xs:import namespace="http://www.w3.org/2000/09/xmldsig#" schemaLocation="xmldsig-core-schema.0.0.0.2.xsd" />
+    <xs:import namespace="http://www.xrml.org/schema/2001/11/xrml2core" schemaLocation="xrml2core.0.0.0.1.xsd" />
+    <xs:import namespace="urn:mpeg:mpeg21:2003:01-REL-R-NS" schemaLocation="mpeg-r.0.0.0.1.xsd" />
+    <xs:annotation>
+        <xs:documentation>2.0.0.15-pre: 
+				Added publisherIdentity for XMLDsig/pki team.
+				Added LUA schema.
+				Added any in application/feature/deployment/mvid to support extensibility (bug fix).
+				Removed privacy element.
+		</xs:documentation>
+        <xs:documentation>2.0.0.14: 
+				ClickOnce schema for Beta 2:
+					New in Beta 2:
+						dependency/dependentAssembly: 
+							@dependencyType="install|preRequisite"
+							@allowDelayedBinding="true|false"
+							application: must appear immediately after description
+							deployment: must appear immediately after description: won't enforce yet
+							@disallowUrlActivation="true|false"
+							@mapFileExtensions="true|false"
+					Bug fixes:
+						Changed expiration/@maximumAge from string to nonNegativeInteger
+						Removed month as a valid enumeration value for timeUnit.
+	 				Marked obsolete for Beta 2 (still supported for transition period):
+						licensing: moved to xmldsig:Signature element per authenticode/SN support
+						dependency/dependentAssembly
+							@visible: replaced by deployment/application marking
+							@preRequisite: use dependencyType instead
+						configuration/@configFile
+						deployment
+							@runAfterInstall: use @disallowUrlActivation instead
+					To be removed for Beta 2 (not done yet, pending review with ClickOnce team):
+						dependency/@supportUrl, @displayName, @name (?)
+						dependency/installFrom
+						TrustInfo
+						trustInfo/security/deployment
+						deployment/@visible
+						deployment/install
+						deployment/@isRequiredUpdate
+						entryPoint/@dependencyName
+						subscription/update/periodic
+				Removed dependency/dependentAssembly: @globalImpact, @externallyBindable, @indirect from asm.v3
+				Added assembly/feature element.
+				Added categoryInstance/@displayName attribute.
+				Added systemProtection/@journaling and systemProtection/@perUserVirtualization, marked noJournaling and noPerUserVirtualization as obsolete.
+				Removed support for previously obsoleted assembly/category schema.
+				Removed configurableState, operationalState, temporaryState, dataState + category definitions for directory/file/settings registration.
+				Removed ADF element and ADF-style information under description element.
+		</xs:documentation>
+        <xs:documentation>2.0.0.13: 
+				Removed description/@contentType (replaced by entryPoint/hostInBrowser).
+				Renamed deployment/@visible to deployment/@install.
+				Moved deployment/install/@runAfterInstall and @promptBelowVersion to deployment/@.
+				Removed deployment/install element.
+				Moved dependency/installFrom/@codebase, @group, @size, @hash, @hashAlg to dependency/assemblyDependency. 
+				Removed dependency/installFrom element.
+				Moved all non-Whidbey schema to asmv3 (specifically: entryPoint/@hostInBrowser, entryPoint/@name)
+				Changed dependency/@visible, @preRequisite, @indirec, @discoverable to boolean instead of YesNoType.
+				Changed appPathData/@external to boolean
+				Added annotations to capture asm.v2 vs. asm.v3 for use with the schema generation tool.
+				Changed resourcesType/@typeId, @itemId, @typeName, @itemName to @typeIds, @itemIds, @typeNames, @itemNames and made them list types instead of string/integer.
+				Added migration, PnP, imaging, shortcut, file attributes, redirectInfo, installerRegistration for CMI.
+				Fixed categoryMembership syntax to comply with CMI schema.
+				Moved dependency/@supportUrl to dependency/dependentAssembly and dependency/dependentOS.
+				Renamed dependent/@displayName to description and moved to dependency/dependentAssembly and dependency/dependentOS.
+				Made identity/@version optional (again).
+				Added any declaration under IPermission to allow for custom permissions. Added Permission element under PermissionSet for custom permissions.
+				Added hash element to file and dependency/dependentAssembly.			
+				Added file/@writeableType attribute for Whidbey data support.
+				Added migration/@customDataMigration attribute for Whidbey data support.
+				Moved dependentAssembly/@resourceType to asm.v3
+				Allowed arbitary XML namespaces under IPermission
+				Added better version number patterns.
+				Made instrumentation/@componentType optional.
+				Misc schema changes for Eventing.
+				Added systemProtection/@noJournaling	and @noPerUserVirtualization.
+				Added deployment/@trustUrlParameters for ClickOnce.
+		</xs:documentation>
+        <xs:documentation>2.0.0.12: 
+				Fixed bug in privacy schema (schemaLocation must be xml.0.0.0.1.xsd instead of http://www.w3.org/2001/xml.xsd.
+				Added systemProtection elements for Strongbox.
+				Added licensing element.
+				Fixed casing on sidebarTile category element (left old sideBarTile casing for transition purposes).
+				Added trustedPlatformInfo element for NGSCB (TUreche).
+				Removed support for category element, use categoryMembership/category instead
+				Renamed categoryCMI element and categoryCMIType back to category and categoryType.
+				Removed support for stringTable element; use localization/resources/stringTable instead.
+				ClickOnce:
+					Added dependency/@visible attribute for ClickOnce/component store. 
+					Added dependency/@resourceSatelliteName, @resourceFallbackCulture and @resourceFallbackCultureInternal for ClickOnce loc scenarios
+					Removed dependency/@primaryDependency; use resourceType="resources" instead to figure out which dependency is NOT an application dependency.
+					Added entryPoint/hostInBrowser for Avalon.
+					Changed deployment\subscription\update\periodic\* to expiration\@maximumAge
+					Moved deployment\install\@visible to deployment\@visible.
+					Removed deployment\install\@shellVisible, use @visible instead to determine if app is Online or Installed.
+					Added deployment\install\@runAfterInstall attribute.
+					Added file\@optional and file\@group for ClickOnce incremental download feature.					
+					Added deployment\install\@diskPadSize and @promptBelowVersion
+					Changed deployment/@isRequiredUpdate to deployment/@minimumRequiredVersion.
+				Change privacy schema to reflect change M6/M7 plans.
+				Removed tasks category and schema.
+				Made comClassType\OLE\auxUserType and comClassType\OLE\miscStatus attributes on comClassType to match XP SP1 DCR for VB scenarios.
+				Removed experimental categoryReference element.
+				Added prototype schema for state separation: configurableState, operationalState, temporaryState, dataState. Categories: fileRegistration, 
+directoryRegistration and settingsRegistration.
+				Changed processContents to be consistently "lax".
+				Added security/trustInfo/trustedPlatformInfo element for NGSCB/Platinum.				
+				Changed dependency/@discoverable to be boolean instead of yesNo.
+				Added buildFilter attributes to assemblyIdentity, dependency, file, directory, categoryMembership, configuration, instrumentation, registryKeys\*, localization\*, genericCommand
+				Removed genericCommand, use genericCommands instead.
+				Added file/@importPath attribute, renamed file/@targetPath attribute to destinationPath.
+				Added file/dependencies/fileDependency/@destinationPath, SrcHash, SrcVer, DepType.
+				Disabled registryKeyNameType validation.
+				Made registryValueType\@name optional.
+				Merged Windows Eventing schema into master schema to reduce number of schema files.
+				Changed eventData schema according to Windows Eventing team. Changed eventInstanceType/@category to be xs:string instead of xs:int
+				Added memberships/categoryMembership/@typeName back to the schema.
+		</xs:documentation>
+        <xs:documentation>2.0.0.11: 
+				Added schema for user accounts, groups, security descriptors (trustInfo/security/accessControl/*).
+				Added schema for COM registration (AppID, OLE, inproc handlers, local server, 16 bit, dll surrogates etc.): file/comClass/*, comAppId/*
+				Added description/@contentType for Avalon MIME filter.
+				Added dependency/@primaryDependency attribute to allow ClickOnce to detect which dependency is the application vs. satellites etc.
+				Removed satelliteCategory and localizationCategory elements.
+				Changed casing of dependency/@resourceType enumeration values to camelCasing (manifestResources instead of ManifestResources, resources instead of Resources)
+				Added third enumeration value "languageEnabling" to indicate that wildcarding on the dependency on culture (dependency/@culture="*") should be allowed.
+				Picked up new privacy schema.
+		</xs:documentation>
+        <xs:documentation>2.0.0.10: 
+				sideBarTile: removed URL attribute, added maxHeight and maxWidth attributes
+				Changed file/@loadFrom to file/@targetPath to unify with MSI terminology. Removed file/@filePath
+				Reconciled category syntax with CMI:
+				- New memberships/categoryMember syntax:
+					- moved category element under memberships parent element
+					- renamed category element to categoryMembership
+					- changed identity attribute to individual name,version etc. attributes					
+				- Added categoryIdentityType/@typeName attribute, removed categoryIdentityType/@identity attribute.
+				- categoryMembership: added @typeName, @subCategory and @description attributes, removed @subType attribute.
+				- Merged categoryMemberType sub-elements into categoryMembershipType				
+				- Existing Fusion category syntax still supported for migration: made all categoryIdentityReferenceType optional
+				Reconciled localization with CMI:
+				- Added localization element.
+				- Added dependency/@resourceType attribute
+				- Marked stringTable element as deprecated (will remove when Fusion switches over)
+				Turned trustInfo/security/requestedPrivileges/@requestedExecutionLevel into separate attributes
+				Turned trustInfo/security/deployment into a deploymentAuthoritiesType complex type (no schema change).
+				Changed schemaType to allow ##any attribute instead of ##other.
+				Added dependency/override prototype schema.
+				Moved categoryDefinition prototype schema to categoryDefinitions/categoryDefinition.
+				WMI.Config: renamed configuration/schema/schema sub-element to configuration/configurationSchema/schema element
+				
+				Disambiguated the schema to work with current Whidbey System.XML:
+				- Made all top-level elements bounded (dependency, file, category, entryPoint, clrClass, clsSurrogate, comInterfaceExternalProxyStub) 
+				- Changed unbounded "sequence" for top-level elements to unbounded "choice"				
+				- Made all top-level elements minOccur="1"
+				- Changed sku/any, product/any, package/any, feature/any, categoryCMI/any to be ##other.
+				- Changed most unbounded sequence to unbounded choice / made sub-elements non-optional/maxOccur=1:
+				    services, services/service, trustInfo/security/deployment, memberships, registryKeys, registryKeys/registryValues, file, file/comCLass, file/dependencies,
+				    ADF, trustInfo/security/applicationRequestMinimum/PermissionSet, CATEGORIESType
+				Added xml.0.0.0.1.xsd to properly support the XML namespace items (lang attribute etc.) in the latest Whidbey XML parser.
+		</xs:documentation>
+        <xs:documentation>2.0.0.9: Change casing in trustInfo/security to be camelCase for everything except Permission element (TrustInfo/Security still has everything upper-case).		
+				Make IPermission element optional and make IPermission.version attribute optional.
+				Moved deploymentAuthority under security node, made deploymentAuthority unbounded.
+				Changed XMLDSIG schema to allow empty string in reference.URI attribute (potential bug in System.XML's anyURI type?)
+				Temporarily removed ADF schema until after design preview.
+				Changed casing of include statements to be identical to casing of actual schema files.
+		</xs:documentation>
+        <xs:documentation>2.0.0.8: Resync with OS componentization schema: added assembly attributes, sync with Whidbey CLickOnce schema, sync with WinfuseManifest schema.
+				installFrom didn't have group attribute: what are the permissible values? Just string?
+				dependency.name was reference in a key constraint, which made it non-optional. Removed the constraint in *.adaptive_elements.xsd
+				dependentOS.displayName was not optional
+				configuration.configFile was not in the adaptive schema, only in v2 schema.
+				trustInfo.PermissionSet.IPermission: #any attribute didn't have the "skip" PI
+				defaultAssemblyRequest and AssemblyRequest were not optional
+				AssemblyRequest didn't allow more than one occurrance
+				PermissionSet ID was not declared as type xs:ID
+				added displayName attribute to dependency
+				Changes to make manifest accessible via XSD.EXE generated classes: removed extra choice, made several unbounded elements bounded and made the containing sequence unbounded.
+				Changed trustInfo to current Avalon casing (TrustInfo)
+				GDF merged into ADF. Changes:
+				- AppGenre is now a string.  no longer restricting to specific strings. 
+				- Reversed the order of URL and Name in the company info
+				- ADF is now in v2 namespace
+				- misc. GDF changes				
+				Added Signature and KeyInfo elements.
+				Changed file name from assembly.2.* to manifest.2.*.
+				Added any/##other attributes/elements to almost all elements to allow for independent extensions to and future evolution of manifest content.
+				Added deploymentAuthority schema.
+		 </xs:documentation>
+    </xs:annotation>
+    <xs:annotation>
+        <xs:documentation>2.0.0.7: Changed from component.0.* to assembly.2.*. Added instrumentation node (WMI.Eventing.0.0.0.1.xsd). Clarified entryPoint schema / added name attribute to dependency element and turned it into single top-level element. Added privacy schema. Changed category syntax to be single top-level element. Added NUI schema.</xs:documentation>
+    </xs:annotation>
+    <xs:annotation>
+        <xs:documentation>0.0.0.6: Added node for restricted Admin (TJones). Added node for parental control ratings. Corrected schema to verify with System.XML. Added TrustInfo node, moved security node under it, added trustInfo\privacy placeholder. Changed namespace to urn:schemas-microsoft-com:asm.v2. Changed xsd prefix to xs prefix.</xs:documentation>
+    </xs:annotation>
+    <xs:annotation>
+        <xs:documentation>0.0.0.5: Added Tasks schema, Changed ADF schema to 0.0.0.0005, added first real WMI.Config schema, made some erroneously required things optional (assemblyIdentity.processorArchitecture, desciption sub-elements). Added application schema for ClickOnce.</xs:documentation>
+    </xs:annotation>
+    <!--Simple Types-->
+    <xs:simpleType name="twoPartVersionType">
+        <xs:annotation>
+            <xs:documentation>Two part version numbers where the segments are in the range 0-65535
+0*[0-9]{1,4}		0-9999
+0*[1-5][0-9]{4}	10000-59999
+0*6[0-4][0-9]{3}	60000-64999
+0*65[0-4][0-9]{2}       65000-65499
+0*655[0-2][0-9]	65500-65529
+0*6553[0-5]		65530-65535
+
+(0*[0-9]{1,4}|0*[1-5][0-9]{4}|0*6[0-4][0-9]{3}|0*65[0-4][0-9]{2}|0*655[0-2][0-9]|0*6553[0-5])
+ </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:pattern value="(0*[0-9]{1,4}|0*[1-5][0-9]{4}|0*6[0-4][0-9]{3}|0*65[0-4][0-9]{2}|0*655[0-2][0-9]|0*6553[0-5])\.(0*[0-9]{1,4}|0*[1-5][0-9]{4}|0*6[0-4][0-9]{3}|0*65[0-4][0-9]{2}|0*655[0-2][0-9]|0*6553[0-5])" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="fourPartVersionType">
+        <xs:annotation>
+            <xs:documentation>Four part version numbers where the segments are in the range 0-65535 </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:pattern value="(0*[0-9]{1,4}|0*[1-5][0-9]{4}|0*6[0-4][0-9]{3}|0*65[0-4][0-9]{2}|0*655[0-2][0-9]|0*6553[0-5])\.(0*[0-9]{1,4}|0*[1-5][0-9]{4}|0*6[0-4][0-9]{3}|0*65[0-4][0-9]{2}|0*655[0-2][0-9]|0*6553[0-5])\.(0*[0-9]{1,4}|0*[1-5][0-9]{4}|0*6[0-4][0-9]{3}|0*65[0-4][0-9]{2}|0*655[0-2][0-9]|0*6553[0-5])\.(0*[0-9]{1,4}|0*[1-5][0-9]{4}|0*6[0-4][0-9]{3}|0*65[0-4][0-9]{2}|0*655[0-2][0-9]|0*6553[0-5])" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="TwoByteVersion">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="0" />
+            <xs:maxInclusive value="65535" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="OneByteVersion">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="0" />
+            <xs:maxInclusive value="255" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="yesNoType">
+        <xs:annotation>
+            <xs:documentation>Boolean yes or no enumeration. This is needed for backward compatability with  existing fusion manifest</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="yes" />
+            <xs:enumeration value="no" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="yesNoBoolType">
+        <xs:annotation>
+            <xs:documentation>Boolean yes or no enumeration. This is needed for backward compatability with  existing fusion manifest</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="yes" />
+            <xs:enumeration value="no" />
+            <xs:enumeration value="true" />
+            <xs:enumeration value="false" />
+        </xs:restriction>
+    </xs:simpleType>
+    <!-- Adriaan's common types: Issue: need to incorporate these better! -->
+    <!-- We have a lot of eight-byte hash codes sitting around. -->
+    <xs:simpleType name="hashAlgorithmType">
+        <xs:annotation>
+            <xs:documentation> Different types of Hash Algorithms. SHA1 is used by default since fusion also uses the same.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="SHA1" />
+            <xs:enumeration value="SHA" />
+            <xs:enumeration value="MD5" />
+            <xs:enumeration value="MD4" />
+            <xs:enumeration value="MD2" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="publicKeyTokenType">
+        <xs:annotation>
+            <xs:documentation> Public Key Token: 16 hex digits in size</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:pattern value="([0-9]|[a-f]|[A-F]){16}" />
+        </xs:restriction>
+    </xs:simpleType>
+    <!-- Generic Guid -->
+    <!-- must be upper case to match to System.XML type system (?) -->
+    <xs:simpleType name="GuidType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\{[0-9A-Fa-f]{8}\-[0-9A-Fa-f]{4}\-[0-9A-Fa-f]{4}\-[0-9A-Fa-f]{4}\-[0-9A-Fa-f]{12}\}" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="processorArchitectureType">
+        <xs:annotation>
+            <xs:documentation>Different types of target processor architecture types. Currently only x86, ia64 and amd64 are supported.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="x86" />
+            <xs:enumeration value="ia64" />
+            <xs:enumeration value="amd64" />
+            <xs:enumeration value="wow64" />
+            <xs:enumeration value="msil" />
+            <xs:enumeration value="shx" />
+            <xs:enumeration value="arm" />
+            <xs:enumeration value="data" />
+            <xs:enumeration value="neutral" />
+        </xs:restriction>
+    </xs:simpleType>
+    <!-- Describe a simple threading model enumeration -->
+    <xs:simpleType name="ThreadingModelType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Apartment" />
+            <xs:enumeration value="Free" />
+            <xs:enumeration value="Single" />
+            <xs:enumeration value="Both" />
+            <xs:enumeration value="Neutral" />
+        </xs:restriction>
+    </xs:simpleType>
+    <!--Fusion Types-->
+    <xs:complexType name="assemblyIdentityType">
+        <xs:annotation>
+            <xs:documentation>Identity type for the assembly</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:extension base="identityType" />
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="assemblyIdentityReference">
+        <xs:annotation>
+            <xs:documentation>Reference type for assembly identity</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:extension base="assemblyIdentityType" />
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="dependencyType">
+        <xs:annotation>
+            <xs:documentation>Abstraction for assembly dependencies. There can be three different types of dependency from an assembly i.e. dependency to an assembly or category or feature.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:choice>
+                <xs:element name="dependentAssembly" type="dependentAssemblyType" />
+                <xs:element ref="asm.v2:dependentOS">
+                </xs:element>
+                <xs:any namespace="urn:schemas-microsoft-com:asm.v3" processContents="lax" minOccurs="0" maxOccurs="unbounded">
+                </xs:any>
+            </xs:choice>
+        </xs:sequence>
+        <xs:attribute name="optional" type="yesNoBoolType" use="optional">
+            <xs:annotation>
+                <xs:documentation>Indicates whether the dependency is optional or not. This aids in building smaller configurations by helping the tool to drop this dependency for smaller distributions.
+TODO: XP only allows yes and no, WCS puts true/false...</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:anyAttribute namespace="##other" processContents="lax" />
+    </xs:complexType>
+    <xs:complexType name="clrClassType">
+        <xs:annotation>
+            <xs:documentation>CLR class type</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:extension base="comClassType">
+                <xs:attribute name="name" type="xs:string" use="required">
+                    <xs:annotation>
+                        <xs:documentation>Specifies the name of the class</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute name="runtimeVersion" type="xs:string" use="optional">
+                    <xs:annotation>
+                        <xs:documentation>The version for the class. This is "major.minor" format.</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="clrSurrogateType">
+        <xs:annotation>
+            <xs:documentation>CLR surrogate type</xs:documentation>
+        </xs:annotation>
+        <xs:attribute name="clsid" type="GuidType" use="required">
+            <xs:annotation>
+                <xs:documentation>Indicates the CLSID for the surrogate</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="name" type="xs:string" use="required">
+            <xs:annotation>
+                <xs:documentation>Indicates the name for the class</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="runtimeVersion" type="xs:string" use="optional">
+            <xs:annotation>
+                <xs:documentation>Indicates the version which is used during run-time. Its of "major.minor" format.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:anyAttribute namespace="##other" processContents="lax" />
+    </xs:complexType>
+    <xs:complexType name="comInterfaceProxyStubType" mixed="true">
+        <xs:annotation>
+            <xs:documentation>Proxy stub for COM interface. If a file in the assembly implements a proxy stub, the corresponding file must include a comInterfaceProxyStub subelement having attributes that are identical to a comInterfaceExternalProxyStub element. Marshaling interfaces between processes and threads may not work as expected if you omit some of the comInterfaceExternalProxyStub dependencies for your component.
+			</xs:documentation>
+        </xs:annotation>
+        <xs:attribute name="iid" type="GuidType" use="required">
+            <xs:annotation>
+                <xs:documentation>The .IID of the interface for which the proxy is being declared. Required. The value should be in the form: "{iid}".</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="name" type="xs:string" use="required">
+            <xs:annotation>
+                <xs:documentation>Name of the interface as it would appear in code. For example, "IViewObject". This should not be a descriptive string. This attribute is optional. The value should be in the form: "name".</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="tlbid" type="GuidType" use="optional">
+            <xs:annotation>
+                <xs:documentation>The type library that contains the description of the interface specified by the iid attribute. This attribute is optional. The value should be in the form: "{tlbid}".</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="numMethods" type="xs:integer" use="optional">
+            <xs:annotation>
+                <xs:documentation>The number of methods implemented by the interface. This attribute is optional. The value should be in the form: "n".</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="proxyStubClsid32" type="GuidType" use="optional">
+            <xs:annotation>
+                <xs:documentation>The class ID for the proxy sub in the form of "{CLSID}".</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="baseInterface" type="GuidType" use="optional">
+            <xs:annotation>
+                <xs:documentation>The IID of the interface from which the one described by the iid attribute is derived. This attribute is optional. The value should be in the form: "{iid}".</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:anyAttribute namespace="##other" processContents="lax" />
+    </xs:complexType>
+    <xs:complexType name="comInterfaceExternalProxyStubType">
+        <xs:annotation>
+            <xs:documentation>External proxy stub for COM interface. The comInterfaceExternalProxyStub is a subelement of an assembly element and is used for automation interfaces. For example, IDispatch and its derived interfaces. Optional. 
+The default proxy-stub implementation is adequate for most automation interfaces, such as interfaces derived from IDispatch. The interface proxy stub, and all other external proxy-stub interface implementations, must be listed in the comInterfaceExternalProxyStub
+</xs:documentation>
+        </xs:annotation>
+        <xs:attribute name="iid" type="GuidType" use="required">
+            <xs:annotation>
+                <xs:documentation>The IID of the interface for which the proxy is being declared. Required. The value should be in the form: "{iid}".</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="name" type="xs:string" use="required">
+            <xs:annotation>
+                <xs:documentation>Name of the interface as it would appear in code. For example, "IViewObject". This should not be a descriptive string. This attribute is optional. The value should be in the form: "name".</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="tlbid" type="GuidType" use="optional">
+            <xs:annotation>
+                <xs:documentation>The type library that contains the description of the interface specified by the iid attribute. This attribute is optional. The value should be in the form: "{tlbid}" .</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="numMethods" type="xs:unsignedInt" use="optional" default="0">
+            <xs:annotation>
+                <xs:documentation>The number of methods implemented by the interface. This attribute is optional. The value should be in the form: "n".</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="proxyStubClsid32" type="GuidType" use="optional">
+            <xs:annotation>
+                <xs:documentation>The class ID in the the form of "{CLSID}".</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="baseInterface" type="GuidType" use="optional">
+            <xs:annotation>
+                <xs:documentation>The IID of the interface from which the one described by the iid attribute is derived. This attribute is optional. The value should be in the form: "{iid}".</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:anyAttribute namespace="##other" processContents="lax" />
+    </xs:complexType>
+    <xs:complexType name="typelibType">
+        <xs:annotation>
+            <xs:documentation>Type Library information</xs:documentation>
+        </xs:annotation>
+        <xs:attribute name="tlbid" type="GuidType" use="required">
+            <xs:annotation>
+                <xs:documentation>The unique ID of the type library. Required.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="version" type="xs:string" use="required">
+            <xs:annotation>
+                <xs:documentation>The two-part version number of the type library. If only the minor version number increases, all the features of the previous type library are supported in a compatible way. If the major version number changes, code that compiled against the type library must be recompiled. The version number of the type library may differ from the version number of the application. Required.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="helpdir" type="xs:string" use="required">
+            <xs:annotation>
+                <xs:documentation>The directory where the Help file for the types in the type library is located. If the application supports type libraries for multiple languages, the libraries may refer to different file names in the Help file directory. If no value, then specify "". Required.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="resourceid" type="xs:string" use="optional">
+            <xs:annotation>
+                <xs:documentation>The hexadecimal string representation of the locale identifier (LCID). It is one to four hexadecimal digits with no 0x prefix and no leading zeros. The LCID may have a neutral sublanguage identifier</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="flags" type="xs:string" use="optional">
+            <xs:annotation>
+                <xs:documentation>The hexadecimal representation of the type library flags for this type library. These are the values of the LIBFLAGS enumeration, and are the same flags specified in the uLibFlags parameter to ICreateTypeLib::SetLibFlags. These flags cannot have leading zeros or the 0x prefix. Optional.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:anyAttribute namespace="##other" processContents="lax" />
+    </xs:complexType>
+    <xs:complexType name="comClassType">
+        <xs:annotation>
+            <xs:documentation>COM class information</xs:documentation>
+        </xs:annotation>
+        <xs:sequence minOccurs="0">
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element name="progid">
+                    <xs:complexType>
+                        <xs:simpleContent>
+                            <xs:extension base="xs:string">
+                                <xs:anyAttribute namespace="##other" processContents="lax" />
+                            </xs:extension>
+                        </xs:simpleContent>
+                    </xs:complexType>
+                </xs:element>
+            </xs:choice>
+            <xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded">
+            </xs:any>
+        </xs:sequence>
+        <xs:attribute name="clsid" type="GuidType" use="required">
+            <xs:annotation>
+                <xs:documentation>The GUID that uniquely identifies the Class. Required. The value must be in the format of a valid GUID i.e. "{GUID}".</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="threadingModel" type="ThreadingModelType" default="Single">
+            <xs:annotation>
+                <xs:documentation>The threading model used by in-process COM classes. If this property is null, then no threading model is used. The component is created on the main thread of the client and calls from other threads are marshaled to this thread. Optional. Valid values are: "Apartment", "Free", "Both", and "Neutral".</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="progid" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>Version-dependent programmatic identifier associated with the COM component. The format of a ProgID is &lt;vendor&gt;.&lt;component&gt;.&lt;version&gt;.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="tlbid" type="GuidType">
+            <xs:annotation>
+                <xs:documentation>GUID for the type library for this COM component. The value must be in the format of a GUID. Optional.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="description" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>The class name string.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="miscStatus" type="xs:string" use="optional" />
+        <xs:attribute name="miscStatusIcon" type="xs:string" use="optional" />
+        <xs:attribute name="miscStatusContent" type="xs:string" use="optional" />
+        <xs:attribute name="miscStatusDocPrint" type="xs:string" use="optional" />
+        <xs:attribute name="miscStatusThumbnail" type="xs:string" use="optional" />
+        <xs:attribute name="auxUserTypeFull" type="xs:string" use="optional" />
+        <xs:attribute name="auxUserTypeShort" type="xs:string" use="optional" />
+        <xs:attribute name="auxUserTypeAppName" type="xs:string" use="optional" />
+        <xs:anyAttribute namespace="##other" processContents="lax" />
+    </xs:complexType>
+    <xs:complexType name="windowClassType">
+        <xs:annotation>
+            <xs:documentation>Window class information. The element contains name of a windows class that is to be versioned</xs:documentation>
+        </xs:annotation>
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="versioned" type="yesNoType" use="optional">
+                    <xs:annotation>
+                        <xs:documentation>This attribute controls whether or not the internal window class name used in registration contains the version of the assembly containing the window class. The value of this attribute can be "yes" or "no". The default is "yes". The value "no" should only be used if the same window class is defined by a side-by-side component and an equivalent non-side-by-side component and you wish to treat them as the same window class. Note that the usual rules about window class registration apply - only the first component that registers the window class will be able to register it since it is not versioned.</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:anyAttribute namespace="##other" processContents="lax" />
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="fileType">
+        <xs:annotation>
+            <xs:documentation>File type</xs:documentation>
+        </xs:annotation>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="comClass" type="comClassType" />
+            <xs:element name="comInterfaceProxyStub" type="comInterfaceProxyStubType" />
+            <xs:element name="typelib">
+                <xs:complexType mixed="true">
+                    <xs:complexContent mixed="true">
+                        <xs:extension base="typelibType" />
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="windowClass" type="windowClassType" />
+            <xs:element ref="asm.v2:hash">
+            </xs:element>
+            <xs:any namespace="urn:schemas-microsoft-com:asm.v3" processContents="lax" minOccurs="0">
+            </xs:any>
+        </xs:choice>
+        <xs:attribute name="name" type="xs:string" use="optional">
+            <xs:annotation>
+                <xs:documentation>Name of the file on the system. This is exposed as DestinationName in the object model</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="hash" type="xs:hexBinary" use="optional">
+            <xs:annotation>
+                <xs:documentation>A hash of the file referred to by name. A hexadecimal string of length depending on the hash algorithm.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="hashalg" type="hashAlgorithmType" use="optional">
+            <xs:annotation>
+                <xs:documentation>Algorithm used to create a hash of the file. This value should be SHA1.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="size" type="xs:unsignedLong" use="optional">
+            <xs:annotation>
+                <xs:documentation>The size of the files in bytes</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute use="optional" default="false" ref="asm.v2:optional">
+        </xs:attribute>
+        <xs:attribute use="optional" ref="asm.v2:group">
+        </xs:attribute>
+        <xs:attribute use="optional" ref="asm.v2:writeableType">
+        </xs:attribute>
+        <xs:anyAttribute namespace="##other" processContents="lax" />
+    </xs:complexType>
+    <xs:complexType name="baseDependencyType" abstract="true">
+        <xs:annotation>
+            <xs:documentation>Dependency type base</xs:documentation>
+        </xs:annotation>
+        <xs:attribute name="optional" type="xs:boolean" use="optional" default="false">
+            <xs:annotation>
+                <xs:documentation>Indicates whether the dependency is optional or not. Optional dependencies are helpful in reducing the run-time image size</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:anyAttribute namespace="##other" processContents="lax" />
+    </xs:complexType>
+    <xs:complexType name="identityType">
+        <xs:annotation>
+            <xs:documentation>Identity definition  type. This is base type from which all the other identity types are derived.</xs:documentation>
+        </xs:annotation>
+        <xs:attribute name="name" type="xs:string" use="required">
+            <xs:annotation>
+                <xs:documentation>This indicates the case sensitive name for the component. This name is in unicode and is never localized.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="version" type="fourPartVersionType" use="optional">
+            <xs:annotation>
+                <xs:documentation>This indicates the version of the component. Version has major, minor, build and revision fields. This needs to be updated everytime anything in the manifest or the binary being referred from the manifest changes. Build number field is used and filled generally automically during the build while preprocessing the manifest. The revision field is updated when a component is rebuild to fix some build issue. Major and Minor fields are reserved for indicating conceptual changes to  the component. Each fields value  can be from 0 to 65535.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="type" type="xs:string" use="optional">
+            <xs:annotation>
+                <xs:documentation>This is present there for backward compatibility with fusion. The assemblies are generally typed as "win32". See MSDN documentation (http://msdn.microsoft.com/library/default.asp?url=/library/en-us/sbscs/setup/assembly_manifests.asp) for more information</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="processorArchitecture" type="processorArchitectureType" use="optional">
+            <xs:annotation>
+                <xs:documentation>Indicates the processor architecture this component i.e. the binaries of this manifest are targetted for. Possible values are x86, ia64 and amd64.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="publicKeyToken" type="publicKeyTokenType" use="optional">
+            <xs:annotation>
+                <xs:documentation>A 16-character hexadecimal string representing the last 8 bytes of the SHA-1 hash of the public key under which the component is signed. The public key used to sign the catalog must be 2048 bits or greater. Required for shared side-by-side components</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="language" type="xs:string" use="optional">
+            <xs:annotation>
+                <xs:documentation>The language for which the component is targetted. Obsolete: use culture instead!</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:anyAttribute namespace="##any" processContents="lax" />
+    </xs:complexType>
+    <xs:complexType name="identityReferenceType">
+        <xs:annotation>
+            <xs:documentation>Identity reference type.</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:extension base="identityType" />
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:attributeGroup name="commonAttributesGroup">
+        <xs:annotation>
+            <xs:documentation>Defines the common attributes across all first class abstractions</xs:documentation>
+        </xs:annotation>
+        <xs:attribute name="manifestVersion" type="twoPartVersionType" use="required" fixed="1.0">
+            <xs:annotation>
+                <xs:documentation>Indicates the version of the manifest. Currently fixed to "1.0"</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:attributeGroup>
+    <!--Assembly details-->
+    <xs:complexType name="dependentAssemblyType">
+        <xs:annotation>
+            <xs:documentation>Dependency on an assembly.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="assemblyIdentity" type="assemblyIdentityReference" />
+            <xs:element minOccurs="0" maxOccurs="unbounded" ref="asm.v2:hash">
+            </xs:element>
+            <xs:any namespace="urn:schemas-microsoft-com:asm.v3" processContents="lax" minOccurs="0" maxOccurs="unbounded">
+            </xs:any>
+        </xs:sequence>
+        <xs:attribute use="optional" default="preRequisite" ref="asm.v2:dependencyType">
+        </xs:attribute>
+        <xs:attribute ref="asm.v2:codebase">
+        </xs:attribute>
+        <xs:attribute use="optional" ref="asm.v2:size">
+        </xs:attribute>
+        <xs:attribute use="optional" ref="asm.v2:hash">
+        </xs:attribute>
+        <xs:attribute use="optional" ref="asm.v2:hashalg">
+        </xs:attribute>
+        <xs:attribute use="optional" ref="asm.v2:group">
+        </xs:attribute>
+        <xs:attribute use="optional" ref="asm.v2:description">
+        </xs:attribute>
+        <xs:attribute use="optional" ref="asm.v2:supportUrl">
+        </xs:attribute>
+        <xs:attribute use="optional" ref="asm.v2:resourceFallbackCulture">
+        </xs:attribute>
+        <xs:attribute use="optional" ref="asm.v2:resourceFallbackCultureInternal">
+        </xs:attribute>
+        <xs:attribute use="optional" default="false" ref="asm.v2:allowDelayedBinding">
+        </xs:attribute>
+        <xs:anyAttribute namespace="##other" processContents="lax" />
+    </xs:complexType>
+    <xs:complexType name="assemblyType">
+        <xs:annotation>
+            <xs:documentation>Assembly (also called as Component)</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:choice minOccurs="0">
+                <xs:element name="noInherit">
+                    <xs:complexType>
+                        <xs:anyAttribute namespace="##other" processContents="lax" />
+                    </xs:complexType>
+                </xs:element>
+                <xs:element ref="asm.v2:noInherit">
+                </xs:element>
+                <xs:element name="noInheritable">
+                    <xs:complexType>
+                        <xs:anyAttribute namespace="##other" processContents="lax" />
+                    </xs:complexType>
+                </xs:element>
+                <xs:element ref="asm.v2:noInheritable">
+                </xs:element>
+            </xs:choice>
+            <xs:element name="assemblyIdentity" type="assemblyIdentityType">
+            </xs:element>
+            <xs:element name="description" type="descriptionType" minOccurs="0">
+            </xs:element>
+            <xs:element minOccurs="0" ref="asm.v2:description">
+            </xs:element>
+            <xs:sequence minOccurs="0">
+                <xs:element minOccurs="0" ref="asm.v2:application">
+                </xs:element>
+            </xs:sequence>
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>TODO: figure out how to enforce cardinality restrictions in XSD</xs:documentation>
+                </xs:annotation>
+                <xs:element name="dependency" type="dependencyType">
+                </xs:element>
+                <xs:element ref="asm.v2:dependency">
+                </xs:element>
+                <xs:element name="file" type="fileType">
+                </xs:element>
+                <xs:element ref="asm.v2:file">
+                </xs:element>
+                <xs:element ref="asm.v2:configuration">
+                </xs:element>
+                <xs:element ref="asm.v2:deployment">
+                </xs:element>
+                <xs:element ref="asm.v2:entryPoint">
+                </xs:element>
+                <xs:element ref="asm.v2:trustInfo">
+                </xs:element>
+                <xs:element ref="asm.v2:licensing">
+                </xs:element>
+                <xs:element minOccurs="0" ref="asm.v2:migration">
+                </xs:element>
+                <xs:element name="clrClass" type="clrClassType">
+                </xs:element>
+                <xs:element ref="asm.v2:clrClass">
+                </xs:element>
+                <xs:element name="clrSurrogate" type="clrSurrogateType">
+                </xs:element>
+                <xs:element ref="asm.v2:clrSurrogate">
+                </xs:element>
+                <xs:element name="comInterfaceExternalProxyStub" type="comInterfaceExternalProxyStubType">
+                </xs:element>
+                <xs:element ref="asm.v2:comInterfaceExternalProxyStub">
+                </xs:element>
+                <xs:element ref="asm.v2:KeyInfo">
+                </xs:element>
+                <xs:element ref="ds:Signature">
+                </xs:element>
+                <xs:any namespace="urn:schemas-microsoft-com:asm.v3" processContents="skip" minOccurs="0">
+                </xs:any>
+                <xs:element minOccurs="0" ref="asm.v2:publisherIdentity" />
+            </xs:choice>
+        </xs:sequence>
+        <xs:attributeGroup ref="commonAttributesGroup" />
+    </xs:complexType>
+    <xs:element name="assembly">
+        <xs:annotation>
+            <xs:documentation>Assembly instance (or Component)</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="assemblyType" />
+            </xs:complexContent>
+        </xs:complexType>
+        <xs:key name="fileNameKey_asm.v1">
+            <xs:selector xpath="file" />
+            <xs:field xpath="@name" />
+        </xs:key>
+    </xs:element>
+    <xs:complexType name="descriptionType" mixed="true">
+        <xs:attribute use="optional" ref="asm.v2:publisher">
+        </xs:attribute>
+        <xs:attribute use="optional" ref="asm.v2:product">
+        </xs:attribute>
+        <xs:attribute use="optional" ref="asm.v2:supportUrl">
+        </xs:attribute>
+        <xs:attribute use="optional" ref="asm.v2:iconFile">
+        </xs:attribute>
+        <xs:anyAttribute namespace="##other" processContents="lax" />
+    </xs:complexType>
+    <!--	
+	<xs:complexType name="clickOnceLicenseGroupType">
+		<xs:annotation>
+			<xs:documentation>This is not an actual XSD type: it is meant as documentation about the schema supported for ClickOnce trust licenses as a subset of XRML. The following notation is used to illustrate namespaces: elementname_XRML - in the XRML element must be in the XRML namespace; no _XRML suffix: element must be in the asm.v2 namespace. If a manifest contains additional information in the XRML namespace or the asm.v2 namespace that is NOT matches by this schema fragment, the license element containing the non matching schema will be considered non existent by the trust manager (and marked as containing unrecognized information by the parsing code).</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:restriction base="xrml:LicenseGroup">
+				<xs:sequence>
+					<xs:element name="license_XRML">
+						<xs:complexType>
+							<xs:choice>
+								<xs:sequence>
+									<xs:choice>
+										<xs:element name="grant_XRML">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="forAll_XRML" minOccurs="0" maxOccurs="unbounded">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="xmlExpression" type="xs:string" minOccurs="0"/>
+															</xs:sequence>
+															<xs:attribute name="varName" type="xrml:VariableName" use="required"/>
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="keyHolder_XRML">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="info_XRML">
+																	<xs:complexType>
+																		<xs:sequence>
+																			<xs:element ref="ds:KeyValue"/>
+																		</xs:sequence>
+																	</xs:complexType>
+																</xs:element>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="run"/>
+													<xs:element name="localmachine"/>
+													<xs:element name="allConditions_XRML">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="identity">
+																	<xs:complexType>
+																		<xs:sequence>
+																			<xs:element name="assemblyIdentity" type="assemblyIdentifyReference"/>
+																		</xs:sequence>
+																		<xs:attribute name="varRef" type="xrml:VariableName" use="optional"/>
+																	</xs:complexType>
+																</xs:element>
+																<xs:element name="location">
+																	<xs:complexType>
+																		<xs:simpleContent>
+																			<xs:extension base="xs:anyURI">
+																				<xs:attribute name="varRef" type="xrml:VariableName" use="optional"/>
+																			</xs:extension>
+																		</xs:simpleContent>
+																	</xs:complexType>
+																</xs:element>
+															</xs:sequence>
+															<xs:attribute name="varRef" type="xrml:VariableName" use="required"/>
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="issuer_XRML">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element ref="ds:Signature" minOccurs="0"/>
+																<xs:element name="details" minOccurs="0">
+																	<xs:annotation>
+																		<xs:documentation>Issuer-specific contributions to the license.</xs:documentation>
+																	</xs:annotation>
+																	<xs:complexType>
+																		<xs:sequence>
+																			<xs:element name="timeOfIssue" type="xs:dateTime"/>
+																		</xs:sequence>
+																	</xs:complexType>
+																</xs:element>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:any namespace="##other"/>
+									</xs:choice>
+								</xs:sequence>
+							</xs:choice>
+						</xs:complexType>
+					</xs:element>
+					<xs:any namespace="##other"/>
+				</xs:sequence>
+			</xs:restriction>
+		</xs:complexContent>
+	</xs:complexType>
+-->
+    <xs:complexType name="publisherIdentityType">
+        <xs:attribute name="name" type="xs:string" />
+        <xs:attribute name="issuerKeyHash" type="xs:string" />
+        <xs:anyAttribute namespace="##other" processContents="lax" />
+    </xs:complexType>
+</xs:schema>

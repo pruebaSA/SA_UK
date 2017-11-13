@@ -1,0 +1,247 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>fab7ad11-3257-4917-bd17-e7b9e5fac080</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>IFRAME</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="System.Web" />
+    <Reference Include="SA.BAL" />
+    <Reference Include="AjaxControlToolkit" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="MigraDoc.DocumentObjectModel" />
+    <Reference Include="SA.Payments.Realex.RealAuth" />
+    <Reference Include="SA.Payments.Realex.RealVault" />
+    <Reference Include="Microsoft.Practices.Unity" />
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="MigraDoc.Rendering" />
+    <Reference Include="System.Configuration" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="IFRAME\Controllers\IFRMSecurePage.cs" />
+    <Compile Include="IFRAME\SecureArea\ProfilePage.cs" />
+    <Compile Include="IFRAME\SecureArea\Holiday_DeletePage.cs" />
+    <Compile Include="IFRAME\SecureArea\Holiday_CreatePage.cs" />
+    <Compile Include="IFRAME\Controllers\IFRMUserControl.cs" />
+    <Compile Include="IFRAME\Modules\YesNoOptions.cs" />
+    <Compile Include="IFRAME\Modules\NoScript.cs" />
+    <Compile Include="IFRAME\Modules\Footer.cs" />
+    <Compile Include="IFRAME\Modules\DateTextBox.cs" />
+    <Compile Include="IFRAME\Controllers\IFRMPage.cs" />
+    <Compile Include="IFRAME\ExpiredPage.cs" />
+    <Compile Include="IFRAME\Controllers\IFRMNestedMasterPage.cs" />
+    <Compile Include="IFRAME\Controllers\IFRMAdminPage.cs" />
+    <Compile Include="IFRAME\Admin\SettingCompany_EditPage.cs" />
+    <Compile Include="IFRAME\Admin\SalonManagement\ServicesPage.cs" />
+    <Compile Include="IFRAME\Admin\ReportSalonBillingTotalsPage.cs" />
+    <Compile Include="IFRAME\Admin\ProfilePage.cs" />
+    <Compile Include="IFRAME\Admin\ReportBillingTotalsPage.cs" />
+    <Compile Include="IFRAME\Admin\InvoiceWTsPage.cs" />
+    <Compile Include="IFRAME\Admin\InvoiceVoidPage.cs" />
+    <Compile Include="IFRAME\Admin\InvoiceAdjustment_DeletePage.cs" />
+    <Compile Include="IFRAME\Admin\APIKey_CreatePage.cs" />
+    <Compile Include="IFRAME\SecureArea\Ticket_AlertsPage.cs" />
+    <Compile Include="IFRAME\SecureArea\Service_CreatePage.cs" />
+    <Compile Include="IFRAME\SecureArea\Profile_Email_EditPage.cs" />
+    <Compile Include="IFRAME\SecureArea\Modules\BlockedTimeLine.cs" />
+    <Compile Include="IFRAME\SecureArea\IFRMInvoiceGenerator.cs" />
+    <Compile Include="IFRAME\SecureArea\BillPay_MyBillPage.cs" />
+    <Compile Include="IFRAME\Modules\HomepageSalonHours.cs" />
+    <Compile Include="IFRAME\LoginPage.cs" />
+    <Compile Include="IFRAME\Controllers\SchedulingEventArgs.cs" />
+    <Compile Include="IFRAME\Admin\SalonUsersPage.cs" />
+    <Compile Include="IFRAME\Admin\SalonUser_EditPage.cs" />
+    <Compile Include="IFRAME\Admin\SalonUser_CreatePage.cs" />
+    <Compile Include="IFRAME\Admin\SalonSetupPage.cs" />
+    <Compile Include="IFRAME\Admin\WSP_UpgradePage.cs" />
+    <Compile Include="IFRAME\Admin\SettingVAT_EditPage.cs" />
+    <Compile Include="IFRAME\Admin\SalonManagement\Service_EditPage.cs" />
+    <Compile Include="IFRAME\Admin\SalonManagement\Holiday_CreatePage.cs" />
+    <Compile Include="IFRAME\Admin\Modules\SchedulingLineReadOnly.cs" />
+    <Compile Include="IFRAME\Admin\Modules\SchedulingLine.cs" />
+    <Compile Include="IFRAME\Admin\ReportBookingTotalsPage.cs" />
+    <Compile Include="IFRAME\Admin\InvoiceEditPage.cs" />
+    <Compile Include="IFRAME\UnavailablePage.cs" />
+    <Compile Include="IFRAME\SecureArea\Modules\SchedulingLine.cs" />
+    <Compile Include="IFRAME\SecureArea\EmployeesPage.cs" />
+    <Compile Include="IFRAME\SecureArea\PaymentMethod_DeletePage.cs" />
+    <Compile Include="IFRAME\SecureArea\Modules\SchedulingLineReadOnly.cs" />
+    <Compile Include="IFRAME\MasterPages\Root.cs" />
+    <Compile Include="IFRAME\Controllers\IFRMRoleProvider.cs" />
+    <Compile Include="IFRAME\Admin\WSP_CancelPage.cs" />
+    <Compile Include="IFRAME\Admin\SalonManagement\EmployeesPage.cs" />
+    <Compile Include="IFRAME\Admin\SalonManagement\Appointment_DetailsPage.cs" />
+    <Compile Include="IFRAME\Admin\SalonCreatePage.cs" />
+    <Compile Include="IFRAME\Admin\ReportsPage.cs" />
+    <Compile Include="IFRAME\Admin\InvoicingPage.cs" />
+    <Compile Include="IFRAME\Admin\InvoicesSettlementTaskPage.cs" />
+    <Compile Include="IFRAME\Admin\InvoicesIssuedPage.cs" />
+    <Compile Include="IFRAME\Admin\InvoicesCreateTaskPage.cs" />
+    <Compile Include="IFRAME\Admin\InvoiceAdjustmentsPage.cs" />
+    <Compile Include="IFRAME\SecureArea\Modules\Menu.cs" />
+    <Compile Include="IFRAME\SecureArea\Scheduling_ReadOnlyPage.cs" />
+    <Compile Include="IFRAME\SecureArea\AppointmentsPage.cs" />
+    <Compile Include="IFRAME\Modules\TimeSelectedEventArgs.cs" />
+    <Compile Include="IFRAME\Modules\TimeSlotsGrid.cs" />
+    <Compile Include="IFRAME\ErrorPage.cs" />
+    <Compile Include="IFRAME\ConfirmationPage.cs" />
+    <Compile Include="IFRAME\Admin\SalonUser_Username_EditPage.cs" />
+    <Compile Include="IFRAME\Admin\SalonManagement\Scheduling_Page.cs" />
+    <Compile Include="IFRAME\Admin\ReportVoidsPage.cs" />
+    <Compile Include="IFRAME\Admin\ReportSalonBillingTotalsHomePage.cs" />
+    <Compile Include="IFRAME\ThreeDayViewPage.cs" />
+    <Compile Include="IFRAME\SecureArea\Ticket_Alert_EditPage.cs" />
+    <Compile Include="IFRAME\SecureArea\SettingsPage.cs" />
+    <Compile Include="IFRAME\SecureArea\Scheduling_Page.cs" />
+    <Compile Include="IFRAME\SecureArea\Employee_CreatePage.cs" />
+    <Compile Include="IFRAME\OfflinePage.cs" />
+    <Compile Include="IFRAME\Modules\PhoneDropDownList.cs" />
+    <Compile Include="IFRAME\LogoutPage.cs" />
+    <Compile Include="IFRAME\DayViewPage.cs" />
+    <Compile Include="IFRAME\Admin\WSP_ExtendPage.cs" />
+    <Compile Include="IFRAME\Admin\SalonManagement\Ticket_AlertsPage.cs" />
+    <Compile Include="IFRAME\Admin\SalonManagement\Employee_DeletePage.cs" />
+    <Compile Include="IFRAME\Admin\SalonDetailsPage.cs" />
+    <Compile Include="IFRAME\Admin\Modules\Menu.cs" />
+    <Compile Include="IFRAME\Admin\LogDetailsPage.cs" />
+    <Compile Include="IFRAME\Admin\BillingPage.cs" />
+    <Compile Include="IFRAME\SecureArea\WSP_PaymentPage.cs" />
+    <Compile Include="IFRAME\SecureArea\Ticket_Alert_DeletePage.cs" />
+    <Compile Include="IFRAME\SecureArea\AccountPage.cs" />
+    <Compile Include="IFRAME\MasterPages\OneColumn.cs" />
+    <Compile Include="IFRAME\Controllers\IFRMContext.cs" />
+    <Compile Include="IFRAME\Controllers\BlockedTimeEventArgs.cs" />
+    <Compile Include="IFRAME\Admin\WSP_WTPage.cs" />
+    <Compile Include="IFRAME\Admin\WSP_EditPage.cs" />
+    <Compile Include="IFRAME\Admin\SalonManagement\Service_CreatePage.cs" />
+    <Compile Include="IFRAME\Admin\SalonManagement\DefaultPage.cs" />
+    <Compile Include="IFRAME\Admin\Appointment_CancelPage.cs" />
+    <Compile Include="IFRAME\Admin\SalonEmployees_SetupPage.cs" />
+    <Compile Include="IFRAME\Admin\ReportSalonPlanTypePage.cs" />
+    <Compile Include="IFRAME\Admin\ReportSalonBookingTotalsPage.cs" />
+    <Compile Include="IFRAME\Admin\InvoicesPaymentOverduePage.cs" />
+    <Compile Include="IFRAME\Admin\InvoiceForwardPage.cs" />
+    <Compile Include="IFRAME\Admin\APIKey_DeletePage.cs" />
+    <Compile Include="IFRAME\SecureArea\WSP_HistoryPage.cs" />
+    <Compile Include="IFRAME\SecureArea\Service_DeletePage.cs" />
+    <Compile Include="IFRAME\SecureArea\ReportBookingTotalsPage.cs" />
+    <Compile Include="IFRAME\SecureArea\PaymentMethodsPage.cs" />
+    <Compile Include="IFRAME\SecureArea\Contact_UsPage.cs" />
+    <Compile Include="IFRAME\SecureArea\Appointment_CancelPage.cs" />
+    <Compile Include="IFRAME\Safari_Cookie_FixPage.cs" />
+    <Compile Include="IFRAME\Controllers\PhoneNumberType.cs" />
+    <Compile Include="IFRAME\Controllers\YesNoOption.cs" />
+    <Compile Include="IFRAME\ClosedPage.cs" />
+    <Compile Include="IFRAME\APIKeyInstallPage.cs" />
+    <Compile Include="IFRAME\Admin\SalonUser_Email_EditPage.cs" />
+    <Compile Include="IFRAME\Admin\SalonUser_DeletePage.cs" />
+    <Compile Include="IFRAME\Admin\SalonManagement\Scheduling_ReadOnlyPage.cs" />
+    <Compile Include="IFRAME\Admin\SalonManagement\AppointmentsPage.cs" />
+    <Compile Include="IFRAME\Admin\ReportSalonBookingTotalsHomePage.cs" />
+    <Compile Include="IFRAME\Admin\ReportPlanExpiryPage.cs" />
+    <Compile Include="IFRAME\SecureArea\Ticket_Alert_CreatePage.cs" />
+    <Compile Include="IFRAME\SecureArea\PaymentMethod_EditPage.cs" />
+    <Compile Include="IFRAME\Modules\ViewTypeMenu.cs" />
+    <Compile Include="IFRAME\Modules\ServiceDropDownList.cs" />
+    <Compile Include="IFRAME\Global.cs" />
+    <Compile Include="IFRAME\DetailsPage.cs" />
+    <Compile Include="IFRAME\Controllers\IFRMCache.cs" />
+    <Compile Include="IFRAME\AgreementPage.cs" />
+    <Compile Include="IFRAME\Admin\SalonUser_Password_EditPage.cs" />
+    <Compile Include="IFRAME\Admin\SalonManagement\Ticket_Alert_CreatePage.cs" />
+    <Compile Include="IFRAME\Admin\SalonManagement\SettingsPage.cs" />
+    <Compile Include="IFRAME\Admin\SalonManagement\Opening_HoursPage.cs" />
+    <Compile Include="IFRAME\Admin\SalonManagement\Holiday_DeletePage.cs" />
+    <Compile Include="IFRAME\Admin\SalonManagement\Employee_EditPage.cs" />
+    <Compile Include="IFRAME\Admin\SalonManagement\BlockedTimesPage.cs" />
+    <Compile Include="IFRAME\Admin\ReportPlanTotalsPage.cs" />
+    <Compile Include="IFRAME\Admin\ReportNonDeliveryPage.cs" />
+    <Compile Include="IFRAME\Admin\ReportNonBillableSalonsPage.cs" />
+    <Compile Include="IFRAME\Admin\InvoicePaidPage.cs" />
+    <Compile Include="IFRAME\SecureArea\Profile_EditPage.cs" />
+    <Compile Include="IFRAME\SecureArea\Modules\Overview.cs" />
+    <Compile Include="IFRAME\SecureArea\BlockedTimesPage.cs" />
+    <Compile Include="IFRAME\Admin\SalonPaymentMethod_ActivatePage.cs" />
+    <Compile Include="IFRAME\Admin\SalonManagement\ProfilePage.cs" />
+    <Compile Include="IFRAME\Admin\ReportInactivePaymentMethodsPage.cs" />
+    <Compile Include="IFRAME\Admin\Modules\SalonOverview.cs" />
+    <Compile Include="IFRAME\Admin\QueuedMessage_EditPage.cs" />
+    <Compile Include="IFRAME\Admin\InvoiceSearchPage.cs" />
+    <Compile Include="IFRAME\Admin\AuditPage.cs" />
+    <Compile Include="IFRAME\SecureArea\SettingCompany_EditPage.cs" />
+    <Compile Include="IFRAME\SecureArea\Opening_HoursPage.cs" />
+    <Compile Include="IFRAME\Admin\ReportWidgetOfflinePage.cs" />
+    <Compile Include="IFRAME\Admin\SalonSchedule_SetupPage.cs" />
+    <Compile Include="IFRAME\Admin\WSP_HistoryPage.cs" />
+    <Compile Include="IFRAME\Admin\SalonManagement\Service_DeletePage.cs" />
+    <Compile Include="IFRAME\Admin\Modules\Overview.cs" />
+    <Compile Include="IFRAME\SecureArea\DefaultPage.cs" />
+    <Compile Include="IFRAME\SecureArea\Employee_EditPage.cs" />
+    <Compile Include="IFRAME\SecureArea\Employee_DeletePage.cs" />
+    <Compile Include="IFRAME\SecureArea\PaymentMethod_CreatePage.cs" />
+    <Compile Include="IFRAME\Controllers\IFRMMasterPage.cs" />
+    <Compile Include="IFRAME\Controllers\IFRMContextHttpModule.cs" />
+    <Compile Include="Resources\CustomerOrderConfirmation.cs" />
+    <Compile Include="IFRAME\Admin\SalonsPage.cs" />
+    <Compile Include="IFRAME\Admin\SalonManagement\Ticket_Alert_EditPage.cs" />
+    <Compile Include="IFRAME\Admin\SalonManagement\Employee_CreatePage.cs" />
+    <Compile Include="IFRAME\Admin\DefaultPage.cs" />
+    <Compile Include="IFRAME\SecureArea\Profile_Password_EditPage.cs" />
+    <Compile Include="IFRAME\SecureArea\HolidaysPage.cs" />
+    <Compile Include="IFRAME\Controllers\UnityDependencyResolver.cs" />
+    <Compile Include="IFRAME\Controllers\TimeSlotUI.cs" />
+    <Compile Include="IFRAME\Controllers\Controls\PageCreatedEventArgs.cs" />
+    <Compile Include="IFRAME\Controllers\Controls\IFRMPager.cs" />
+    <Compile Include="IFRAME\Admin\Modules\BlockedTimeLine.cs" />
+    <Compile Include="IFRAME\Admin\InvoiceDetailsPage.cs" />
+    <Compile Include="IFRAME\Admin\InvoiceAdjustment_CreatePage.cs" />
+    <Compile Include="IFRAME\WeekViewPage.cs" />
+    <Compile Include="IFRAME\SecureArea\ServicesPage.cs" />
+    <Compile Include="IFRAME\SearchPage.cs" />
+    <Compile Include="IFRAME\Controllers\Constants.cs" />
+    <Compile Include="Resources\SalesOrderConfirmation.cs" />
+    <Compile Include="IFRAME\Admin\Modules\SalonMenu.cs" />
+    <Compile Include="IFRAME\SecureArea\Service_EditPage.cs" />
+    <Compile Include="IFRAME\DefaultPage.cs" />
+    <Compile Include="IFRAME\Controllers\Settings.cs" />
+    <Compile Include="IFRAME\Controllers\IFRMHelper.cs" />
+    <Compile Include="IFRAME\Admin\SalonUser_Password_DetailsPage.cs" />
+    <Compile Include="IFRAME\Admin\WSPPage.cs" />
+    <Compile Include="IFRAME\Admin\SalonManagement\Ticket_Alert_DeletePage.cs" />
+    <Compile Include="IFRAME\Admin\SalonManagement\HolidaysPage.cs" />
+    <Compile Include="IFRAME\Admin\InvoicesPaymentDuePage.cs" />
+    <Compile Include="IFRAME\Admin\APIKey_EditPage.cs" />
+    <Compile Include="IFRAME\SecureArea\SettingVAT_EditPage.cs" />
+    <Compile Include="IFRAME\Admin\QueuedMessage_DeletePage.cs" />
+    <Compile Include="Resources\SalonOrderConfirmation.cs" />
+    <Compile Include="IFRAME\SecureArea\Appointment_DetailsPage.cs" />
+  </ItemGroup>
+</Project>

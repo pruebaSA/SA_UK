@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>df8e87bb-6862-47c3-814f-356714b81aeb</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>SA.Payments.Realex.RealVault</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Configuration" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="SA\Payments\Realex\RealVault\ResponseBase.cs" />
+    <Compile Include="SA\Payments\Realex\RealVault\RealVaultResponse.cs" />
+    <Compile Include="SA\Payments\Realex\RealVault\RequestBase.cs" />
+    <Compile Include="SA\Payments\Realex\RealVault\CardCreateRequest.cs" />
+    <Compile Include="SA\Payments\Realex\RealVault\ReceiptInResponse.cs" />
+    <Compile Include="SA\Payments\Realex\RealVault\CardType.cs" />
+    <Compile Include="SA\Payments\Realex\RealVault\ISettingsProvider.cs" />
+    <Compile Include="SA\Payments\Realex\RealVault\SettingsProviderConfig.cs" />
+    <Compile Include="SA\Payments\Realex\RealVault\CardDeleteRequest.cs" />
+    <Compile Include="SA\Payments\Realex\RealVault\PayerCreateResponse.cs" />
+    <Compile Include="SA\Payments\Realex\RealVault\ReceiptInRequest.cs" />
+    <Compile Include="SA\Payments\Realex\RealVault\Helper.cs" />
+    <Compile Include="SA\Payments\Realex\RealVault\CardCreateResponse.cs" />
+    <Compile Include="SA\Payments\Realex\RealVault\SettingsProvider.cs" />
+    <Compile Include="SA\Payments\Realex\RealVault\PayerCreateRequest.cs" />
+    <Compile Include="SA\Payments\Realex\RealVault\RealVaultException.cs" />
+    <Compile Include="SA\Payments\Realex\RealVault\CardDeleteResponse.cs" />
+  </ItemGroup>
+</Project>

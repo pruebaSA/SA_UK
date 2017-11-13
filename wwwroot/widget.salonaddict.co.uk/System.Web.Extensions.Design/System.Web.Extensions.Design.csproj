@@ -1,0 +1,166 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>085eceb4-586f-4588-86b8-2c4a494b1bdb</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>System.Web.Extensions.Design</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="System\Web\Resources\Design\AtlasWebDesign.cs" />
+    <Compile Include="System\Web\UI\Design\AsyncPostBackTriggerControlIDConverter.cs" />
+    <Compile Include="System\Web\UI\Design\AsyncPostBackTriggerEventNameConverter.cs" />
+    <Compile Include="System\Web\UI\Design\CollectionEditorBase.cs" />
+    <Compile Include="System\Web\UI\Design\DesignUtil.cs" />
+    <Compile Include="System\Web\UI\Design\IControlDesigner.cs" />
+    <Compile Include="System\Web\UI\Design\ExtenderControlDesigner.cs" />
+    <Compile Include="System\Web\UI\Design\ExtenderControlToolboxItem.cs" />
+    <Compile Include="System\Web\UI\Design\PostBackTriggerControlIDConverter.cs" />
+    <Compile Include="System\Web\UI\Design\ScriptManagerDesigner.cs" />
+    <Compile Include="System\Web\UI\Design\ScriptManagerProxyDesigner.cs" />
+    <Compile Include="System\Web\UI\Design\TimerDesigner.cs" />
+    <Compile Include="System\Web\UI\Design\TriggerDesignUtil.cs" />
+    <Compile Include="System\Web\UI\Design\UpdatePanelDesigner.cs" />
+    <Compile Include="System\Web\UI\Design\UpdatePanelTriggerCollectionEditor.cs" />
+    <Compile Include="System\Web\UI\Design\UpdateProgressAssociatedUpdatePanelIDConverter.cs" />
+    <Compile Include="System\Web\UI\Design\UpdateProgressDesigner.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\DesignerPagerStyle.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\CustomPagerStyle.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\DataPagerActionList.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\DataPagerDesigner.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\DataPagerFieldsEditor.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\DataPagerFieldTypeEditor.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\DataPagerStylesTypeConverter.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\DesignerPanel.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\LinqDataSourceContextChangedEventHandler.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\ILinqDataSourceChooseContextType.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\ILinqDataSourceChooseContextTypePanel.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\ILinqDataSourceConfiguration.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\ILinqDataSourceConfigurationPanel.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\ILinqDataSourceConfigureAdvanced.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\ILinqDataSourceConfigureAdvancedForm.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\ILinqDataSourceConfigureGroupBy.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\ILinqDataSourceConfigureGroupByPanel.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\ILinqDataSourceConfigureOrderBy.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\ILinqDataSourceConfigureOrderByForm.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\ILinqDataSourceConfigureSelect.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\ILinqDataSourceConfigureSelectPanel.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\ILinqDataSourceConfigureWhere.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\ILinqDataSourceConfigureWhereForm.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\ILinqDataSourceContextTypeItem.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\ILinqDataSourceDesignerHelper.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\ILinqDataSourceProjection.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\ILinqDataSourcePropertyItem.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\ILinqDataSourceStatementEditorForm.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\ILinqDataSourceWizardForm.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\ILinqDataSourceWrapper.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\LinqDataSourceAggregateFunctions.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\LinqDataSourceChooseContextType.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\LinqDataSourceChooseContextTypePanel.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\LinqDataSourceConfiguration.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\LinqDataSourceConfigurationHelper.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\LinqDataSourceConfigurationPanel.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\LinqDataSourceConfigureAdvanced.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\LinqDataSourceConfigureAdvancedForm.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\LinqDataSourceGroupByChangedEventHandler.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\LinqDataSourceConfigureGroupBy.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\LinqDataSourceConfigureGroupByPanel.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\LinqDataSourceConfigureOrderBy.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\LinqDataSourceConfigureOrderByForm.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\SelectionChangedEventHandler.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\LinqDataSourceConfigureSelect.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\LinqDataSourceConfigureSelectPanel.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\LinqDataSourceConfigureWhere.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\LinqDataSourceConfigureWhereForm.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\LinqDataSourceConfigureWhereHelper.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\LinqDataSourceContextTypeConverter.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\LinqDataSourceContextTypeItem.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\LinqDataSourceDesigner.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\LinqDataSourceDesignerHelper.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\LinqDataSourceGroupByMode.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\LinqDataSourceInsertUpdateDeleteStatementConverter.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\LinqDataSourceOperators.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\LinqDataSourceProjection.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\LinqDataSourcePropertyItem.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\LinqDataSourceSelectBuilder.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\LinqDataSourceSelectionChangedEventArgs.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\LinqDataSourceState.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\LinqDataSourceStatementEditor.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\LinqDataSourceStatementEditorForm.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\LinqDataSourceTableConverter.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\LinqDataSourceTablePropertyItem.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\LinqDataSourceWhereBuilder.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\LinqDataSourceWhereExpression.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\LinqDataSourceWhereStatement.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\LinqDataSourceWizardForm.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\LinqDataSourceWrapper.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\LinqDesignerDataSourceView.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\ListViewActionList.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\ListViewAutoLayoutDefinitions.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\ListViewAutoLayouts.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\ListViewAutoLayout.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\ListViewAutoStyle.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\ListViewNoFormatStyle.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\ListViewBlueStyle.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\ListViewColorfulStyle.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\ListViewProfessionalStyle.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\ListViewGridLayout.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\ListViewTiledLayout.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\ListViewBulletedListLayout.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\ListViewFlowLayout.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\ListViewSingleRowLayout.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\ListViewConfigurationForm.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\ListViewDesigner.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\ListViewViewsTypeConverter.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\NextPreviousPagerStyle.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\NullPagerStyle.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\NumericPagerStyle.cs" />
+    <Compile Include="System\Web\UI\Design\WebControls\PagedControlIDConverter.cs" />
+    <Compile Include="FX20Assembly.cs" />
+    <Compile Include="FX35Assembly.cs" />
+    <Compile Include="FXAssembly.cs" />
+    <Compile Include="ThisAssembly.cs" />
+    <Compile Include="AssemblyRef.cs" />
+    <EmbeddedResource Include="System.Web.Resources.Design.AtlasWebDesign.resources" />
+    <EmbeddedResource Include="System.Web.UI.Design.Util.StringCollectionEditor.resources" />
+    <EmbeddedResource Include="System.Web.Resources.Design.SortDown.ico" />
+    <EmbeddedResource Include="System.Web.Resources.Design.SortUp.ico" />
+    <EmbeddedResource Include="System.Web.Resources.Design.Delete.ico" />
+    <EmbeddedResource Include="System.Web.Resources.Design.FieldNodes.bmp" />
+    <EmbeddedResource Include="System.Web.Resources.Design.LinqDataSourceWizard.bmp" />
+  </ItemGroup>
+</Project>

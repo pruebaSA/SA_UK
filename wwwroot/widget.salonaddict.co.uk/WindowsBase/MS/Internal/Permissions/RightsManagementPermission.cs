@@ -1,0 +1,13 @@
+﻿namespace MS.Internal.Permissions
+{
+    using MS.Internal.WindowsBase;
+    using System.Security;
+
+    [FriendAccessAllowed]
+    internal class RightsManagementPermission : InternalPermissionBase
+    {
+        public override IPermission Copy() => 
+            new RightsManagementPermission();
+    }
+}
+

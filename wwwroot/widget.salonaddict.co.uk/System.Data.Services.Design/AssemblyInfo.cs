@@ -1,0 +1,20 @@
+﻿// Assembly System.Data.Services.Design, Version 3.5.0.0
+
+[assembly: System.Reflection.AssemblyKeyFile(@"f:\dd\tools\devdiv\EcmaPublicKey.snk")]
+[assembly: System.Diagnostics.Debuggable(System.Diagnostics.DebuggableAttribute.DebuggingModes.IgnoreSymbolStoreSequencePoints)]
+[assembly: System.Runtime.CompilerServices.CompilationRelaxations(8)]
+[assembly: System.Reflection.AssemblyDelaySign(true)]
+[assembly: System.Reflection.AssemblyDefaultAlias("System.Data.Services.Design.dll")]
+[assembly: System.Runtime.CompilerServices.RuntimeCompatibility(WrapNonExceptionThrows=true)]
+[assembly: System.Runtime.InteropServices.ComVisible(false)]
+[assembly: System.CLSCompliant(true)]
+[assembly: System.Reflection.AssemblyTitle("System.Data.Services.Design.dll")]
+[assembly: System.Reflection.AssemblyDescription("System.Data.Services.Design.dll")]
+[assembly: System.Reflection.AssemblyCopyright("\x00a9 Microsoft Corporation.  All rights reserved.")]
+[assembly: System.Reflection.AssemblyCompany("Microsoft Corporation")]
+[assembly: System.Reflection.AssemblyProduct("Microsoft\x00ae .NET Framework")]
+[assembly: System.Reflection.AssemblyInformationalVersion("3.5.30729.5451")]
+[assembly: System.Resources.NeutralResourcesLanguage("en-US")]
+[assembly: System.Reflection.AssemblyFileVersion("3.5.30729.5451")]
+[assembly: System.Resources.SatelliteContractVersion("3.5.0.0")]
+

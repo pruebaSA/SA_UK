@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>6f3dd688-bbbd-4b5c-ba78-f2f31e6be96c</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>System.Data.Services.Design</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System" />
+    <Reference Include="System.Data.Services.Client" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Core" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="System\Data\Services\Design\Strings.cs" />
+    <Compile Include="System\Data\Services\Design\Error.cs" />
+    <Compile Include="System\Data\EntityModel\Emitters\Emitter.cs" />
+    <Compile Include="System\Data\EntityModel\Emitters\MetadataItemEmitter.cs" />
+    <Compile Include="System\Data\EntityModel\Emitters\SchemaTypeEmitter.cs" />
+    <Compile Include="System\Data\EntityModel\Emitters\AssociationTypeEmitter.cs" />
+    <Compile Include="System\Data\EntityModel\Emitters\AttributeEmitter.cs" />
+    <Compile Include="System\Data\Metadata\Edm\Helper.cs" />
+    <Compile Include="System\Data\Metadata\Edm\TypeSemantics.cs" />
+    <Compile Include="System\Data\Metadata\Edm\EdmProviderManifest.cs" />
+    <Compile Include="System\Data\Metadata\Edm\TypeSystem.cs" />
+    <Compile Include="System\Data\Metadata\Edm\Schema.cs" />
+    <Compile Include="System\Data\EntityModel\ClientApiGenerator.cs" />
+    <Compile Include="System\Data\EntityModel\Emitters\CommentEmitter.cs" />
+    <Compile Include="System\Data\EntityModel\Emitters\StructuredTypeEmitter.cs" />
+    <Compile Include="System\Data\EntityModel\Emitters\ComplexTypeEmitter.cs" />
+    <Compile Include="System\Data\EntityModel\Emitters\EntityContainerEmitter.cs" />
+    <Compile Include="System\Data\EntityModel\Emitters\EntityTypeEmitter.cs" />
+    <Compile Include="System\Data\EntityModel\Emitters\FixUp.cs" />
+    <Compile Include="System\Data\EntityModel\Emitters\FixUpCollection.cs" />
+    <Compile Include="System\Data\EntityModel\Emitters\FixUpType.cs" />
+    <Compile Include="System\Data\EntityModel\Emitters\NamespaceEmitter.cs" />
+    <Compile Include="System\Data\EntityModel\Emitters\PropertyEmitterBase.cs" />
+    <Compile Include="System\Data\EntityModel\Emitters\NavigationPropertyEmitter.cs" />
+    <Compile Include="System\Data\EntityModel\Emitters\PrivateMemberPrefixId.cs" />
+    <Compile Include="System\Data\EntityModel\Emitters\PropertyEmitter.cs" />
+    <Compile Include="System\Data\EntityModel\Emitters\TypeReference.cs" />
+    <Compile Include="System\Data\EntityModel\Emitters\Utils.cs" />
+    <Compile Include="System\Data\Services\Design\EdmToObjectNamespaceMap.cs" />
+    <Compile Include="System\Data\Common\Utils\EntityUtil.cs" />
+    <Compile Include="System\Data\Services\Design\EntityUtil.cs" />
+    <Compile Include="System\Data\Services\Design\EntityClassGenerator.cs" />
+    <Compile Include="System\Data\Services\Design\LanguageOption.cs" />
+    <Compile Include="System\Data\Services\Design\DataServiceCodeVersion.cs" />
+    <Compile Include="System\Data\Services\Design\LazyTextWriterCreator.cs" />
+    <Compile Include="System\Data\Services\Design\PropertyGeneratedEventArgs.cs" />
+    <Compile Include="System\Data\Services\Design\TypeGeneratedEventArgs.cs" />
+    <Compile Include="System\Data\Services\Design\Common\EDesignUtil.cs" />
+    <Compile Include="System\Data\Services\Design\Common\UniqueIdentifierService.cs" />
+    <Compile Include="System\Data\Services\Design\ModelBuilderErrorCode.cs" />
+    <Compile Include="System\Data\Common\Utils\StringUtil.cs" />
+    <Compile Include="System\Data\Common\Utils\Memoizer!2.cs" />
+    <Compile Include="System\Data\Common\Utils\InternalBase.cs" />
+    <Compile Include="System\Data\Metadata\Edm\EdmConstants.cs" />
+    <Compile Include="System\Data\Metadata\Edm\XmlConstants.cs" />
+    <Compile Include="System\Data\Services\XmlConstants.cs" />
+    <Compile Include="System\Data\Services\Common\EpmAttributeNameBuilder.cs" />
+    <Compile Include="System\Data\Services\Design\Xml\XNodeSchemaApplier.cs" />
+    <Compile Include="System\Data\EDesignResDescriptionAttribute.cs" />
+    <Compile Include="System\Data\EDesignResCategoryAttribute.cs" />
+    <Compile Include="System\Data\EDesignRes.cs" />
+    <EmbeddedResource Include="System.Data.Services.Design.resources" />
+  </ItemGroup>
+</Project>

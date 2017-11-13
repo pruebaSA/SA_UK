@@ -1,0 +1,20 @@
+﻿// Assembly Microsoft.Practices.Unity, Version 2.1.505.0
+
+[assembly: System.Diagnostics.Debuggable(System.Diagnostics.DebuggableAttribute.DebuggingModes.DisableOptimizations | System.Diagnostics.DebuggableAttribute.DebuggingModes.EnableEditAndContinue | System.Diagnostics.DebuggableAttribute.DebuggingModes.IgnoreSymbolStoreSequencePoints | System.Diagnostics.DebuggableAttribute.DebuggingModes.Default)]
+[assembly: System.Runtime.CompilerServices.CompilationRelaxations(8)]
+[assembly: System.Runtime.CompilerServices.RuntimeCompatibility(WrapNonExceptionThrows=true)]
+[assembly: System.Reflection.AssemblyTitle("Microsoft.Practices.Unity")]
+[assembly: System.Reflection.AssemblyDescription("Unity Dependency Injection Framework")]
+[assembly: System.Runtime.InteropServices.ComVisible(false)]
+[assembly: System.Reflection.AssemblyFileVersion("2.1.505.0")]
+[assembly: System.Reflection.AssemblyProduct("Microsoft Unity Application Block")]
+[assembly: System.Reflection.AssemblyCompany("Microsoft Corporation")]
+[assembly: System.Reflection.AssemblyTrademark("")]
+[assembly: System.Resources.NeutralResourcesLanguage("en")]
+[assembly: System.CLSCompliant(true)]
+[assembly: System.Security.SecurityTransparent]
+[assembly: System.Runtime.CompilerServices.Extension]
+[assembly: System.Security.AllowPartiallyTrustedCallers]
+[assembly: System.Reflection.AssemblyConfiguration("Debug")]
+[assembly: System.Reflection.AssemblyCopyright("Copyright \x00a9 2011 Microsoft Corporation.")]
+

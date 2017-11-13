@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>d8f4a2ff-cb41-4977-884b-c28bd03ee9a0</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>MigraDoc.Rendering</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="PdfSharp" />
+    <Reference Include="MigraDoc.DocumentObjectModel" />
+    <Reference Include="PdfSharp.Charting" />
+    <Reference Include="System" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="MigraDoc\Rendering\Resources\Messages.cs" />
+    <Compile Include="MigraDoc\Rendering\ColorHelper.cs" />
+    <Compile Include="MigraDoc\Rendering\PageRenderOptions.cs" />
+    <Compile Include="MigraDoc\Rendering\VersionInfo.cs" />
+    <Compile Include="MigraDoc\Rendering\ChartMapper\AxisMapper.cs" />
+    <Compile Include="MigraDoc\Rendering\ChartMapper\ChartMapper.cs" />
+    <Compile Include="MigraDoc\Rendering\ChartMapper\DataLabelMapper.cs" />
+    <Compile Include="MigraDoc\Rendering\ChartMapper\FillFormatMapper.cs" />
+    <Compile Include="MigraDoc\Rendering\ChartMapper\FontMapper.cs" />
+    <Compile Include="MigraDoc\Rendering\ChartMapper\LegendMapper.cs" />
+    <Compile Include="MigraDoc\Rendering\ChartMapper\LineFormatMapper.cs" />
+    <Compile Include="MigraDoc\Rendering\ChartMapper\PlotAreaMapper.cs" />
+    <Compile Include="MigraDoc\Rendering\ChartMapper\SeriesCollectionMapper.cs" />
+    <Compile Include="MigraDoc\Rendering\ChartMapper\XValuesMapper.cs" />
+    <Compile Include="MigraDoc\Rendering\Forms\Zoom.cs" />
+    <Compile Include="MigraDoc\Rendering\Forms\PagePreviewEventHandler.cs" />
+    <Compile Include="MigraDoc\Rendering\Forms\DocumentPreview.cs" />
+    <Compile Include="MigraDoc\Rendering\Printing\MigraDocPrintDocument.cs" />
+    <Compile Include="MigraDoc\Rendering\Area.cs" />
+    <Compile Include="MigraDoc\Rendering\Rectangle.cs" />
+    <Compile Include="MigraDoc\Rendering\BordersRenderer.cs" />
+    <Compile Include="MigraDoc\Rendering\FormatInfo.cs" />
+    <Compile Include="MigraDoc\Rendering\ShapeFormatInfo.cs" />
+    <Compile Include="MigraDoc\Rendering\ChartFormatInfo.cs" />
+    <Compile Include="MigraDoc\Rendering\Renderer.cs" />
+    <Compile Include="MigraDoc\Rendering\ShapeRenderer.cs" />
+    <Compile Include="MigraDoc\Rendering\ChartRenderer.cs" />
+    <Compile Include="MigraDoc\Rendering\RenderInfo.cs" />
+    <Compile Include="MigraDoc\Rendering\ShapeRenderInfo.cs" />
+    <Compile Include="MigraDoc\Rendering\ChartRenderInfo.cs" />
+    <Compile Include="MigraDoc\Rendering\DocumentRenderer.cs" />
+    <Compile Include="MigraDoc\Rendering\ElementAlignment.cs" />
+    <Compile Include="MigraDoc\Rendering\Floating.cs" />
+    <Compile Include="MigraDoc\Rendering\HorizontalReference.cs" />
+    <Compile Include="MigraDoc\Rendering\ImageFailure.cs" />
+    <Compile Include="MigraDoc\Rendering\VerticalReference.cs" />
+    <Compile Include="MigraDoc\Rendering\FieldInfos.cs" />
+    <Compile Include="MigraDoc\Rendering\FillFormatRenderer.cs" />
+    <Compile Include="MigraDoc\Rendering\FontHandler.cs" />
+    <Compile Include="MigraDoc\Rendering\IAreaProvider.cs" />
+    <Compile Include="MigraDoc\Rendering\FormattedCell.cs" />
+    <Compile Include="MigraDoc\Rendering\FormattedDocument.cs" />
+    <Compile Include="MigraDoc\Rendering\FormattedHeaderFooter.cs" />
+    <Compile Include="MigraDoc\Rendering\FormattedTextArea.cs" />
+    <Compile Include="MigraDoc\Rendering\FormattedTextFrame.cs" />
+    <Compile Include="MigraDoc\Rendering\ImageFormatInfo.cs" />
+    <Compile Include="MigraDoc\Rendering\ImageRenderer.cs" />
+    <Compile Include="MigraDoc\Rendering\ImageRenderInfo.cs" />
+    <Compile Include="MigraDoc\Rendering\LayoutInfo.cs" />
+    <Compile Include="MigraDoc\Rendering\LineFormatRenderer.cs" />
+    <Compile Include="MigraDoc\Rendering\NumberFormatter.cs" />
+    <Compile Include="MigraDoc\Rendering\PageBreakFormatInfo.cs" />
+    <Compile Include="MigraDoc\Rendering\PageBreakRenderer.cs" />
+    <Compile Include="MigraDoc\Rendering\PageBreakRenderInfo.cs" />
+    <Compile Include="MigraDoc\Rendering\PageInfo.cs" />
+    <Compile Include="MigraDoc\Rendering\VerticalLineInfo.cs" />
+    <Compile Include="MigraDoc\Rendering\LineInfo.cs" />
+    <Compile Include="MigraDoc\Rendering\ParagraphFormatInfo.cs" />
+    <Compile Include="MigraDoc\Rendering\ParagraphIterator.cs" />
+    <Compile Include="MigraDoc\Rendering\TabOffset.cs" />
+    <Compile Include="MigraDoc\Rendering\ParagraphRenderer.cs" />
+    <Compile Include="MigraDoc\Rendering\ParagraphRenderInfo.cs" />
+    <Compile Include="MigraDoc\Rendering\PdfDocumentRenderer.cs" />
+    <Compile Include="MigraDoc\Rendering\PdfPrinter.cs" />
+    <Compile Include="MigraDoc\Rendering\ShadingRenderer.cs" />
+    <Compile Include="MigraDoc\Rendering\TableFormatInfo.cs" />
+    <Compile Include="MigraDoc\Rendering\TableRenderer.cs" />
+    <Compile Include="MigraDoc\Rendering\TableRenderInfo.cs" />
+    <Compile Include="MigraDoc\Rendering\TextFrameFormatInfo.cs" />
+    <Compile Include="MigraDoc\Rendering\TextFrameRenderer.cs" />
+    <Compile Include="MigraDoc\Rendering\TextFrameRenderInfo.cs" />
+    <Compile Include="MigraDoc\Rendering\TopDownFormatter.cs" />
+    <EmbeddedResource Include="MigraDoc.Rendering.Forms.DocumentPreview.resources" />
+    <EmbeddedResource Include="MigraDoc.Rendering.Resources.Messages.resources" />
+  </ItemGroup>
+</Project>

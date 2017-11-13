@@ -1,0 +1,206 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>92501428-0fa3-4928-846a-b96a013e2b70</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>MigraDoc.DocumentObjectModel</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\DocumentObject.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Fields\BookmarkField.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Fields\DateField.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Fields\InfoFieldType.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Fields\InfoField.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Fields\NumericFieldBase.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Fields\NumPagesField.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Fields\PageField.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Fields\PageRefField.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Fields\SectionField.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Fields\SectionPagesField.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Internals\Meta.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Internals\ValueDescriptor.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Internals\NullableDescriptor.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Internals\ValueTypeDescriptor.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Internals\DocumentObjectDescriptor.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Internals\DocumentObjectCollectionDescriptor.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Internals\ValueDescriptorCollection.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Internals\DVAttribute.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Internals\GV.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Internals\VDFlags.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Internals\INullableValue.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Internals\NBool.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Internals\NDouble.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Internals\NEnum.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Internals\NInt.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Internals\NString.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\IO\DdlParser.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\IO\DdlParserException.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\IO\DdlReader.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\IO\DdlReaderError.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\IO\DdlReaderErrors.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\IO\DdlScanner.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\IO\DdlWriter.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\IO\DdlErrorLevel.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\IO\Symbol.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\IO\TokenType.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\IO\KeyWords.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Shapes\Charts\ChartObject.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Shapes\Charts\Axis.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Shapes\Charts\AxisTitle.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Shapes\Shape.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Visitors\IVisitable.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Shapes\Charts\Chart.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Shapes\Charts\DataLabel.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Shapes\Charts\BlankType.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Shapes\Charts\ChartType.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Shapes\Charts\DataLabelPosition.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Shapes\Charts\DataLabelType.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Shapes\Charts\HorizontalAlignment.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Shapes\Charts\MarkerStyle.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Shapes\Charts\TickMarkType.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Shapes\Charts\Gridlines.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Shapes\Charts\Legend.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Shapes\Charts\PlotArea.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Shapes\Charts\Point.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Shapes\Charts\Series.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\DocumentObjectCollection.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Shapes\Charts\SeriesCollection.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Shapes\Charts\SeriesElements.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Shapes\Charts\TextArea.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Shapes\Charts\TickLabels.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Shapes\Charts\XSeries.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Shapes\Charts\XSeriesElements.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Shapes\Charts\XValue.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Shapes\Charts\XValues.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Shapes\Barcode.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Shapes\BarcodeType.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Shapes\DashStyle.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Shapes\LineStyle.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Shapes\RelativeHorizontal.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Shapes\RelativeVertical.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Shapes\ShapePosition.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Shapes\TextOrientation.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Shapes\WrapStyle.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Shapes\FillFormat.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Shapes\Image.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Shapes\LeftPosition.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Shapes\LineFormat.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Shapes\PictureFormat.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Shapes\TextFrame.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Shapes\TopPosition.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Shapes\WrapFormat.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Tables\Cell.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Tables\Cells.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Tables\Column.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Tables\Columns.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Tables\Edge.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Tables\RowAlignment.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Tables\RowHeightRule.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Tables\VerticalAlignment.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Tables\Row.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Tables\Rows.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Tables\Table.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Visitors\CellComparer.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Visitors\DocumentObjectVisitor.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Visitors\MergedCellList.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Visitors\VisitorBase.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Visitors\PdfFlattenVisitor.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Visitors\RtfFlattenVisitor.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Border.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Borders.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Character.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Chars.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Color.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Colors.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\DdlEncoder.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\DdlVisibleAttribute.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Document.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\DocumentElements.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\DocumentInfo.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\DocumentRelations.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\DomSR.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\BorderStyle.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\BorderType.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\BreakType.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\ColorName.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\DomMsgID.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\FontProperties.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\FootnoteLocation.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\FootnoteNumberingRule.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\FootnoteNumberStyle.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\HeaderFooterIndex.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\HyperlinkType.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\LineSpacingRule.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\ListType.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Orientation.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\OutlineLevel.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\PageFormat.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\ParagraphAlignment.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\StyleType.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\SymbolName.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\TabAlignment.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\TabLeader.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\TextFormat.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Underline.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\UnitType.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Font.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Footnote.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\FormattedText.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\HeaderFooter.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\HeadersFooters.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Hyperlink.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\ImageHelper.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\ListInfo.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\PageBreak.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\PageSetup.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Paragraph.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\ParagraphElements.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\ParagraphFormat.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Section.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Sections.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Serializer.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Shading.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Style.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\StyleNames.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Styles.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\TabStop.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\TabStops.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Text.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\TextMeasurement.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\Unit.cs" />
+    <Compile Include="MigraDoc\ProductVersionInfo.cs" />
+    <Compile Include="MigraDoc\DocumentObjectModel\VersionInfo.cs" />
+    <Compile Include="Properties\Resources.cs" />
+    <EmbeddedResource Include="MigraDoc.DocumentObjectModel.Resources.Messages.resources" />
+    <EmbeddedResource Include="Properties.Resources.resources" />
+  </ItemGroup>
+</Project>

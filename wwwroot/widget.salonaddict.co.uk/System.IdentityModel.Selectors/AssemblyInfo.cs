@@ -1,0 +1,23 @@
+﻿// Assembly System.IdentityModel.Selectors, Version 3.0.0.0
+
+[assembly: System.Reflection.AssemblyDelaySign(true)]
+[assembly: System.Diagnostics.Debuggable(System.Diagnostics.DebuggableAttribute.DebuggingModes.IgnoreSymbolStoreSequencePoints)]
+[assembly: System.Runtime.CompilerServices.CompilationRelaxations(8)]
+[assembly: System.Resources.NeutralResourcesLanguage("en-US")]
+[assembly: System.Reflection.AssemblyKeyFile(@"f:\dd\Tools\devdiv\EcmaPublicKey.snk")]
+[assembly: System.Reflection.AssemblyTitle("System.IdentityModel.Selectors.dll")]
+[assembly: System.Resources.SatelliteContractVersion("3.0.0.0")]
+[assembly: System.Reflection.AssemblyDescription("System.IdentityModel.Selectors.dll")]
+[assembly: System.Reflection.AssemblyInformationalVersion("3.0.4506.5420")]
+[assembly: System.Runtime.CompilerServices.InternalsVisibleTo("infocardsvc, PublicKey=00000000000000000400000000000000")]
+[assembly: System.Runtime.InteropServices.ComVisible(false)]
+[assembly: System.CLSCompliant(true)]
+[assembly: System.Runtime.CompilerServices.RuntimeCompatibility(WrapNonExceptionThrows=true)]
+[assembly: System.Runtime.CompilerServices.InternalsVisibleTo("infocard, PublicKey=00000000000000000400000000000000")]
+[assembly: System.Reflection.AssemblyDefaultAlias("System.IdentityModel.Selectors.dll")]
+[assembly: System.Reflection.AssemblyCompany("Microsoft Corporation")]
+[assembly: System.Reflection.AssemblyProduct("Microsoft\x00ae .NET Framework")]
+[assembly: System.Reflection.AssemblyCopyright("\x00a9 Microsoft Corporation.  All rights reserved.")]
+[assembly: System.Reflection.AssemblyFileVersion("3.0.4506.5420")]
+[assembly: System.Security.Permissions.SecurityPermission(System.Security.Permissions.SecurityAction.RequestMinimum, SkipVerification=true)]
+

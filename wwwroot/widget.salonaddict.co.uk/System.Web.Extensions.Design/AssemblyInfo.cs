@@ -1,0 +1,22 @@
+﻿// Assembly System.Web.Extensions.Design, Version 3.5.0.0
+
+[assembly: System.Web.UI.WebResource("System.Web.Resources.Design.Background.gif", "image/gif")]
+[assembly: System.Runtime.CompilerServices.RuntimeCompatibility(WrapNonExceptionThrows=true)]
+[assembly: System.Runtime.CompilerServices.InternalsVisibleTo("System.Web.Extensions.Test, PublicKey=002400000480000094000000060200000024000052534131000400000100010007d1fa57c4aed9f0a32e84aa0faefd0de9e8fd6aec8f87fb03766c834c99921eb23be79ad9d5dcc1dd9ad236132102900b723cf980957fc4e177108fc607774f29e8320e92ea05ece4e821c0a5efe8f1645c4c0c93c1ab99285d622caa652c1dfad63d745d6f2de5f17e5eaf0fc4963d261c8a12436518206dc093344d5ad293")]
+[assembly: System.Diagnostics.Debuggable(System.Diagnostics.DebuggableAttribute.DebuggingModes.IgnoreSymbolStoreSequencePoints)]
+[assembly: System.Runtime.CompilerServices.CompilationRelaxations(8)]
+[assembly: System.Runtime.InteropServices.ComVisible(false)]
+[assembly: System.CLSCompliant(true)]
+[assembly: System.Reflection.AssemblyTitle("System.Web.Extensions.Design.dll")]
+[assembly: System.Reflection.AssemblyDescription("System.Web.Extensions.Design.dll")]
+[assembly: System.Reflection.AssemblyDefaultAlias("System.Web.Extensions.Design.dll")]
+[assembly: System.Reflection.AssemblyCompany("Microsoft Corporation")]
+[assembly: System.Reflection.AssemblyProduct("Microsoft\x00ae .NET Framework")]
+[assembly: System.Reflection.AssemblyCopyright("\x00a9 Microsoft Corporation.  All rights reserved.")]
+[assembly: System.Reflection.AssemblyFileVersion("3.5.30729.5420")]
+[assembly: System.Reflection.AssemblyInformationalVersion("3.5.30729.5420")]
+[assembly: System.Resources.SatelliteContractVersion("3.5.0.0")]
+[assembly: System.Resources.NeutralResourcesLanguage("en-US")]
+[assembly: System.Reflection.AssemblyDelaySign(true)]
+[assembly: System.Reflection.AssemblyKeyFile(@"f:\dd\tools\devdiv\35MSSharedLib1024.snk")]
+

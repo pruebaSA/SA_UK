@@ -1,0 +1,22 @@
+﻿// Assembly System.Web.RegularExpressions, Version 2.0.0.0
+
+[assembly: System.Runtime.CompilerServices.InternalsVisibleTo("System.Design, PublicKey=002400000480000094000000060200000024000052534131000400000100010007d1fa57c4aed9f0a32e84aa0faefd0de9e8fd6aec8f87fb03766c834c99921eb23be79ad9d5dcc1dd9ad236132102900b723cf980957fc4e177108fc607774f29e8320e92ea05ece4e821c0a5efe8f1645c4c0c93c1ab99285d622caa652c1dfad63d745d6f2de5f17e5eaf0fc4963d261c8a12436518206dc093344d5ad293")]
+[assembly: System.Runtime.CompilerServices.RuntimeCompatibility(WrapNonExceptionThrows=true)]
+[assembly: System.Reflection.AssemblyDefaultAlias("System.Web.RegularExpressions.dll")]
+[assembly: System.Security.AllowPartiallyTrustedCallers]
+[assembly: System.Runtime.InteropServices.ComVisible(false)]
+[assembly: System.Resources.NeutralResourcesLanguage("en-US")]
+[assembly: System.Reflection.AssemblyDelaySign(true)]
+[assembly: System.Reflection.AssemblyProduct("Microsoft\x00ae .NET Framework")]
+[assembly: System.Reflection.AssemblyTitle("System.Web.RegularExpressions.dll")]
+[assembly: System.Reflection.AssemblyCopyright("\x00a9 Microsoft Corporation.  All rights reserved.")]
+[assembly: System.Reflection.AssemblyKeyFile(@"f:\dd\Tools\devdiv\FinalPublicKey.snk")]
+[assembly: System.Reflection.AssemblyFileVersion("2.0.50727.8762")]
+[assembly: System.Reflection.AssemblyCompany("Microsoft Corporation")]
+[assembly: System.Runtime.CompilerServices.InternalsVisibleTo("System.Web, PublicKey=002400000480000094000000060200000024000052534131000400000100010007d1fa57c4aed9f0a32e84aa0faefd0de9e8fd6aec8f87fb03766c834c99921eb23be79ad9d5dcc1dd9ad236132102900b723cf980957fc4e177108fc607774f29e8320e92ea05ece4e821c0a5efe8f1645c4c0c93c1ab99285d622caa652c1dfad63d745d6f2de5f17e5eaf0fc4963d261c8a12436518206dc093344d5ad293")]
+[assembly: System.Reflection.AssemblyDescription("System.Web.RegularExpressions.dll")]
+[assembly: System.CLSCompliant(true)]
+[assembly: System.Runtime.CompilerServices.CompilationRelaxations(8)]
+[assembly: System.Resources.SatelliteContractVersion("2.0.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersion("2.0.50727.8762")]
+

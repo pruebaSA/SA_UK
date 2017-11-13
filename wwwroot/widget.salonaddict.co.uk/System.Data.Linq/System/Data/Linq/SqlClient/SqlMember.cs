@@ -1,0 +1,39 @@
+﻿namespace System.Data.Linq.SqlClient
+{
+    using System;
+    using System.Reflection;
+
+    internal class SqlMember : SqlSimpleTypeExpression
+    {
+        private SqlExpression expression;
+        private MemberInfo member;
+
+        internal SqlMember(Type clrType, ProviderType sqlType, SqlExpression expr, MemberInfo member) : base(SqlNodeType.Member, clrType, sqlType, expr.SourceExpression)
+        {
+            this.member = member;
+            this.Expression = expr;
+        }
+
+        internal SqlExpression Expression
+        {
+            get => 
+                this.expression;
+            set
+            {
+                if (value == null)
+                {
+                    throw Error.ArgumentNull("value");
+                }
+                if (!this.member.ReflectedType.IsAssignableFrom(value.ClrType) && !value.ClrType.IsAssignableFrom(this.member.ReflectedType))
+                {
+                    throw Error.MemberAccessIllegal(this.member, this.member.ReflectedType, value.ClrType);
+                }
+                this.expression = value;
+            }
+        }
+
+        internal MemberInfo Member =>
+            this.member;
+    }
+}
+
