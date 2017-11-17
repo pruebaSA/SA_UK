@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ltrContent.Text" xml:space="preserve">
-    <value>We are not around to take your appointment at the moment. &lt;br /&gt;Please come back later.</value>
+    <value>&lt;br /&gt;We are experiencing technical difficulties at the moment. &lt;br /&gt;Please call the salon directly to make your appointment.</value>
   </data>
   <data name="Page.Title" xml:space="preserve">
     <value>Salon booking availability</value>
